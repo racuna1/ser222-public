@@ -13,3 +13,6 @@ Within each unit, files are ordered by appearance.
 * SelectionSort.java - selection sort implementation.
 * InsertionSort.java - insertion sort implementation.
 * ShellSort.java - shellsort implementation.
+
+### 2.2 Mergesort
+* TopdownMergesort.java - topdown mergesort implementation.

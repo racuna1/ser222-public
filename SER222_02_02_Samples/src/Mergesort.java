@@ -1,11 +1,11 @@
 /**
- * A sample insertion sort implementation.
+ * A sample merge sort implementation using a topdown approach.
  * 
  * @author Sedgewick and Wayne, Acuna
  * @version 1.0
  */
 
-public class TopdownMergesort {
+public class Mergesort {
     
     public static void sort(Comparable[] a) {
         Comparable[] aux = new Comparable[a.length];
