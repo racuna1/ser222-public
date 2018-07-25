@@ -23,9 +23,9 @@ Within each module, files are ordered by appearance.
 * ShellSort.java - shellsort implementation.
 
 ### 2.2 Mergesort
-* TopdownMergesort.java - topdown mergesort implementation.
+* Mergesort.java - topdown mergesort implementation.
 
-### 2.4 Priority Queue
+### 2.4 Priority Queues
 * Date.java - see 2.1 Elementary Sorts.
 * MaxPQ.java - implementation of maximum priority queue.
 * MinPQ.java - implementation of minimum priority queue.
