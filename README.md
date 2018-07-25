@@ -24,3 +24,10 @@ Within each module, files are ordered by appearance.
 
 ### 2.2 Mergesort
 * TopdownMergesort.java - topdown mergesort implementation.
+
+### 2.4 Priority Queue
+* Date.java - see 2.1 Elementary Sorts.
+* MaxPQ.java - implementation of maximum priority queue.
+* MinPQ.java - implementation of minimum priority queue.
+* TopM.java - finds the top M transactions in an input.
+* Transaction.java - ADT for representing financial transactions.
