@@ -12,7 +12,18 @@ public class Date implements Comparable<Date> {
       month = m; 
       day   = d;
       year  = y;
-   }
+    }
+    
+    //used in for testing priority queue later in course.
+    public Date(String date) {
+        String[] fields = date.split("/");
+        if (fields.length != 3) {
+            throw new IllegalArgumentException("Invalid date");
+        }
+        month = Integer.parseInt(fields[0]);
+        day   = Integer.parseInt(fields[1]);
+        year  = Integer.parseInt(fields[2]);
+    }
 
     @Override
     public int compareTo(Date that) {
