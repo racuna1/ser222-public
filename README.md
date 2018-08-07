@@ -3,7 +3,7 @@ This repository contains public files for use in SER222 (Design & Analysis: Data
 
 Within each module, files are ordered alphabetically.
 
-## Fundamentals (modules 1.1, 1.2, 1.4)
+## Fundamentals (modules 1.1, 1.2, 1.3, 1.4)
 
 ### 1.1 Programming Model
 * Cone.java - class for representing a 3d geometric cone shape.
@@ -21,6 +21,21 @@ Within each module, files are ordered alphabetically.
 * IncrementCounter.java - interface for a counter.
 * Point2D.java - ADT for representing a 2D point.
 * Point2DTester.java - tests the Point2D class.
+
+### 1.3 Bags, Stacks, and Queues (deprecated)
+* Queue.java - interface for queue ADT.
+* Stack.java - interface for stack ADT.
+* FixedCapacityStringStack.java - initial array implementation of stack. limited to a fixed number of strings.
+* FixedCapacityStack.java - second array implementation of stack. limited to a fixed number of elements.
+* UnsafeExpandableStack.java - third array implementation of stack. 
+* ArrayStack.java - forth array implementation of stack. adds default constructor and makes pop() safe.
+* IterableArrayStack.java - fifth array implementation of stack. adds iterable support.
+* LinearNode.java - generic singly linked list node.
+* LinkedStack.java - linked list implementation of stack.
+* IterableLinkedStack.java - linked list implementation of stack. adds iterable support.
+* LinkedQueue.java - linked list implementation of queue. (not in slides.)
+* ContactNode.java - singly linked list node with contact information.
+* ContactBook.java - linked list implementation of a contact book.
 
 ### 1.4 Analysis of Algorithms
 * Stopwatch.java - ADT for taking a time measurement.
