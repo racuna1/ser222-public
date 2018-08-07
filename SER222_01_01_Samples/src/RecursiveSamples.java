@@ -1,5 +1,6 @@
 /**
- * Recursive implementations of methods that compute a factorial, compute a Fibonacci number
+ * Recursive implementations of methods that compute a factorial, compute a
+ * Fibonacci number, and display a list.
  * 
  * @author Acuna
  * @version 1.0

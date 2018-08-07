@@ -2,6 +2,7 @@
  * Tests Point2D class by creating and comparing two points.
  * 
  * @author Acuna
+ * @version 1.0.1
  */
 public class Point2DTester {
     public static void main(String[] args) {

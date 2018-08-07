@@ -1,7 +1,7 @@
 ﻿# Introduction
-This repository contains public files for use in SER222 (Design & Analysis: Data Structures & Algorithms) taught by Professor Ruben Acuña at Arizona State University. This repository primarily stores sample source code used in the course. Much of the material comes from samples in *Algorithms* 4th edition by Sedgewick and Wayne.
+This repository contains public files for use in SER222 (Design & Analysis: Data Structures & Algorithms) taught by Lecturer Ruben Acuña at Arizona State University. This repository primarily stores sample source code used in the course. Much of the material comes from samples in *Algorithms* 4th edition by Sedgewick and Wayne.
 
-Within each module, files are ordered by alphabetically.
+Within each module, files are ordered alphabetically.
 
 ## Fundamentals (modules 1.1, 1.2, 1.4)
 
