@@ -22,6 +22,10 @@ Within each module, files are ordered alphabetically.
 * Point2D.java - ADT for representing a 2D point.
 * Point2DTester.java - tests the Point2D class.
 
+### 1.4 Analysis of Algorithms
+* Stopwatch.java - ADT for taking a time measurement.
+* ThreeSum.java - algorithm that counts triples that sum to zero.
+
 ## Sorting (modules 2.1, 2.2, 2.4)
 
 ### 2.1 Elementary Sorts
