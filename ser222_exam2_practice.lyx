@@ -99,12 +99,12 @@ SER 222
 \series bold
 Practice
 \series default
- Exam 1
+ Exam 2
 \end_layout
 
 \begin_layout Standard
 \align center
-Updated 1/19/2019
+Updated 2/3/2019
 \end_layout
 
 \begin_layout Standard
@@ -201,7 +201,7 @@ No electronic items are allowed.
 
 \bar default
  Please use a pen (instead of a pencil) if you have one.
- There are 96 points available and the exam must be completed in 37.5 minutes.
+ There are 110 points available and the exam must be completed in 37.5 minutes.
  This exam has two types of questions:
 \end_layout
 
@@ -217,9 +217,9 @@ No electronic items are allowed.
 \series bold
 Short answer questions:
 \series default
- There are 64 points of short answer questions.
+ There are 80 points of short answer questions.
  A typical answer is one or two sentences.
- Each short answer question is worth 4 or 8 points.
+ Each short answer question is worth 10 or 5 points.
 \end_layout
 
 \begin_layout Standard
@@ -236,7 +236,7 @@ Write-in questions:
 \series default
  The programming questions are given near the end of the paper.
  They must be answered on the question paper.
- There are 32 points of write-in programming questions.
+ There are 0 points of write-in programming questions.
 \end_layout
 
 \begin_layout Standard
@@ -249,7 +249,7 @@ Write-in questions:
 \begin_layout Standard
 \align right
 \begin_inset Tabular
-<lyxtabular version="3" rows="8" columns="3">
+<lyxtabular version="3" rows="6" columns="3">
 <features tabularvalignment="middle">
 <column alignment="left" valignment="top">
 <column alignment="center" valignment="top">
@@ -290,11 +290,11 @@ Possible
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-SA: Recursion
+SA: Elementary Sorts
 \end_layout
 
 \end_inset
@@ -312,7 +312,7 @@ SA: Recursion
 \begin_inset Text
 
 \begin_layout Plain Layout
-16
+20
 \end_layout
 
 \end_inset
@@ -323,7 +323,7 @@ SA: Recursion
 \begin_inset Text
 
 \begin_layout Plain Layout
-SA: Data Abstraction
+SA: Mergesort
 \end_layout
 
 \end_inset
@@ -341,7 +341,7 @@ SA: Data Abstraction
 \begin_inset Text
 
 \begin_layout Plain Layout
-16
+20
 \end_layout
 
 \end_inset
@@ -352,7 +352,7 @@ SA: Data Abstraction
 \begin_inset Text
 
 \begin_layout Plain Layout
-SA: Stacks, Lists, and Generics
+SA: Priority Queues
 \end_layout
 
 \end_inset
@@ -370,36 +370,7 @@ SA: Stacks, Lists, and Generics
 \begin_inset Text
 
 \begin_layout Plain Layout
-16
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-SA: Analysis of Algorithms
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-32
+20
 \end_layout
 
 \end_inset
@@ -410,7 +381,7 @@ SA: Analysis of Algorithms
 \begin_inset Text
 
 \begin_layout Plain Layout
-Prog: Recursion
+SA: Symbol Tables
 \end_layout
 
 \end_inset
@@ -428,36 +399,7 @@ Prog: Recursion
 \begin_inset Text
 
 \begin_layout Plain Layout
-24
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Prog: Analysis of Algorithms
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-8
+20
 \end_layout
 
 \end_inset
@@ -486,7 +428,7 @@ Total:
 \begin_inset Text
 
 \begin_layout Plain Layout
-96
+80
 \end_layout
 
 \end_inset
@@ -509,386 +451,23 @@ Total:
 \begin_layout Standard
 
 \series bold
-Short Answer: Recursion
+Short Answer: Elementary Sorts
 \end_layout
 
 \begin_layout Enumerate
-Consider an algorithm for determining the size of some nested folders/files
- recursively.
- (Imagine right clicking an item on your desktop and viewing it's size.)
- What would be the base case(s) for this problem? [8 points]
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset VSpace 4cm
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Consider the problem of reversing letters of a string.
- Would it be more appropriate to use recursion or iteration? Justify your
- answer.
- [8 points]
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset VSpace 4cm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Short Answer: Data Abstraction
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-When it comes to functionality (not performance), is it important to know
- how an ADT is internally implemented? [8 points]
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset VSpace 4cm
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Consider the following constructor for an immutable matrix ADT:
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset listings
-lstparams "language=Java"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-public class SolnMatrix implements Matrix { 
-\end_layout
-
-\begin_layout Plain Layout
-
-    private final int[][] data;
-\end_layout
-
-\begin_layout Plain Layout
-
-    public SolnMatrix(int[][] matrix) {
-\end_layout
-
-\begin_layout Plain Layout
-
-        data = matrix
-\end_layout
-
-\begin_layout Plain Layout
-
-    }
-\end_layout
-
-\begin_layout Plain Layout
-
-    // the usual operations follow...
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Will this class behave as expected? Explain.
- [8 points]
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 4cm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Short Answer: Stacks, Lists, and Generics
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Assume that 
-\emph on
-head
-\emph default
- is the head node of a singly linked list containing the nodes A, B, and
- C.
- What would the result of executing the following code be? Draw the resulting
- list using box and arrow notation and include any variables.
- [2 points]
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset listings
-lstparams "language=Java"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-head.getNext().getNext().setNext(head.getNext());
-\end_layout
-
-\end_inset
-
-What would be the difference in memory usage for storing a thousand elements
- in an array vs a linked list? Which takes less space? Explain.
- [8 points]
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 4cm
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-If you were optimizing for performance and wanted to support potentially
- adding many new elements to a data structure, would an array or list be
- more appropriate? Explain using Big-Oh.
- [8 points]
-\begin_inset VSpace 4cm
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-
-\series bold
-Short Answer: Analysis of Algorithms
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Consider the following growth function: [16 points]
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Formula $f_{1}(n)=100+10log_{10}(n)n^{2}+45n$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-What is the Big-Oh order of this function? You should provide a relatively
- tight upper bound.
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 2cm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Prove that your bound holds.
- (Hint: the definition for Big-Oh is 
-\begin_inset Formula $𝑓(𝑛)=𝑂(𝑔(𝑛))$
-\end_inset
-
- iff 
-\begin_inset Formula $|f(n)|≤𝑐|𝑔(𝑛)|$
-\end_inset
-
- (for 
-\begin_inset Formula $n>x_{0}$
-\end_inset
-
-, where 
-\begin_inset Formula $x_{0}$
-\end_inset
-
- is a constant, and 
-\begin_inset Formula $c$
-\end_inset
-
- is also a constant).
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 6cm
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-What is the Big-Oh order of the following code fragment? The fragment is
- parametrized on the variable 
+What are the Big-Oh and Omega orders of the following code fragment? The
+ fragment is parametrized on the variable 
 \begin_inset Formula $n$
 \end_inset
 
 .
- Assume that you are measuring the number of println calls.
- [8 points]
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset listings
-lstparams "language=Java"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-for (int i = 1; i <= n; i++)
-\end_layout
-
-\begin_layout Plain Layout
-
-  for (int j = 1; j <= n; j *= 10)
-\end_layout
-
-\begin_layout Plain Layout
-
-    System.out.println("Nested loops!");
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 4cm
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Consider the following algorithm that implements linear search:
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset listings
-lstparams "language=Java"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-public static boolean find(int target, int[] pool) {
-\end_layout
-
-\begin_layout Plain Layout
-
-    for(int i = 0; i < pool.length; i++)
-\end_layout
-
-\begin_layout Plain Layout
-
-        if(pool[i] == target)
-\end_layout
-
-\begin_layout Plain Layout
-
-            return true;
-\end_layout
-
-\begin_layout Plain Layout
-
-    return false;
-\end_layout
-
-\begin_layout Plain Layout
-
-}   
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-If you were asked to analyze the performance of this algorithm, would it
- be useful to write a growth function that counts the number of times the
- return false statement will execute? That is, use the number of returns
- as the cost metric.
- Explain.
- [8 points]
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 4cm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-N/A Programming: Recursion
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Implement a recursive method called 
-\series bold
-countOccurrences
-\series default
- that takes the first node in a singly linked list and returns the number
- of times a particular value occurs in the list.
- For example, if countOccurrences("A") is called on a list with nodes containing
-: "A", "B", "C", "B", "E", it would return 1.
- If countOccurrences("B") was called on the same list, it would return 2.
- For reference, a standard implementation for the nodes of a singly linked
- list is given below.
- 
+ Assume that you are measuring the number of swap calls.
+ [10 points] 
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
-Source: MT Fall 2017.
+From FC15 final.
 \end_layout
 
 \end_inset
@@ -899,47 +478,72 @@ Source: MT Fall 2017.
 \begin_deeper
 \begin_layout Standard
 \begin_inset listings
+lstparams "language=Java"
 inline false
 status open
 
 \begin_layout Plain Layout
 
-public class LinearNode<T> {
+public static void sort(Comparable[] a) {
 \end_layout
 
 \begin_layout Plain Layout
 
-  private LinearNode<T> next;
+    int n = a.length;
 \end_layout
 
 \begin_layout Plain Layout
 
-  private T element;
+    for (int j = 0; j < n-1; j++) {
 \end_layout
 
 \begin_layout Plain Layout
 
-  public LinearNode(T elem) { next = null; element = elem; }
+        int z = j;
 \end_layout
 
 \begin_layout Plain Layout
 
-  public LinearNode<T> getNext() { return next; } 
+        for (int i = j+1; i < n; i++) {
 \end_layout
 
 \begin_layout Plain Layout
 
-  public void setNext(LinearNode<T> node) { next = node; } 
+            if (a[i] < a[z]) {
 \end_layout
 
 \begin_layout Plain Layout
 
-  public T getElement() { return element; } 
+                z = i;
 \end_layout
 
 \begin_layout Plain Layout
 
-  public void setElement(T elem) { element = elem; }
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        if(z != j) {
+\end_layout
+
+\begin_layout Plain Layout
+
+          swap(a[j], a[z]); //count these
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
 \end_layout
 
 \begin_layout Plain Layout
@@ -953,70 +557,110 @@ public class LinearNode<T> {
 \end_layout
 
 \begin_layout Enumerate
-Using the fantastic four approach, determine the size n problem for the
- method countOccurrences.
- [2 point]
+What is the Big-Oh order of the above code fragment? If it does not exist,
+ then explain.
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
-\begin_inset VSpace 1.5cm
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset VSpace 4cm
 \end_inset
 
 
 \end_layout
 
-\end_deeper
-\begin_layout Enumerate
-Identify the stopping condition(s) and the return value, if any, for the
- problem.
- [2 point]
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset VSpace 1.5cm
 \end_inset
 
 
-\end_layout
+\begin_inset Branch soln
+inverted 0
+status collapsed
 
-\end_deeper
-\begin_layout Enumerate
-Determine the size m problem(i.e.
- the “subproblem”) for the problem.
- [2 point]
-\end_layout
-
-\begin_deeper
 \begin_layout Standard
-\begin_inset VSpace 1.5cm
-\end_inset
 
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-How is the size-n problem constructed from the size m problem? [2 point]
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset VSpace 1.5cm
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Implement the recursive method 
 \series bold
-public static int countOccurrences<T>(LinearNode node, T target)
-\series default
- (Hint: use .equals to compare the target with the contents of each node.)
- [16 points]
+Ans: [Acuña]
+\end_layout
+
+\begin_layout Standard
+It is O(n) since it is inside one loop with linear incrementor.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 2cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+What is the Tilde order of the above code fragment? If it does not exist,
+ then explain.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\series bold
+Ans: [Acuña]
+\end_layout
+
+\begin_layout Standard
+It does not exist, swap only runs if z != j and we can't know how often
+ that occurs without knowing the data.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 2cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+When dealing with systems having low RAM capacity, or analyzing large datasets,
+ space is at a premium.
+ In these cases, algorithms must be designed to reduce their memory foot
+ print.
+ From the sorting algorithm implementations seen in class, which would be
+ the best choice? [10 points]
 \end_layout
 
 \begin_deeper
@@ -1027,9 +671,85 @@ public static int countOccurrences<T>(LinearNode node, T target)
 
 \end_layout
 
-\end_deeper
 \begin_layout Standard
-\begin_inset Newpage pagebreak
+
+\series bold
+Short Answer: Mergesort
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+[Acuña] Consider the following array: 23, 7, 35, 3, 4, 2, 13.
+ Show a trace of execution for top-down mergesort.
+ Illustrate how the array is broken down, and then merged into an ordered
+ state.
+ [10 points]
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset VSpace 12cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+In the lower bound proof for sorting, why must there be at least N! leaves
+ on the decision tree? [10 points]
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\series bold
+Ans: [Acuña]
+\end_layout
+
+\begin_layout Standard
+A sorting algorithm must be able to sort (solve) any input.
+ Given that the input is an array of size N, then there are N! permutations
+ of it.
+ Since each result is represented as a leaf, we need N! leaves to have enough
+ solutions available for the possible inputs.
+ This is the equivalent of saying that the tree contains a path which leads
+ to the solution of each possible input.
+\end_layout
+
 \end_inset
 
 
@@ -1038,94 +758,111 @@ public static int countOccurrences<T>(LinearNode node, T target)
 \begin_layout Standard
 
 \series bold
-Short Answer: Stacks, Lists, and Generics
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-If this was the real exam, there might be a question here asking you to
- implement methods (potentially stand-alone, or in an ADT) using linked
- lists.
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Programming: Analysis of Algorithms
+Short Answer: Priority Queues 
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
-Consider the following method, excerpted from a protein structural prediction
- algorithm.
- Assume that any variables not given as parameters are available as globals.
+What is the difference between a (max) heap and a priority queue? [10 points]
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+One of the main operations for a PQ is to move an element lower in a heap,
+ so that it will be in the proper order.
+ It is implemented by the sink() method.
+ According to lecture, this particular implementation takes 
+\begin_inset Formula $O(log(n))$
+\end_inset
+
+ number of exchanges to put the element in its proper place.
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
 \begin_inset listings
-lstparams "language=Java"
 inline false
 status open
 
 \begin_layout Plain Layout
 
-//sets initial interaction energy.
+    private void sink(int k) {
 \end_layout
 
 \begin_layout Plain Layout
 
-//  int n: dimension of square matrix storing protein backbone.
+        while (2*k <= N) {
 \end_layout
 
 \begin_layout Plain Layout
 
-//  double[][] pair: energy matrix.
+            int j = 2*k;
 \end_layout
 
 \begin_layout Plain Layout
 
-void energy() {
+            if (j < N && less(j, j+1))
 \end_layout
 
 \begin_layout Plain Layout
 
-    double ee = 0; 
+              j++;
 \end_layout
 
 \begin_layout Plain Layout
 
-    //reset all pair interaction energies to zero.
+            if (!less(k, j))
 \end_layout
 
 \begin_layout Plain Layout
 
-    for(int j = 1; j < n; j++)
+              break;
 \end_layout
 
 \begin_layout Plain Layout
 
-        for(int i = 3; i < n-2; i++)
+            exch(k, j);
 \end_layout
 
 \begin_layout Plain Layout
 
-            pair[i][j] = 0.0;
+            k = j;
 \end_layout
 
 \begin_layout Plain Layout
 
+        }
 \end_layout
 
 \begin_layout Plain Layout
 
-    //<more code follows in actual program>
+    }
 \end_layout
 
 \begin_layout Plain Layout
 
-    //...
 \end_layout
 
 \end_inset
@@ -1134,16 +871,175 @@ void energy() {
 \end_layout
 
 \begin_layout Standard
-Give a growth function for 
+Support this claim by explaining why this method is 
+\begin_inset Formula $O(log(n))$
+\end_inset
+
+: [10 points]
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset VSpace 3cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Short Answer: Symbol Tables
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Trace an initially empty symbol table (called ST) through the following
+ operations:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+SymbolTable<> ST = new BinarySearchTree<String, Integer>();
+\end_layout
+
+\begin_layout Plain Layout
+
+ST.put("SER100", 150);
+\end_layout
+
+\begin_layout Plain Layout
+
+ST.put("SER200", 150);
+\end_layout
+
+\begin_layout Plain Layout
+
+ST.put("SER250", 100);
+\end_layout
+
+\begin_layout Plain Layout
+
+ST.put("SER316", 100);
+\end_layout
+
+\begin_layout Plain Layout
+
+System.out.println(ST.get("SER200"));
+\end_layout
+
+\begin_layout Plain Layout
+
+ST.put("SER200", 250);
+\end_layout
+
+\begin_layout Plain Layout
+
+ST.put("SER316", 75);
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Give the contents of the hashtable after the code has been executed.
+ Use the format ABC### : ### (e.g., 
+\begin_inset Quotes eld
+\end_inset
+
+SER100 : 100
+\begin_inset Quotes erd
+\end_inset
+
+) to give your answer.
+ Use separate lines for each key/value pair.
+ [10 points]
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset VSpace 3cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Consider the task of implementing a SymbolTable vs an OrderedSymbolTable.
+ For the purposes of get and put, which you be more likely to create an
+ efficient implementation for? Explain.
+ (Hint: no knowledge of BSTs or hashtables is needed.) [10 points]
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Created for SA18.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Programming: ???
+\end_layout
+
+\begin_layout Standard
+
 \emph on
-md_fragment
-\emph default
- that counts the number of assignments in the inner loop based on 
-\emph on
-n
-\emph default
-.
- [8 points]
+There will be at least one programming question on the actual exam.
 \end_layout
 
 \end_deeper
