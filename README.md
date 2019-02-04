@@ -59,3 +59,11 @@ Within each module, files are ordered alphabetically.
 * MinPQ.java - implementation of minimum priority queue.
 * TopM.java - finds the top M transactions in an input.
 * Transaction.java - ADT for representing financial transactions.
+
+## Searching (modules 3.1, 3.2, 3.4)
+
+### 3.4 Hash Tables
+* LinearProbingHashST - implementation of a ST using probing. 
+* SeparateChainingHashST - implementation of ST using separate chainning.
+* SequentialSearchST - implementation of ST using a list.
+* SymbolTable`- interface for symbol table ADT.
