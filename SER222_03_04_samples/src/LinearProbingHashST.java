@@ -22,9 +22,25 @@ public class LinearProbingHashST<Key, Value>
     private int hash(Key key) {
         return (key.hashCode() & 0x7fffffff) % M;
     }
+
+    private static int primeCeil(int num) {
+        if (num > 2 && num % 2 == 0) num++;
+        if (num < 2) num = 2;
+        boolean prime = false;
+        while (!prime) {
+            prime = true;
+            for (int d = 3; d <= Math.sqrt(num) && prime; d += 2) {
+                if (num % d == 0)
+                    prime = false;
+            }
+            if (!prime) num += 2;
+        }
+        return num;
+    }
+
     private void resize(int cap) {
         LinearProbingHashST<Key, Value> t;
-        t = new LinearProbingHashST<>(cap);
+        t = new LinearProbingHashST<>(primeCeil(cap));
         for (int i = 0; i < M; i++)
             if (keys[i] != null)
                 t.put(keys[i], vals[i]);
