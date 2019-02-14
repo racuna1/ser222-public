@@ -1,6 +1,6 @@
 /**
  * A symbol table implemented using a hashtable with chaining.
- * @author Sedgewick and Wayne, Acuna
+ * @author Sedgewick and Wayne, Acuna, Bush
  */
 public class LinearProbingHashST<Key, Value>
 {
