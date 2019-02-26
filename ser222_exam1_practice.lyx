@@ -104,7 +104,7 @@ Practice
 
 \begin_layout Standard
 \align center
-Updated 1/19/2019
+Updated 2/7/2019
 \end_layout
 
 \begin_layout Standard
@@ -370,7 +370,7 @@ SA: Stacks, Lists, and Generics
 \begin_inset Text
 
 \begin_layout Plain Layout
-16
+24
 \end_layout
 
 \end_inset
@@ -399,7 +399,7 @@ SA: Analysis of Algorithms
 \begin_inset Text
 
 \begin_layout Plain Layout
-32
+24
 \end_layout
 
 \end_inset
@@ -638,7 +638,7 @@ head
  C.
  What would the result of executing the following code be? Draw the resulting
  list using box and arrow notation and include any variables.
- [2 points]
+ [8 points]
 \end_layout
 
 \begin_deeper
@@ -655,11 +655,24 @@ head.getNext().getNext().setNext(head.getNext());
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
 What would be the difference in memory usage for storing a thousand elements
  in an array vs a linked list? Which takes less space? Explain.
  [8 points]
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset VSpace 4cm
 \end_inset
@@ -788,9 +801,9 @@ for (int i = 1; i <= n; i++)
 \end_inset
 
 
-\end_layout
+\begin_inset Note Note
+status collapsed
 
-\end_deeper
 \begin_layout Enumerate
 Consider the following algorithm that implements linear search:
 \begin_inset Separator latexpar
@@ -800,7 +813,7 @@ Consider the following algorithm that implements linear search:
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset listings
 lstparams "language=Java"
 inline false
@@ -841,7 +854,7 @@ public static boolean find(int target, int[] pool) {
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 If you were asked to analyze the performance of this algorithm, would it
  be useful to write a growth function that counts the number of times the
  return false statement will execute? That is, use the number of returns
@@ -850,8 +863,14 @@ If you were asked to analyze the performance of this algorithm, would it
  [8 points]
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_inset
 
 
