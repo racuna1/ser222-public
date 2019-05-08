@@ -104,7 +104,7 @@ Practice
 
 \begin_layout Standard
 \align center
-Updated 2/25/2019
+Updated 5/8/2019
 \end_layout
 
 \begin_layout Standard
@@ -572,12 +572,12 @@ status open
 
 \begin_layout Plain Layout
 
-//assume that the "tree" variable below has already been construct
+//assume that the "tree" variable below has already been constructed,
 \end_layout
 
 \begin_layout Plain Layout
 
-//to be the tree shown above.
+//per the tree shown above.
 \end_layout
 
 \begin_layout Plain Layout
@@ -630,11 +630,10 @@ status collapsed
 
 \end_deeper
 \begin_layout Enumerate
-When adding and removing nodes from a heap, the binary structure will always
+When adding and removing nodes from a heap, the tree structure will always
  remain balanced.
  Why is it the case that when these operations are performed over a BST,
- there is a a chance that the tree will become unbalanced? (Hint: array
- versus list representation doesn't matter.) [10 points]
+ there is a chance that the tree will become unbalanced? [10 points]
 \end_layout
 
 \begin_deeper
@@ -798,9 +797,9 @@ Would the DFS algorithm run faster if it was implemented with an adjacency
 
 \end_deeper
 \begin_layout Enumerate
-If you are asked to run a DFS or BFS by hand, and given both a picture of
- the graph and the code for the algorithm, why is there a chance you and
- a classmate who correctly execute the algorithm will produce different
+If you are asked to run a DFS or BFS by hand, and given a picture of the
+ graph, the code for the algorithm, and a start node, why is there a chance
+ you and a classmate who correctly execute the algorithm will produce different
  paths? [10 points]
 \end_layout
 
@@ -858,7 +857,7 @@ Programming: Binary Search Trees
 \end_deeper
 \begin_layout Enumerate
 One of the data structures we studied is Binary Search Trees (BST).
- A simple implementation of node for a binary tree is shown below.
+ A simple implementation of a node for a binary tree is shown below.
  For this question, you are to implement a method called isBST that takes
  first node in a binary tree (its root) and returns true if it is the root
  of a BST, and false otherwise.
