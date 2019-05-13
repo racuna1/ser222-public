@@ -24,6 +24,6 @@ public interface SymbolTable<Key, Value> {
     //number of key-value pairs
     int size();
     
-    //all keys in the table. unsorted.
+    //all keys in the table
     Iterable<Key> keys();
 }
