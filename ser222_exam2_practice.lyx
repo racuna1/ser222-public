@@ -100,6 +100,19 @@ SER 222
 Practice
 \series default
  Exam 2
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\size huge
+(SOLN)
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -690,6 +703,27 @@ status collapsed
 
 \begin_layout Standard
 
+\series bold
+Ans:
+\end_layout
+
+\begin_layout Standard
+(Any of the in-place sorting algorithms would be fine: selection sort, insertion
+ sort, or shell sort.)
+\end_layout
+
+\begin_layout Standard
+Selection sort.
+ We don't want to use mergesort since it requires creating an auxiliary
+ array which doubles the space used.
+ Mergesort is also bad because it requires stack memory for recursive calls.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 4cm
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -705,7 +739,7 @@ Short Answer: Mergesort
 
 \end_deeper
 \begin_layout Enumerate
-[Acuña] Consider the following array: 23, 7, 35, 3, 4, 2, 13.
+[Acuña] Consider the following array: 23, 7, 35, 3, 4, 2, 13, 1.
  Show a trace of execution for top-down mergesort.
  Illustrate how the array is broken down, and then merged into an ordered
  state.
@@ -738,6 +772,43 @@ status collapsed
 
 \begin_layout Standard
 
+\series bold
+Ans:
+\end_layout
+
+\begin_layout Standard
+[23, 7, 35, 3, 4, 2, 13, 1]
+\end_layout
+
+\begin_layout Standard
+[[23, 7, 35, 3], [4, 2, 13, 1]]
+\end_layout
+
+\begin_layout Standard
+[[[23, 7], [35, 3]], [[4, 2], [13, 1]]]
+\end_layout
+
+\begin_layout Standard
+[[[[23], [7]], [[35], [3]]], [[[4], [2]], [[13], [1]]]]
+\end_layout
+
+\begin_layout Standard
+[[[7, 23], [3, 35]], [[2, 4], [1, 13]]]
+\end_layout
+
+\begin_layout Standard
+[[3, 7, 23, 35], [1, 2, 4, 13]]
+\end_layout
+
+\begin_layout Standard
+[1, 2, 3, 4, 7, 13, 23, 35]
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 6cm
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -758,7 +829,7 @@ inverted 0
 status collapsed
 
 \begin_layout Standard
-\begin_inset VSpace 4cm
+\begin_inset VSpace 5cm
 \end_inset
 
 
@@ -785,6 +856,13 @@ A sorting algorithm must be able to sort (solve) any input.
  solutions available for the possible inputs.
  This is the equivalent of saying that the tree contains a path which leads
  to the solution of each possible input.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 2cm
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -814,7 +892,7 @@ inverted 0
 status collapsed
 
 \begin_layout Standard
-\begin_inset VSpace 4cm
+\begin_inset VSpace 5cm
 \end_inset
 
 
@@ -828,6 +906,19 @@ inverted 0
 status collapsed
 
 \begin_layout Standard
+
+\series bold
+Ans:
+\end_layout
+
+\begin_layout Standard
+A heap is a data structure and a priority queue is an ADT.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 2cm
+\end_inset
+
 
 \end_layout
 
@@ -947,6 +1038,36 @@ status collapsed
 
 \begin_layout Standard
 
+\series bold
+Ans:
+\end_layout
+
+\begin_layout Standard
+The height of the tree will be 
+\emph on
+
+\begin_inset Formula $log_{2}(n)$
+\end_inset
+
+
+\emph default
+, where 
+\emph on
+n
+\emph default
+ is the number of nodes, so since each loop iteration moves down one level,
+ it can run a maximum of 
+\begin_inset Formula $log_{2}(n)$
+\end_inset
+
+ times.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1057,6 +1178,45 @@ status collapsed
 
 \begin_layout Standard
 
+\series bold
+Ans:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+SER100 : 150
+\end_layout
+
+\begin_layout Plain Layout
+
+SER200 : 250
+\end_layout
+
+\begin_layout Plain Layout
+
+SER250 : 100
+\end_layout
+
+\begin_layout Plain Layout
+
+SER316 : 75
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1103,6 +1263,21 @@ inverted 0
 status collapsed
 
 \begin_layout Standard
+
+\series bold
+Ans:
+\end_layout
+
+\begin_layout Standard
+OrderedSymbolTable offers more potential for optimization since itmeans
+ you have some structure (i.e., all elements are Comparable) on the data which
+ you can exploit.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 2cm
+\end_inset
+
 
 \end_layout
 
