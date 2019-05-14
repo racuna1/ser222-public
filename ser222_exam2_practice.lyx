@@ -104,7 +104,7 @@ Practice
 
 \begin_layout Standard
 \align center
-Updated 4/13/2019
+Updated 5/14/2019
 \end_layout
 
 \begin_layout Standard
@@ -670,7 +670,28 @@ When dealing with systems having low RAM capacity, or analyzing large datasets,
 
 \begin_deeper
 \begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
+\begin_layout Standard
 \begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\end_layout
+
 \end_inset
 
 
@@ -702,9 +723,20 @@ inverted 0
 status collapsed
 
 \begin_layout Standard
-\begin_inset VSpace 12cm
+\begin_inset VSpace 10cm
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
 
 \end_layout
 
@@ -785,6 +817,17 @@ status collapsed
 \begin_inset VSpace 4cm
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
 
 \end_layout
 
@@ -883,7 +926,7 @@ Support this claim by explaining why this method is
 : [10 points]
 \end_layout
 
-\begin_layout LyX-Code
+\begin_layout Standard
 \begin_inset Branch blank
 inverted 0
 status collapsed
@@ -892,6 +935,17 @@ status collapsed
 \begin_inset VSpace 3cm
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
 
 \end_layout
 
@@ -997,6 +1051,17 @@ status collapsed
 \end_inset
 
 
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -1027,6 +1092,17 @@ status collapsed
 \begin_inset VSpace 4cm
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
 
 \end_layout
 

@@ -104,7 +104,7 @@ Practice
 
 \begin_layout Standard
 \align center
-Updated 5/8/2019
+Updated 5/14/2019
 \end_layout
 
 \begin_layout Standard
@@ -626,6 +626,17 @@ status collapsed
 \end_inset
 
 
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -646,6 +657,17 @@ status collapsed
 \begin_inset VSpace 4cm
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
 
 \end_layout
 
@@ -733,7 +755,28 @@ public class Point2D {
 \end_layout
 
 \begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
+\begin_layout Standard
 \begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\end_layout
+
 \end_inset
 
 
@@ -769,7 +812,28 @@ From FC17 final.
 
 \begin_deeper
 \begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
+\begin_layout Standard
 \begin_inset VSpace 14cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\end_layout
+
 \end_inset
 
 
@@ -789,7 +853,28 @@ Would the DFS algorithm run faster if it was implemented with an adjacency
 
 \begin_deeper
 \begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
+\begin_layout Standard
 \begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\end_layout
+
 \end_inset
 
 
@@ -805,7 +890,28 @@ If you are asked to run a DFS or BFS by hand, and given a picture of the
 
 \begin_deeper
 \begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
+\begin_layout Standard
 \begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\end_layout
+
 \end_inset
 
 
@@ -826,7 +932,28 @@ When using DFS to check for a cycle in a directed graph, can we simply check
 
 \begin_deeper
 \begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
+\begin_layout Standard
 \begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\end_layout
+
 \end_inset
 
 
@@ -842,7 +969,28 @@ In the DFS based topological sort, what would happen if nodes were pushed
 
 \begin_deeper
 \begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
+\begin_layout Standard
 \begin_inset VSpace 5cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\end_layout
+
 \end_inset
 
 
@@ -954,12 +1102,9 @@ status open
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Branch soln
 inverted 0
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset listings
@@ -1369,6 +1514,11 @@ Sample graph.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
+\begin_layout Standard
 Before loop:
 \end_layout
 
@@ -1437,6 +1587,25 @@ queue = {
 
 \begin_layout Standard
 \begin_inset VSpace 6cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\end_layout
+
 \end_inset
 
 

@@ -104,7 +104,7 @@ Practice
 
 \begin_layout Standard
 \align center
-Updated 2/7/2019
+Updated 5/14/2019
 \end_layout
 
 \begin_layout Standard
@@ -521,7 +521,28 @@ Consider an algorithm for determining the size of some nested folders/files
 
 \begin_deeper
 \begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
+\begin_layout Standard
 \begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\end_layout
+
 \end_inset
 
 
@@ -537,7 +558,28 @@ Consider the problem of reversing letters of a string.
 
 \begin_deeper
 \begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
+\begin_layout Standard
 \begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\end_layout
+
 \end_inset
 
 
@@ -557,7 +599,28 @@ When it comes to functionality (not performance), is it important to know
 
 \begin_deeper
 \begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
+\begin_layout Standard
 \begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\end_layout
+
 \end_inset
 
 
@@ -616,7 +679,28 @@ Will this class behave as expected? Explain.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
+\begin_layout Standard
 \begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\end_layout
+
 \end_inset
 
 
@@ -659,7 +743,28 @@ head.getNext().getNext().setNext(head.getNext());
 \end_layout
 
 \begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
+\begin_layout Standard
 \begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\end_layout
+
 \end_inset
 
 
@@ -674,7 +779,28 @@ What would be the difference in memory usage for storing a thousand elements
 
 \begin_deeper
 \begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
+\begin_layout Standard
 \begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\end_layout
+
 \end_inset
 
 
@@ -686,13 +812,44 @@ If you were optimizing for performance and wanted to support potentially
  adding many new elements to a data structure, would an array or list be
  more appropriate? Explain using Big-Oh.
  [8 points]
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
+\begin_layout Standard
 \begin_inset VSpace 4cm
 \end_inset
 
 
 \end_layout
 
-\begin_deeper
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 
 \series bold
@@ -717,6 +874,12 @@ What is the Big-Oh order of this function? You should provide a relatively
  tight upper bound.
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
 \begin_layout Standard
 \begin_inset VSpace 2cm
 \end_inset
@@ -724,6 +887,12 @@ What is the Big-Oh order of this function? You should provide a relatively
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 Prove that your bound holds.
  (Hint: the definition for Big-Oh is 
@@ -750,6 +919,12 @@ Prove that your bound holds.
  
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
 \begin_layout Standard
 \begin_inset VSpace 6cm
 \end_inset
@@ -757,6 +932,12 @@ Prove that your bound holds.
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 What is the Big-Oh order of the following code fragment? The fragment is
@@ -797,7 +978,28 @@ for (int i = 1; i <= n; i++)
 \end_layout
 
 \begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
+\begin_layout Standard
 \begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\end_layout
+
 \end_inset
 
 
@@ -979,7 +1181,28 @@ Using the fantastic four approach, determine the size n problem for the
 
 \begin_deeper
 \begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
+\begin_layout Standard
 \begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\end_layout
+
 \end_inset
 
 
@@ -994,7 +1217,28 @@ Identify the stopping condition(s) and the return value, if any, for the
 
 \begin_deeper
 \begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
+\begin_layout Standard
 \begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\end_layout
+
 \end_inset
 
 
@@ -1009,7 +1253,28 @@ Determine the size m problem(i.e.
 
 \begin_deeper
 \begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
+\begin_layout Standard
 \begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\end_layout
+
 \end_inset
 
 
@@ -1022,7 +1287,28 @@ How is the size-n problem constructed from the size m problem? [2 point]
 
 \begin_deeper
 \begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
+\begin_layout Standard
 \begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\end_layout
+
 \end_inset
 
 
@@ -1040,7 +1326,28 @@ public static int countOccurrences<T>(LinearNode node, T target)
 
 \begin_deeper
 \begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
+\begin_layout Standard
 \begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\end_layout
+
 \end_inset
 
 
@@ -1163,6 +1470,34 @@ n
 \emph default
 .
  [8 points]
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
