@@ -99,7 +99,20 @@ SER 222
 \series bold
 Practice
 \series default
- Exam 1
+ Exam 1 
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\size huge
+(SOLN)
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -541,6 +554,19 @@ status collapsed
 
 \begin_layout Standard
 
+\series bold
+Ans:
+\end_layout
+
+\begin_layout Standard
+An empty folder, or a folder containing only files.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 2cm
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -578,6 +604,25 @@ status collapsed
 
 \begin_layout Standard
 
+\series bold
+Ans:
+\end_layout
+
+\begin_layout Standard
+(Answer would be evaluated on justification's soundness.
+ Full credit answers for either direction are possible.)
+\end_layout
+
+\begin_layout Standard
+Either would work okay but iteration would probably be faster since it doesn't
+ require the overhead of many recursive calls.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 2cm
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -594,7 +639,8 @@ Short Answer: Data Abstraction
 \end_deeper
 \begin_layout Enumerate
 When it comes to functionality (not performance), is it important to know
- how an ADT is internally implemented? [8 points]
+ how an ADT is internally implemented? Explain.
+ [8 points]
 \end_layout
 
 \begin_deeper
@@ -618,6 +664,21 @@ inverted 0
 status collapsed
 
 \begin_layout Standard
+
+\series bold
+Ans:
+\end_layout
+
+\begin_layout Standard
+No.
+ The point of an ADT is that it is an abstraction where the internal representat
+ion is hidden.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 2cm
+\end_inset
+
 
 \end_layout
 
@@ -699,6 +760,21 @@ status collapsed
 
 \begin_layout Standard
 
+\series bold
+Ans:
+\end_layout
+
+\begin_layout Standard
+No.
+ It performs a shallow copy of the 2D matrix so if it is changed outside,
+ it will be changed in this object.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 2cm
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -763,6 +839,25 @@ status collapsed
 
 \begin_layout Standard
 
+\series bold
+Ans:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename practice_exams/ser222_exam1_practice_q5.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -799,6 +894,21 @@ status collapsed
 
 \begin_layout Standard
 
+\series bold
+Ans:
+\end_layout
+
+\begin_layout Standard
+An array would take less.
+ A linked list must also store the next reference in addition to each data
+ element.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 2cm
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -809,8 +919,8 @@ status collapsed
 \end_deeper
 \begin_layout Enumerate
 If you were optimizing for performance and wanted to support potentially
- adding many new elements to a data structure, would an array or list be
- more appropriate? Explain using Big-Oh.
+ adding many new elements to a data structure, would an array or linked
+ list be more appropriate? Explain using Big-Oh.
  [8 points]
 \end_layout
 
@@ -835,6 +945,22 @@ inverted 0
 status collapsed
 
 \begin_layout Standard
+
+\series bold
+Ans:
+\end_layout
+
+\begin_layout Standard
+A linked list would be more appropriate.
+ It's possible to add to a list in constant time (i.e., O(1)) without having
+ to shift around the existing elements in O(n) time, like an array would
+ need.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 2cm
+\end_inset
+
 
 \end_layout
 
@@ -869,12 +995,11 @@ Consider the following growth function: [16 points]
 
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Standard
 What is the Big-Oh order of this function? You should provide a relatively
  tight upper bound.
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 \begin_inset Branch blank
 inverted 0
@@ -890,9 +1015,36 @@ status collapsed
 \end_inset
 
 
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\series bold
+Ans:
 \end_layout
 
-\end_deeper
+\begin_layout Standard
+\begin_inset Formula $O(log_{10}(n)n^{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 3cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
 \begin_layout Enumerate
 Prove that your bound holds.
  (Hint: the definition for Big-Oh is 
@@ -916,11 +1068,10 @@ Prove that your bound holds.
 \end_inset
 
  is also a constant).
- 
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Branch blank
 inverted 0
 status collapsed
@@ -935,9 +1086,25 @@ status collapsed
 \end_inset
 
 
+\begin_inset Branch soln
+inverted 0
+status open
+
+\begin_layout Standard
+Ans:
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
 What is the Big-Oh order of the following code fragment? The fragment is
@@ -997,6 +1164,22 @@ inverted 0
 status collapsed
 
 \begin_layout Standard
+
+\series bold
+Ans:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $O(nlogn)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 3cm
+\end_inset
+
 
 \end_layout
 
@@ -1197,9 +1380,22 @@ status collapsed
 
 \begin_inset Branch soln
 inverted 0
-status collapsed
+status open
 
 \begin_layout Standard
+
+\series bold
+Ans:
+\end_layout
+
+\begin_layout Standard
+Finding the total number of times a value occurs in the whole list.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.75cm
+\end_inset
+
 
 \end_layout
 
@@ -1236,6 +1432,17 @@ inverted 0
 status collapsed
 
 \begin_layout Standard
+Ans:
+\end_layout
+
+\begin_layout Standard
+An empty list, for which zero will be returned.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.75cm
+\end_inset
+
 
 \end_layout
 
@@ -1247,7 +1454,7 @@ status collapsed
 \end_deeper
 \begin_layout Enumerate
 Determine the size m problem(i.e.
- the “subproblem”) for the problem.
+ the “sub-problem”) for the problem.
  [2 point]
 \end_layout
 
@@ -1272,6 +1479,20 @@ inverted 0
 status collapsed
 
 \begin_layout Standard
+
+\series bold
+Ans:
+\end_layout
+
+\begin_layout Standard
+Finding the total number of times a value occurs in the tail of the list
+ (i.e., search everything after the first node).
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.75cm
+\end_inset
+
 
 \end_layout
 
@@ -1306,6 +1527,19 @@ inverted 0
 status collapsed
 
 \begin_layout Standard
+
+\series bold
+Ans:
+\end_layout
+
+\begin_layout Standard
+Add the sub-problem count to 1 if the head has a match, otherwise add 0.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.75cm
+\end_inset
+
 
 \end_layout
 
@@ -1345,6 +1579,63 @@ inverted 0
 status collapsed
 
 \begin_layout Standard
+
+\series bold
+Ans:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+public static int countOccurrences<T>(LinearNode node, T target) {
+\end_layout
+
+\begin_layout Plain Layout
+
+  if(node == null)
+\end_layout
+
+\begin_layout Plain Layout
+
+    return 0;
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\end_layout
+
+\begin_layout Plain Layout
+
+  if(node.element.equals(target))
+\end_layout
+
+\begin_layout Plain Layout
+
+    return 1 + countOccurrence(node.getNext(), target);
+\end_layout
+
+\begin_layout Plain Layout
+
+  else
+\end_layout
+
+\begin_layout Plain Layout
+
+    return countOccurrence(node.getNext(), target);
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -1492,6 +1783,15 @@ inverted 0
 status collapsed
 
 \begin_layout Standard
+
+\series bold
+Ans:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f(n)=\Sigma_{j=1}^{n}\Sigma_{i=3}^{n-2}1$
+\end_inset
+
 
 \end_layout
 
