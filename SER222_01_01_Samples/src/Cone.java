@@ -34,7 +34,8 @@ public class Cone extends RoundShape
         return Math.PI * Math.pow(GetRadius(), 2) * (GetHeight()/3);
     }
     
-    String ToString()
+    @Override
+    public String toString()
     {
         return "A cone of radius " + GetRadius() + ", area " + GetArea() + ", and volume " + GetVolume() + ".";
     }
