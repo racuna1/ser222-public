@@ -21,6 +21,7 @@ public class Counter {
         return count;
     } 
 
+    @Override
     public String toString() {
         return count + " " + name;
     } 
