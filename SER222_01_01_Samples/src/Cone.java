@@ -4,39 +4,34 @@
  * @author Acuna
  * @version 1.0
  */
-public class Cone extends RoundShape
-{
+public class Cone extends RoundShape {
     private double height;
-    
-    public Cone(double r, double h)
-    {
+
+    public Cone(double r, double h) {
         super(r);
         height = h;
     }        
-    
-    public double GetHeight()
+
+    public double getHeight()
     {
         return height;
     }
-    
-    public void SetHeight(double r)
+
+    public void setHeight(double r)
     {
         height = r;
     }
-    
-    public double GetArea()
-    {
-        return Math.PI * GetRadius() * (GetRadius() + Math.sqrt(Math.pow(GetHeight(), 2) + Math.pow(GetRadius(), 2)));
+
+    public double getArea() {
+        return Math.PI * getRadius() * (getRadius() + Math.sqrt(Math.pow(getHeight(), 2) + Math.pow(getRadius(), 2)));
     }
-    
-    public double GetVolume()
-    {
-        return Math.PI * Math.pow(GetRadius(), 2) * (GetHeight()/3);
+
+    public double getVolume() {
+        return Math.PI * Math.pow(getRadius(), 2) * (getHeight()/3);
     }
-    
+
     @Override
-    public String toString()
-    {
-        return "A cone of radius " + GetRadius() + ", area " + GetArea() + ", and volume " + GetVolume() + ".";
+    public String toString() {
+        return "A cone of radius " + getRadius() + ", area " + getArea() + ", and volume " + getVolume() + ".";
     }
-} 
+}

@@ -4,25 +4,25 @@
  * @author Acuna
  * @version 1.0
  */
-public abstract class RoundShape
-{
+public abstract class RoundShape {
+
     private double radius;
-    
-    public RoundShape(double r)
-    {
-        radius = r;
+
+    public RoundShape(double r) {
+        this.radius = r;
     }
-    
-    public double GetRadius()
+
+    public double getRadius()
     {
         return radius;
     }
-    
-    public void SetRadius(double r)
+
+    public void setRadius(double r)
     {
         radius = r;
     }
-    
-    public abstract double GetArea();
-    public abstract double GetVolume();
+
+    public abstract double getArea();
+
+    public abstract double getVolume();
 }
