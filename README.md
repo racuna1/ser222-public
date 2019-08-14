@@ -67,3 +67,6 @@ Within each module, files are ordered alphabetically.
 * SeparateChainingHashST - implementation of ST using separate chainning.
 * SequentialSearchST - implementation of ST using a list.
 * SymbolTable`- interface for symbol table ADT.
+
+# Field Guide
+The folder called SER222_FieldGuide contains a field guide written by UGTA Wezley Sherman in Spring 2019. It serves as a guide to the course from the student perspective with FAQs, suggestions, references, and more, on several modules. Contributions by UGTAs and students taking the course are strongly encouraged.
