@@ -117,7 +117,7 @@ status collapsed
 
 \begin_layout Standard
 \align center
-Updated 5/14/2019
+Updated 9/2/2019
 \end_layout
 
 \begin_layout Standard
@@ -214,7 +214,7 @@ No electronic items are allowed.
 
 \bar default
  Please use a pen (instead of a pencil) if you have one.
- There are 96 points available and the exam must be completed in 37.5 minutes.
+ There are 122 points available and the exam must be completed in 37.5 minutes.
  This exam has two types of questions:
 \end_layout
 
@@ -230,9 +230,9 @@ No electronic items are allowed.
 \series bold
 Short answer questions:
 \series default
- There are 64 points of short answer questions.
+ There are 90 points of short answer questions.
  A typical answer is one or two sentences.
- Each short answer question is worth 4 or 8 points.
+ Each short answer question is worth 5 or 10 points.
 \end_layout
 
 \begin_layout Standard
@@ -325,7 +325,7 @@ SA: Recursion
 \begin_inset Text
 
 \begin_layout Plain Layout
-16
+20
 \end_layout
 
 \end_inset
@@ -354,7 +354,7 @@ SA: Data Abstraction
 \begin_inset Text
 
 \begin_layout Plain Layout
-16
+20
 \end_layout
 
 \end_inset
@@ -383,7 +383,7 @@ SA: Stacks, Lists, and Generics
 \begin_inset Text
 
 \begin_layout Plain Layout
-24
+30
 \end_layout
 
 \end_inset
@@ -412,7 +412,7 @@ SA: Analysis of Algorithms
 \begin_inset Text
 
 \begin_layout Plain Layout
-24
+20
 \end_layout
 
 \end_inset
@@ -499,7 +499,7 @@ Total:
 \begin_inset Text
 
 \begin_layout Plain Layout
-96
+122
 \end_layout
 
 \end_inset
@@ -529,7 +529,7 @@ Short Answer: Recursion
 Consider an algorithm for determining the size of some nested folders/files
  recursively.
  (Imagine right clicking an item on your desktop and viewing it's size.)
- What would be the base case(s) for this problem? [8 points]
+ What would be the base case(s) for this problem? [10 points]
 \end_layout
 
 \begin_deeper
@@ -579,7 +579,7 @@ An empty folder, or a folder containing only files.
 Consider the problem of reversing letters of a string.
  Would it be more appropriate to use recursion or iteration? Justify your
  answer.
- [8 points]
+ [10 points]
 \end_layout
 
 \begin_deeper
@@ -640,7 +640,7 @@ Short Answer: Data Abstraction
 \begin_layout Enumerate
 When it comes to functionality (not performance), is it important to know
  how an ADT is internally implemented? Explain.
- [8 points]
+ [10 points]
 \end_layout
 
 \begin_deeper
@@ -736,7 +736,7 @@ public class SolnMatrix implements Matrix {
 
 \begin_layout Standard
 Will this class behave as expected? Explain.
- [8 points]
+ [10 points]
 \end_layout
 
 \begin_layout Standard
@@ -798,7 +798,7 @@ head
  C.
  What would the result of executing the following code be? Draw the resulting
  list using box and arrow notation and include any variables.
- [8 points]
+ [10 points]
 \end_layout
 
 \begin_deeper
@@ -869,7 +869,7 @@ Ans:
 \begin_layout Enumerate
 What would be the difference in memory usage for storing a thousand elements
  in an array vs a linked list? Which takes less space? Explain.
- [8 points]
+ [10 points]
 \end_layout
 
 \begin_deeper
@@ -921,7 +921,7 @@ An array would take less.
 If you were optimizing for performance and wanted to support potentially
  adding many new elements to a data structure, would an array or linked
  list be more appropriate? Explain using Big-Oh.
- [8 points]
+ [10 points]
 \end_layout
 
 \begin_deeper
@@ -984,7 +984,7 @@ Short Answer: Analysis of Algorithms
 
 \end_deeper
 \begin_layout Enumerate
-Consider the following growth function: [16 points]
+Consider the following growth function: [10 points]
 \end_layout
 
 \begin_deeper
@@ -1114,7 +1114,7 @@ What is the Big-Oh order of the following code fragment? The fragment is
 
 .
  Assume that you are measuring the number of println calls.
- [8 points]
+ [10 points]
 \end_layout
 
 \begin_deeper
