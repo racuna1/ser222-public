@@ -1,0 +1,1750 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.54cm
+\topmargin 2.54cm
+\rightmargin 2.54cm
+\bottommargin 2.54cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\noindent
+Arizona State University
+\begin_inset space \hfill{}
+\end_inset
+
+SER222: Data Structures & Algorithms
+\end_layout
+
+\begin_layout Standard
+\noindent
+Lect.
+ Ruben Acuña
+\begin_inset space \hfill{}
+\end_inset
+
+Revised 4/9/2016
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size largest
+Midterm Practice Questions
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+Not for redistribution.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There are 16 points of practice questions available.
+ If you want to treat them as a practice exam, give yourself 45 minutes.
+ For the real exam, you will be allowed ONE 3x5 note card.
+ Note that the questions in this practice are labeled with the units in
+ which the material was covered; the same may not hold for the real exam.
+ This practice exam has three types of questions:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Multiple choice questions:
+\series default
+ There are 14 points of multiple choice questions.
+ Each question is worth 1 point.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+True or false questions:
+\series default
+ There are 1 points of true or false questions.
+ Each question is worth 1 point.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Multiple answer questions:
+\series default
+ There are 1 points of multiple answer questions.
+ Each question is worth 1 point.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 8cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align right
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+\align right
+\begin_inset Tabular
+<lyxtabular version="3" rows="10" columns="3">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Topic
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Earned
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Possible
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Unit 11: Analysis of Algorithms
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Unit 12: Introduction to Collections - Stacks
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Unit 13: Linked Structures - Stacks
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Unit 14: Queues
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Unit 15: Lists
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Unit 16: Iterators
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Unit 17: Recursion
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Unit 18: Searching and Sorting
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Total:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Unit 1: Analysis of Algorithms [2 points]
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset Formula $\;\;\;\;\;\;\;\;\;$
+\end_inset
+
+Unit 0: Software Quality [2 points]
+\end_layout
+
+\begin_layout Enumerate
+Which of the following is not an aspect of software quality:
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+From [A][O] midterm.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Correctness
+\end_layout
+
+\begin_layout Enumerate
+Credibility
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Correct.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Usability
+\end_layout
+
+\begin_layout Enumerate
+Portability
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Which of the following developmental tasks would NOT be part of ensuring
+ that a piece of software meets maintainability requirements?
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Making sure components are well documented for use in future projects.
+\end_layout
+
+\begin_layout Enumerate
+Making sure components are small and easy to understand.
+\end_layout
+
+\begin_layout Enumerate
+Making sure components are developed using a coding style standard.
+\end_layout
+
+\begin_layout Enumerate
+Making sure components are decoupled and easy to reuse in other projects.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Correct.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+What is the Big-oh order of the following function?
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $f(n)=20n+5nlog_{2}(n)-4$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $O(1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $O(logn)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $O(n)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $O(nlogn)$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Correct.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $O(n^{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $O(n^{2}logn)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+What is the Big-Oh order of the following code fragment? The fragment is
+ parametrized on the variable 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Assume that you are measuring the number of println calls.
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Java"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+for (int i = 1; i <= n; i++)
+\end_layout
+
+\begin_layout Plain Layout
+
+  for (int j = 1; j <= n; j *= 10)
+\end_layout
+
+\begin_layout Plain Layout
+
+    System.out.println("Nested loops!");
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $O(1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $O(logn)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $O(n)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $O(nlogn)$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Correct.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $O(n^{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $O(n^{2}logn)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Unit 2: Introduction to Collections - Stacks [2 points]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Trace a stack (called S) through the following operations:
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Stack<Integer> S = new Stack<Integer>();
+\end_layout
+
+\begin_layout Plain Layout
+
+S.push(new Integer(7));
+\end_layout
+
+\begin_layout Plain Layout
+
+Integer X = S.pop();
+\end_layout
+
+\begin_layout Plain Layout
+
+S.push(new Integer(4));
+\end_layout
+
+\begin_layout Plain Layout
+
+S.push(new Integer(5));
+\end_layout
+
+\begin_layout Plain Layout
+
+Integer Y = S.peek();
+\end_layout
+
+\begin_layout Plain Layout
+
+S.push(new Integer(1));
+\end_layout
+
+\begin_layout Plain Layout
+
+S.push(new Integer(3));
+\end_layout
+
+\begin_layout Plain Layout
+
+Integer Z = S.pop();
+\end_layout
+
+\begin_layout Plain Layout
+
+Y = S.pop();
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Give the contents of the stack after this code has been executed.
+\end_layout
+
+\begin_layout Enumerate
+4 5 (top) 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Correct.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+4 (top)
+\end_layout
+
+\begin_layout Enumerate
+7 4 1 3 (top)
+\end_layout
+
+\begin_layout Enumerate
+None of the above.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 6cm
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The variable top in the array implementation of a stack refers to:
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+From [A][O] midterm.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The next available position in the array.
+\end_layout
+
+\begin_layout Enumerate
+The item at the top of the Stack.
+\end_layout
+
+\begin_layout Enumerate
+The number of items in the stack.
+\end_layout
+
+\begin_layout Enumerate
+Both a and c.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Correct.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Unit 3: Linked Structures - Stacks [4 points]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A pop operation on a stack returns a(n): 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+From LC Quiz 4.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+node
+\end_layout
+
+\begin_layout Enumerate
+element 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Correct.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+variable
+\end_layout
+
+\begin_layout Enumerate
+pointer
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Is the following a correct implementation of a method to add a node (containing
+ 
+\emph on
+element
+\emph default
+) to the end of a list referenced by 
+\emph on
+front?
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Java"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+public void addLast(T element, LinearNode<T> front) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    LinearNode<T> newNode = new LinearNode(element);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    while(front.getNext() != null)
+\end_layout
+
+\begin_layout Plain Layout
+
+        front = front.getnext();
+\end_layout
+
+\begin_layout Plain Layout
+
+    newNode.setNext(front);
+\end_layout
+
+\begin_layout Plain Layout
+
+    front = newNode;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Yes, if the element isn't null.
+\end_layout
+
+\begin_layout Enumerate
+Yes, provided that LinearNode has been properly set up.
+\end_layout
+
+\begin_layout Enumerate
+No, it can't add to a full list.
+\end_layout
+
+\begin_layout Enumerate
+No, it can't add to an empty list.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Correct.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Unit 4: Queues [2 points]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Trace a queue (called Q) through the following operations:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Queue<Integer> Q = new Queue <Integer>(); 
+\end_layout
+
+\begin_layout Plain Layout
+
+Q.enqueue(new Integer(3)); 
+\end_layout
+
+\begin_layout Plain Layout
+
+Q.enqueue(new Integer(7)); 
+\end_layout
+
+\begin_layout Plain Layout
+
+Integer X = Q.dequeue(); 
+\end_layout
+
+\begin_layout Plain Layout
+
+Q.enqueue(new Integer(5)); 
+\end_layout
+
+\begin_layout Plain Layout
+
+Integer Y = Q.first(); 
+\end_layout
+
+\begin_layout Plain Layout
+
+Q.enqueue(new Integer(3));
+\end_layout
+
+\begin_layout Plain Layout
+
+Q.enqueue(new Integer(9)); 
+\end_layout
+
+\begin_layout Plain Layout
+
+Integer Z = Q.dequeue(); 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Give the contents of the queue after the code has been executed.
+\end_layout
+
+\begin_layout Enumerate
+9 3 (front)
+\end_layout
+
+\begin_layout Enumerate
+9 3 5 7 (front)
+\end_layout
+
+\begin_layout Enumerate
+9 3 5 (front) 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Correct.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+None of the above.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+When are the head and tail variables in a LinkedQueue not equal?
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+When the queue is empty.
+\end_layout
+
+\begin_layout Enumerate
+When the queue is full.
+\end_layout
+
+\begin_layout Enumerate
+When the queue has one element.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Correct.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+They are always equal.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Unit 5: Lists [2 points]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Which of the following are basic methods for using an indexed list? Select
+ all that apply.
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+addToFront(T element)
+\end_layout
+
+\begin_layout Enumerate
+addToRear(T element)
+\end_layout
+
+\begin_layout Enumerate
+add(T element)
+\end_layout
+
+\begin_layout Enumerate
+contains(T element)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+If an unordered list is implemented with an array, what would be the Big-Oh
+ of the addFirst(T element) operation?
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $O(1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $O(logn)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $O(n)$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Correct.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $O(nlogn)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $O(n^{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $O(n^{2}logn)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Unit 6: Iterators [2 points]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The Iterator and Iterable interfaces are only useful if for-each loops are
+ available.
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+True
+\end_layout
+
+\begin_layout Enumerate
+False
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Correct.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Which of the following is a proper implementation for a method that displays
+ the contents of a List?
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset listings
+lstparams "language=Java"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+public void DisplayRoster(List<Student> roster) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    Iterator<Student> iter = roster.iterator();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    while(iter.hasNext())
+\end_layout
+
+\begin_layout Plain Layout
+
+        System.out.println(iter.next());
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Correct.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset listings
+lstparams "language=Java"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+public void DisplayRoster(List<Student> roster) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    Iterator<Student> iter = roster.iterator();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    while(iter.Next() != null)
+\end_layout
+
+\begin_layout Plain Layout
+
+        System.out.println(iter.next());
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset listings
+lstparams "language=Java"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+public void DisplayRoster(List<Student> roster) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    Iterator<Student> iter = roster.iterator();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    while(iter.hasNext())
+\end_layout
+
+\begin_layout Plain Layout
+
+        System.out.println(iter.getNext());
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset listings
+lstparams "language=Java"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+public void DisplayRoster(List<Student> roster) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    Iterator<Student> iter = roster.getIterator();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    while(iter.hasNext())
+\end_layout
+
+\begin_layout Plain Layout
+
+        System.out.println(iter.next());
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Unit 7: Recursion [2 points]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+When is a base case required for a recursive method?
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If the method needs to return a value.
+\end_layout
+
+\begin_layout Enumerate
+If its mathematical function was defined as piecewise.
+\end_layout
+
+\begin_layout Enumerate
+If the recursive step doesn't always make the sub-problem smaller.
+\end_layout
+
+\begin_layout Enumerate
+All the time.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Correct.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Consider the following method.
+ Is this a correct recursive implementation for factorial?
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+int factorial(int n) {
+\end_layout
+
+\begin_layout Plain Layout
+
+   if(n > 1)
+\end_layout
+
+\begin_layout Plain Layout
+
+       return n * factorial(n-1);
+\end_layout
+
+\begin_layout Plain Layout
+
+   else
+\end_layout
+
+\begin_layout Plain Layout
+
+       return 0;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Yes, it calls itself on the n-1 sub-problem.
+\end_layout
+
+\begin_layout Enumerate
+Yes, it includes both a base case and recursive step.
+\end_layout
+
+\begin_layout Enumerate
+No, the n > 1 condition is not correct for factorial.
+\end_layout
+
+\begin_layout Enumerate
+No, the return value is not correct for factorial.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Correct.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Unit 8: Sorting and Searching [2 points]
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+If you only want to find the 3 smallest elements in a dataset, which sorting
+ algorithm is most efficient?
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Bubble Sort
+\end_layout
+
+\begin_layout Enumerate
+Insertion Sort
+\end_layout
+
+\begin_layout Enumerate
+Merge Sort
+\end_layout
+
+\begin_layout Enumerate
+Quick Sort
+\end_layout
+
+\begin_layout Enumerate
+Selection Sort
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Correct.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Which of the following arrays would insertion sort process the fastest?
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+{1, 2, 3, 4, 7, 5, 6}
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Correct.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+{2, 3, 4, 6, 1, 5, 7}
+\end_layout
+
+\begin_layout Enumerate
+{6, 7, 5, 4, 3, 2, 1}
+\end_layout
+
+\begin_layout Enumerate
+They will be processed the same.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
