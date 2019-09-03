@@ -215,7 +215,24 @@ No electronic items are allowed.
 \bar default
  Please use a pen (instead of a pencil) if you have one.
  There are 122 points available and the exam must be completed in 37.5 minutes.
- This exam has two types of questions:
+ This exam has three types of questions:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Multiple choice questions:
+\series default
+ There are 0 points of multiple choice questions.
+ An answer is selecting one option among the choices given.
+ Each multiple choice is worth 2 to 5 points.
 \end_layout
 
 \begin_layout Standard
@@ -245,7 +262,7 @@ Short answer questions:
 \begin_layout Standard
 
 \series bold
-Write-in questions:
+Programing questions:
 \series default
  The programming questions are given near the end of the paper.
  They must be answered on the question paper.
@@ -253,7 +270,7 @@ Write-in questions:
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace 10cm
+\begin_inset VSpace 9cm
 \end_inset
 
 

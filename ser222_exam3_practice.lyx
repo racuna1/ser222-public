@@ -104,7 +104,7 @@ Practice
 
 \begin_layout Standard
 \align center
-Updated 5/14/2019
+Updated 9/2/2019
 \end_layout
 
 \begin_layout Standard
@@ -206,7 +206,7 @@ No electronic items are allowed.
 \bar default
  Please use a pen (instead of a pencil) if you have one.
  There are 90 points available and the exam must be completed in 37.5 minutes.
- This exam has two types of questions:
+ This exam has three types of questions:
 \end_layout
 
 \begin_layout Standard
@@ -219,7 +219,24 @@ No electronic items are allowed.
 \begin_layout Standard
 
 \series bold
-Short answer questions:
+Multiple choice questions:
+\series default
+ There are 0 points of multiple choice questions.
+ An answer is selecting one option among the choices given.
+ Each multiple choice is worth 2 to 5 points.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Programing questions:
 \series default
  There are 90 points of short answer questions.
  A typical answer is one or two sentences.
@@ -244,7 +261,7 @@ Write-in questions:
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace 6cm
+\begin_inset VSpace 5cm
 \end_inset
 
 
