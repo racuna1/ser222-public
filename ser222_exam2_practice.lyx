@@ -117,7 +117,7 @@ status collapsed
 
 \begin_layout Standard
 \align center
-Updated 9/2/2019
+Updated 9/27/2019
 \end_layout
 
 \begin_layout Standard
@@ -1121,17 +1121,17 @@ SymbolTable<> ST = new BinarySearchTree<String, Integer>();
 
 \begin_layout Plain Layout
 
-ST.put("SER100", 150);
+ST.put("CSE110", 150);
 \end_layout
 
 \begin_layout Plain Layout
 
-ST.put("SER200", 150);
+ST.put("CSE205", 150);
 \end_layout
 
 \begin_layout Plain Layout
 
-ST.put("SER250", 100);
+ST.put("CSE230", 100);
 \end_layout
 
 \begin_layout Plain Layout
@@ -1141,12 +1141,12 @@ ST.put("SER316", 100);
 
 \begin_layout Plain Layout
 
-System.out.println(ST.get("SER200"));
+System.out.println(ST.get("CSE205"));
 \end_layout
 
 \begin_layout Plain Layout
 
-ST.put("SER200", 250);
+ST.put("CSE205", 250);
 \end_layout
 
 \begin_layout Plain Layout
