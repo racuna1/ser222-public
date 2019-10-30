@@ -539,9 +539,127 @@ Total:
 \begin_layout Standard
 
 \series bold
+MCQ: Recursion
+\end_layout
+
+\begin_layout Enumerate
+When is a base case required for a recursive method? 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If the method needs to return a value.
+ 
+\end_layout
+
+\begin_layout Enumerate
+If its mathematical function was defined piece wise.
+ 
+\end_layout
+
+\begin_layout Enumerate
+If the recursive step doesn’t always make the sub-problem smaller.
+\end_layout
+
+\begin_layout Enumerate
+All the time.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Correct answer
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Consider the following method.
+ Is this a correct recursive implementation for factorial?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Java"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+int factorial(int n) { 
+\end_layout
+
+\begin_layout Plain Layout
+
+if(n>1) 
+\end_layout
+
+\begin_layout Plain Layout
+
+	return n * factorial(n-1); 
+\end_layout
+
+\begin_layout Plain Layout
+
+else 
+\end_layout
+
+\begin_layout Plain Layout
+
+	return 0; 
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Yes, it calls itself on the n-1 sub-problem.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Yes, it includes both a base case and recursive step.
+\end_layout
+
+\begin_layout Enumerate
+No, the n>1 condition is not correct for factorial.
+ 
+\end_layout
+
+\begin_layout Enumerate
+No, the return value is not correct for factorial.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Correct answer
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
 Short Answer: Recursion
 \end_layout
 
+\end_deeper
 \begin_layout Enumerate
 Consider an algorithm for determining the size of some nested folders/files
  recursively.
@@ -640,6 +758,153 @@ Either would work okay but iteration would probably be faster since it doesn't
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+MCQ: Data Abstraction
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Given the following piece of code which of the following statements is correct?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Java"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+public interface Numbers { 
+\end_layout
+
+\begin_layout Plain Layout
+
+int count();
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+public interface Characters { 
+\end_layout
+
+\begin_layout Plain Layout
+
+int length(); 
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+public abstract class NaturalNumbers implements Numbers { 
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+public class Alphabets extends NaturalNumbers implements Characters { 
+\end_layout
+
+\begin_layout Plain Layout
+
+@Override public int count() { }
+\end_layout
+
+\begin_layout Plain Layout
+
+@Override public void length() { } 
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+This code will not compile, because method count() in interface Numbers
+ must be defined abstract.
+ 
+\end_layout
+
+\begin_layout Enumerate
+This code will not compile, because class NaturalNumbers must implement
+ method count() from interface Numbers.
+ 
+\end_layout
+
+\begin_layout Enumerate
+This code will not compile, because the same class cannot extend a class
+ and implement another interface at the same time 
+\end_layout
+
+\begin_layout Enumerate
+This code will compile without errors.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Correct answer
 \end_layout
 
 \end_inset
@@ -797,6 +1062,92 @@ No.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+MCQ: Stacks, Lists, and Generics
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Consider an implementation of unsorted single linked list.
+ Suppose it has its representation with a head and a tail pointer (i.e.
+ pointers to the first and last nodes of the linked list).
+ Given the representation, which of the following operation cannot be implemente
+d in O(1) time ?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Insertion of the front node of the linked list.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Insertion of the last node of the linked list.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Deletion of the first node of the linked list.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Deletion of the last node of the linked list.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Correct answer
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Assume that we are storing the ASU IDs of 50 students in a singly linked
+ list.
+ Due to a security breach, one entire node has been corrupted.
+ In this case, will all the 50 nodes still be accessible to us?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Yes - the Java garbage collector will delete the bad node from the list.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Yes - although we do not have a previous reference, we can use the tail
+ reference.
+ 
+\end_layout
+
+\begin_layout Enumerate
+No – the user will face data loss.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Correct answer
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+No - only the nodes after the corrupted node will be accessible.
+ 
 \end_layout
 
 \begin_layout Standard
