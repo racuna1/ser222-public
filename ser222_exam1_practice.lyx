@@ -868,7 +868,7 @@ public class Alphabets extends NaturalNumbers implements Characters {
 
 \begin_layout Plain Layout
 
-@Override public void length() { } 
+@Override public int length() { } 
 \end_layout
 
 \begin_layout Plain Layout
