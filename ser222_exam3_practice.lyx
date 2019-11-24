@@ -205,7 +205,7 @@ No electronic items are allowed.
 
 \bar default
  Please use a pen (instead of a pencil) if you have one.
- There are 90 points available and the exam must be completed in 37.5 minutes.
+ There are 85 points available and the exam must be completed in 37.5 minutes.
  This exam has three types of questions:
 \end_layout
 
@@ -221,7 +221,7 @@ No electronic items are allowed.
 \series bold
 Multiple choice questions:
 \series default
- There are 5 points of multiple choice questions.
+ There are 15 points of multiple choice questions.
  An answer is selecting one option among the choices given.
  Each multiple choice is worth 2 to 5 points.
 \end_layout
@@ -238,7 +238,7 @@ Multiple choice questions:
 \series bold
 Programing questions:
 \series default
- There are 90 points of short answer questions.
+ There are 70 points of short answer questions.
  A typical answer is one or two sentences.
  Each short answer question is worth 5 or 10 points.
 \end_layout
@@ -315,7 +315,7 @@ Possible
 \begin_inset Text
 
 \begin_layout Plain Layout
-SA: Binary Search Trees
+MC/SA: Binary Search Trees
 \end_layout
 
 \end_inset
@@ -344,7 +344,7 @@ SA: Binary Search Trees
 \begin_inset Text
 
 \begin_layout Plain Layout
-SA: Hashtables
+MC/SA: Hashtables
 \end_layout
 
 \end_inset
@@ -362,7 +362,7 @@ SA: Hashtables
 \begin_inset Text
 
 \begin_layout Plain Layout
-30
+20
 \end_layout
 
 \end_inset
@@ -373,7 +373,7 @@ SA: Hashtables
 \begin_inset Text
 
 \begin_layout Plain Layout
-SA: Undirected Graphs
+MC/SA: Undirected Graphs
 \end_layout
 
 \end_inset
@@ -402,7 +402,7 @@ SA: Undirected Graphs
 \begin_inset Text
 
 \begin_layout Plain Layout
-SA: Directed Graphs
+MC/SA: Directed Graphs
 \end_layout
 
 \end_inset
@@ -420,7 +420,7 @@ SA: Directed Graphs
 \begin_inset Text
 
 \begin_layout Plain Layout
-20
+10
 \end_layout
 
 \end_inset
@@ -536,7 +536,7 @@ Total:
 \begin_inset Text
 
 \begin_layout Plain Layout
-95
+85
 \end_layout
 
 \end_inset
@@ -562,6 +562,224 @@ Total:
 Short Answer: Binary Search Trees
 \end_layout
 
+\begin_layout Enumerate
+Consider the following method discussed in lecture for deleting a node from
+ a BST.
+ What functionality is provided by the indicated line? [5 points] 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Acuna
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Java"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+private Node delete(Node x, Key key) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    if (x == null) return null;
+\end_layout
+
+\begin_layout Plain Layout
+
+    int cmp = key.compareTo(x.key);
+\end_layout
+
+\begin_layout Plain Layout
+
+    if (cmp < 0) x.left = delete(x.left, key);
+\end_layout
+
+\begin_layout Plain Layout
+
+    else if (cmp > 0) x.right = delete(x.right, key);
+\end_layout
+
+\begin_layout Plain Layout
+
+    else {
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (x.right == null) return x.left;
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (x.left == null) return x.right;
+\end_layout
+
+\begin_layout Plain Layout
+
+        Node t = x;
+\end_layout
+
+\begin_layout Plain Layout
+
+        x = min(t.right);
+\end_layout
+
+\begin_layout Plain Layout
+
+        x.right = deleteMin(t.right);
+\end_layout
+
+\begin_layout Plain Layout
+
+        x.left = t.left;  //THIS LINE HERE
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+    x.N = size(x.left) + size(x.right) + 1;
+\end_layout
+
+\begin_layout Plain Layout
+
+    return x;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Finds the in-order successor to x.
+\end_layout
+
+\begin_layout Enumerate
+Replaces the current sub-tree rooted at x with the new sub-tree without
+ the minimal node.
+\end_layout
+
+\begin_layout Enumerate
+It sets the old left sub-tree of x to be a child of the successor node being
+ moved up.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ANS
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Updates the size variable of the tree rooted at x.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+When adding and removing nodes from a heap, the tree structure will always
+ remain balanced.
+ Why is it the case that when these operations are performed over a BST,
+ there is a chance that the tree will become unbalanced? [5 points] 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Acuna
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+In a BST there is exactly one place a node may be added.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ANS
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\series bold
+Ans:
+\series default
+ In a BST, there is exactly one place a node may be added.
+ This position might be selected such that a stilted tree is formed (ex:
+ consider adding elements in sequence).
+ In a heap, a node may end up in different places since although it is added
+ to the 
+\begin_inset Quotes eld
+\end_inset
+
+last
+\begin_inset Quotes erd
+\end_inset
+
+ position, swim is used to move it upward to a valid position.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+In a BST nodes are always placed in level nearest to the root node.
+\end_layout
+
+\begin_layout Enumerate
+Because heaps use an array, while BSTs use a linked node structured.
+\end_layout
+
+\begin_layout Enumerate
+This is is a trick question, both BSTs and heaps are always balanced.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 Trace a (non-balancing) BST through the following operations:
 \begin_inset Separator latexpar
@@ -665,68 +883,6 @@ Ans:
 
 \begin_layout Standard
 \begin_inset VSpace 2cm
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-When adding and removing nodes from a heap, the tree structure will always
- remain balanced.
- Why is it the case that when these operations are performed over a BST,
- there is a chance that the tree will become unbalanced? [10 points]
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Branch blank
-inverted 0
-status collapsed
-
-\begin_layout Standard
-\begin_inset VSpace 4cm
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Branch soln
-inverted 0
-status collapsed
-
-\begin_layout Standard
-
-\series bold
-Ans:
-\end_layout
-
-\begin_layout Standard
-In a BST, there is exactly one place a node may be added.
- This position might be selected such that a stilted tree is formed (ex:
- consider adding elements in sequence).
- In a heap, a node may end up in different places since although it is added
- to the 
-\begin_inset Quotes eld
-\end_inset
-
-last
-\begin_inset Quotes erd
-\end_inset
-
- position, swim is used to move it upward to a valid position.
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 3cm
 \end_inset
 
 
@@ -873,7 +1029,7 @@ Imagine that you have a linear probe hashtable, with M=11.
 
  is number of times the algorithm has tried to insert the key.
  Your drawing should include the main size M array.
- [20 points] 
+ [10 points] 
 \begin_inset Note Note
 status collapsed
 
@@ -1327,54 +1483,8 @@ No.
 
 \end_layout
 
-\end_deeper
-\begin_layout Enumerate
-In the DFS based topological sort, what would happen if nodes were pushed
- on the stack before their children were explored, rather than after? Would
- the algorithm still work? Explain.
- [10 points]
-\end_layout
-
-\begin_deeper
 \begin_layout Standard
-\begin_inset Branch blank
-inverted 0
-status collapsed
-
-\begin_layout Standard
-\begin_inset VSpace 5cm
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Branch soln
-inverted 0
-status collapsed
-
-\begin_layout Standard
-
-\series bold
-Ans:
-\end_layout
-
-\begin_layout Standard
-No.
- We lose the logic which makes sure that a node is only listed after its
- children have been listed, which, in reverse, gives us the topological
- sort solution.
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 3cm
-\end_inset
-
-
-\end_layout
-
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -1848,7 +1958,7 @@ BFS
 \series default
  algorithm on this graph to compute the shortest paths between 0 and every
  other node.
- For reference, the BFS algorithm is shown on the next page.
+ For reference, the BFS algorithm is shown below.
  Use the adjacency list above for the order of the nodes explored and follow
  the trace format shown before.
  Your answer must include the values of 
@@ -1867,6 +1977,90 @@ edgeTo
  [20 points]
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Java"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+private void bfs(Graph G, int s) { //by Sedgewick.
+ for reference.
+\end_layout
+
+\begin_layout Plain Layout
+
+    Queue<Integer> queue = new LinkedList<>();
+\end_layout
+
+\begin_layout Plain Layout
+
+    marked[s] = true;
+\end_layout
+
+\begin_layout Plain Layout
+
+    queue.add(s);
+\end_layout
+
+\begin_layout Plain Layout
+
+    while (!queue.isEmpty()) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        int v = queue.remove();
+\end_layout
+
+\begin_layout Plain Layout
+
+        for (int w : G.adj(v))
+\end_layout
+
+\begin_layout Plain Layout
+
+            if (!marked[w]) {
+\end_layout
+
+\begin_layout Plain Layout
+
+                edgeTo[w] = v;
+\end_layout
+
+\begin_layout Plain Layout
+
+                marked[w] = true;
+\end_layout
+
+\begin_layout Plain Layout
+
+                queue.add(w);
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 \begin_inset Float figure
 placement H
@@ -2297,236 +2491,85 @@ queue = {}
 
 \end_layout
 
+\begin_layout Section*
+Extra Questions
+\end_layout
+
 \begin_layout Standard
-\begin_inset Float algorithm
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=Java"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-public class BreadthFirstPaths {
+The following questions were used on previous practice exams - they are
+ not part of the practice exam, but are provided for additional practice.
 \end_layout
 
-\begin_layout Plain Layout
-
-    private boolean[] marked;
-\end_layout
-
-\begin_layout Plain Layout
-
-    private int[] edgeTo;
-\end_layout
-
-\begin_layout Plain Layout
-
-    private final int s;
-\end_layout
-
-\begin_layout Plain Layout
-
-    public BreadthFirstPaths(Graph G, int s) {
-\end_layout
-
-\begin_layout Plain Layout
-
-        marked = new boolean[G.V()];
-\end_layout
-
-\begin_layout Plain Layout
-
-        edgeTo = new int[G.V()];
-\end_layout
-
-\begin_layout Plain Layout
-
-        this.s = s;
-\end_layout
-
-\begin_layout Plain Layout
-
-        bfs(G, s);
-\end_layout
-
-\begin_layout Plain Layout
-
-    }
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-    private void bfs(Graph G, int s) {
-\end_layout
-
-\begin_layout Plain Layout
-
-        Queue<Integer> queue = new LinkedList<>();
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-        marked[s] = true;
-\end_layout
-
-\begin_layout Plain Layout
-
-        queue.add(s);
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-        while (!queue.isEmpty()) {
-\end_layout
-
-\begin_layout Plain Layout
-
-            int v = queue.remove();
-\end_layout
-
-\begin_layout Plain Layout
-
-            for (int w : G.adj(v))
-\end_layout
-
-\begin_layout Plain Layout
-
-                if (!marked[w]) {
-\end_layout
-
-\begin_layout Plain Layout
-
-                    edgeTo[w] = v;
-\end_layout
-
-\begin_layout Plain Layout
-
-                    marked[w] = true;
-\end_layout
-
-\begin_layout Plain Layout
-
-                    queue.add(w);
-\end_layout
-
-\begin_layout Plain Layout
-
-                }
-\end_layout
-
-\begin_layout Plain Layout
-
-        }
-\end_layout
-
-\begin_layout Plain Layout
-
-    }
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-    public boolean hasPathTo(int v) {
-\end_layout
-
-\begin_layout Plain Layout
-
-        return marked[v];
-\end_layout
-
-\begin_layout Plain Layout
-
-    }
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-    public Iterable<Integer> pathTo(int v) {
-\end_layout
-
-\begin_layout Plain Layout
-
-        if(!hasPathTo(v))
-\end_layout
-
-\begin_layout Plain Layout
-
-            return null;
-\end_layout
-
-\begin_layout Plain Layout
-
-        Stack<Integer> path = new Stack<>();
-\end_layout
-
-\begin_layout Plain Layout
-
-        for(int x = v; x != s; x = edgeTo[x])
-\end_layout
-
-\begin_layout Plain Layout
-
-            path.push(x);
-\end_layout
-
-\begin_layout Plain Layout
-
-        path.push(s);
-\end_layout
-
-\begin_layout Plain Layout
-
-        return path;
-\end_layout
-
-\begin_layout Plain Layout
-
-    }
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
+\begin_layout Standard
+\begin_inset Formula $ $
 \end_inset
 
 
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption Standard
+\begin_layout Standard
 
-\begin_layout Plain Layout
-BFS for pathing.
+\series bold
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Formula $ $
+\end_inset
+
+Short Answer: Directed Graphs
 \end_layout
 
+\begin_layout Enumerate
+In the DFS based topological sort, what would happen if nodes were pushed
+ on the stack before their children were explored, rather than after? Would
+ the algorithm still work? Explain.
+ [10 points]
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset VSpace 5cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\series bold
+Ans:
+\end_layout
+
+\begin_layout Standard
+No.
+ We lose the logic which makes sure that a node is only listed after its
+ children have been listed, which, in reverse, gives us the topological
+ sort solution.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 3cm
 \end_inset
 
 
@@ -2537,5 +2580,6 @@ BFS for pathing.
 
 \end_layout
 
+\end_deeper
 \end_body
 \end_document
