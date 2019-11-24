@@ -1433,6 +1433,14 @@ Short Answer: Directed Graphs
 
 \end_deeper
 \begin_layout Enumerate
+TODO: JANICE MC (topo sort)
+\end_layout
+
+\begin_layout Enumerate
+TODO: JANICE MC (dijkstra's)
+\end_layout
+
+\begin_layout Enumerate
 When using DFS to check for a cycle in a directed graph, can we simply check
  for the algorithm visiting a marked node? Explain yes or no.
  [10 points]
@@ -1494,6 +1502,13 @@ No.
 
 \series bold
 Programming: Binary Search Trees
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+On the real exam, there could be programming questions on BSTs, hash tables,
+ or graphs.
 \end_layout
 
 \end_deeper
