@@ -1433,13 +1433,84 @@ Short Answer: Directed Graphs
 
 \end_deeper
 \begin_layout Enumerate
-TODO: JANICE MC (topo sort)
+For the given directed graph, which of the following sequence is not a topologic
+al sort?
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename /Users/janiceabraham/Desktop/Screen Shot 2019-11-26 at 12.31.38 PM.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(a) a, b, h, g, c, d, f, e
+\end_layout
+
+\begin_layout Standard
+(b) a, b, c, d, e, f, g, h 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Correct
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(c) a, b, g, c, e, d, f, h
+\end_layout
+
+\begin_layout Standard
+(d) All of these are valid topological sorts.
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
-TODO: JANICE MC (dijkstra's)
+Dijkstra’s Algorithm will work for both negative and positive weights?
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+(a) True, as long as there is no negative weight cycle, Dijkstra’s can find
+ the shortest paths.
+\end_layout
+
+\begin_layout Standard
+(b) True, because Dijkstra’s will just update the weights and add the maximum
+ negative weight to each edge and then find shortest path.
+\end_layout
+
+\begin_layout Standard
+(c) False, because negative weights will cause the algorithm to get stuck
+ in a loop while reducing the edge weights.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Correct
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(d) False, because the problem of finding shortest path cannot be solved
+ for graphs with negative weights.
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 When using DFS to check for a cycle in a directed graph, can we simply check
  for the algorithm visiting a marked node? Explain yes or no.
