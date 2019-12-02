@@ -901,6 +901,56 @@ Short Answer: Hashtables
 
 \end_deeper
 \begin_layout Enumerate
+Consider implementing a hashcode function for a string class.
+ Which of the following statement(s) is/are True? Select all that apply.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+A hash function takes a string of arbitrary length and generates a fixed
+ length code.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Correct
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+A hash function takes a string of fixed length and generates a code of variable
+ length.
+ 
+\end_layout
+
+\begin_layout Enumerate
+A hash function may give the same hash value for distinct strings.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Correct
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+None of them are true.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
 Is the hashCode() implementation in the following Point2D class valid? That
  is, would a hashtable be able to properly store keys with this hashCode?
  Explain.
@@ -1370,6 +1420,59 @@ Ans:
 \begin_layout Enumerate
 Adjacency list - it will provide faster support for checking if two nodes
  are connected.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+In which of the following scenario(s) would you select using the DFS algorithm
+ over BFS? Select all that apply.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+You have limited memory available for storing intermediate results and you
+ are given a wide graph.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Correct
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+You need to find the optimal solution that is the shortest path for the
+ given problem.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The solution is far away as in many levels away from the source node.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Correct
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+When are you implementing a peer to peer networks like a social networking
+ site where you are attempting to find the degree of connection between
+ two individuals.
+ The degree of connection means the number of intermediate friend introductions
+ you need in order to get to the required person.
+ 
 \end_layout
 
 \end_deeper
