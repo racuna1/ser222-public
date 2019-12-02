@@ -1486,12 +1486,13 @@ Dijkstra’s Algorithm will work for both negative and positive weights?
 
 \begin_layout Standard
 (b) True, because Dijkstra’s will just update the weights and add the maximum
- negative weight to each edge and then find shortest path.
+ negative weight to each edge to find the shortest path.
 \end_layout
 
 \begin_layout Standard
-(c) False, because negative weights will cause the algorithm to get stuck
- in a loop while reducing the edge weights.
+(c) False, because Dijkstra’s algorithms will select an edge with minimum
+ distance in every stage and negative weights might change the cost on nodes
+ in a way that it invalidates other paths that use that node.
  
 \begin_inset Note Note
 status open
