@@ -117,7 +117,7 @@ status collapsed
 
 \begin_layout Standard
 \align center
-Updated 9/27/2019
+Updated 12/24/2019
 \end_layout
 
 \begin_layout Standard
@@ -214,7 +214,7 @@ No electronic items are allowed.
 
 \bar default
  Please use a pen (instead of a pencil) if you have one.
- There are 110 points available and the exam must be completed in 37.5 minutes.
+ There are 70 points available and the exam must be completed in 37.5 minutes.
  This exam has three types of questions:
 \end_layout
 
@@ -230,9 +230,9 @@ No electronic items are allowed.
 \series bold
 Multiple choice questions:
 \series default
- There are 0 points of multiple choice questions.
+ There are 30 points of multiple choice questions.
  An answer is selecting one option among the choices given.
- Each multiple choice is worth 2 to 5 points.
+ Each multiple choice is worth 2.5 to 5 points.
 \end_layout
 
 \begin_layout Standard
@@ -247,9 +247,9 @@ Multiple choice questions:
 \series bold
 Short answer questions:
 \series default
- There are 80 points of short answer questions.
+ There are 40 points of short answer questions.
  A typical answer is one or two sentences.
- Each short answer question is worth 5 or 10 points.
+ Each short answer question is worth 10 points.
 \end_layout
 
 \begin_layout Standard
@@ -262,7 +262,7 @@ Short answer questions:
 \begin_layout Standard
 
 \series bold
-Programing questions:
+Programming questions:
 \series default
  The programming questions are given near the end of the paper.
  They must be answered on the question paper.
@@ -270,7 +270,7 @@ Programing questions:
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace 9cm
+\begin_inset VSpace 8cm
 \end_inset
 
 
@@ -279,7 +279,7 @@ Programing questions:
 \begin_layout Standard
 \align right
 \begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="3">
+<lyxtabular version="3" rows="7" columns="3">
 <features tabularvalignment="middle">
 <column alignment="left" valignment="top">
 <column alignment="center" valignment="top">
@@ -324,7 +324,7 @@ Possible
 \begin_inset Text
 
 \begin_layout Plain Layout
-SA: Elementary Sorts
+MC/SA: Elementary Sorts
 \end_layout
 
 \end_inset
@@ -353,7 +353,7 @@ SA: Elementary Sorts
 \begin_inset Text
 
 \begin_layout Plain Layout
-SA: Mergesort
+MC/SA: Mergesort
 \end_layout
 
 \end_inset
@@ -382,7 +382,7 @@ SA: Mergesort
 \begin_inset Text
 
 \begin_layout Plain Layout
-SA: Priority Queues
+MC/SA: Priority Queues
 \end_layout
 
 \end_inset
@@ -411,7 +411,7 @@ SA: Priority Queues
 \begin_inset Text
 
 \begin_layout Plain Layout
-SA: Symbol Tables
+MC/SA: Symbol Tables
 \end_layout
 
 \end_inset
@@ -429,7 +429,36 @@ SA: Symbol Tables
 \begin_inset Text
 
 \begin_layout Plain Layout
-20
+10
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Prog: TBD
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
 \end_layout
 
 \end_inset
@@ -458,7 +487,7 @@ Total:
 \begin_inset Text
 
 \begin_layout Plain Layout
-80
+70
 \end_layout
 
 \end_inset
@@ -485,8 +514,118 @@ Short Answer: Elementary Sorts
 \end_layout
 
 \begin_layout Enumerate
-What are the Big-Oh and Tilde orders of the following code fragment? The
- fragment is parametrized on the variable 
+[Abraham] Which sorting algorithm will take least time when all elements
+ of input array are identical? Consider the implementations of the sorting
+ algorithms as given in class.
+ [5 points]
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Selection Sort
+\end_layout
+
+\begin_layout Enumerate
+Insertion Sort 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+ANS
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Shell Sort
+\end_layout
+
+\begin_layout Enumerate
+Merge Sort
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+[Acuña] When dealing with systems having low RAM capacity, or analyzing
+ large datasets, space is at a premium.
+ In these cases, algorithms must be designed to reduce their memory foot
+ print.
+ From the sorting algorithm implementations seen in class, which would be
+ the worse choice? [5 points]
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Selection Sort
+\end_layout
+
+\begin_layout Enumerate
+Insertion Sort
+\end_layout
+
+\begin_layout Enumerate
+Shell Sort
+\end_layout
+
+\begin_layout Enumerate
+Merge Sort 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+ANS
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\series bold
+Ans:
+\series default
+ [Acuña] We don't want to use mergesort since it requires creating an auxiliary
+ array which doubles the space used.
+ Mergesort is also bad because it requires stack memory for recursive calls.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+[Acuña] What are the Big-Oh and Tilde orders of the following code fragment?
+ The fragment is parametrized on the variable 
 \begin_inset Formula $n$
 \end_inset
 
@@ -603,7 +742,7 @@ inverted 0
 status collapsed
 
 \begin_layout Standard
-\begin_inset VSpace 4cm
+\begin_inset VSpace 2cm
 \end_inset
 
 
@@ -627,7 +766,7 @@ It is O(n) since it is inside one loop with linear incrementor.
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace 2cm
+\begin_inset VSpace 1cm
 \end_inset
 
 
@@ -651,7 +790,7 @@ inverted 0
 status collapsed
 
 \begin_layout Standard
-\begin_inset VSpace 4cm
+\begin_inset VSpace 2cm
 \end_inset
 
 
@@ -676,7 +815,7 @@ It does not exist, swap only runs if z != j and we can't know how often
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace 2cm
+\begin_inset VSpace 1cm
 \end_inset
 
 
@@ -688,61 +827,8 @@ It does not exist, swap only runs if z != j and we can't know how often
 \end_layout
 
 \end_deeper
-\end_deeper
-\begin_layout Enumerate
-When dealing with systems having low RAM capacity, or analyzing large datasets,
- space is at a premium.
- In these cases, algorithms must be designed to reduce their memory foot
- print.
- From the sorting algorithm implementations seen in class, which would be
- the best choice? [10 points]
-\end_layout
-
-\begin_deeper
 \begin_layout Standard
-\begin_inset Branch blank
-inverted 0
-status collapsed
-
-\begin_layout Standard
-\begin_inset VSpace 4cm
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Branch soln
-inverted 0
-status collapsed
-
-\begin_layout Standard
-
-\series bold
-Ans:
-\end_layout
-
-\begin_layout Standard
-(Any of the in-place sorting algorithms would be fine: selection sort, insertion
- sort, or shell sort.)
-\end_layout
-
-\begin_layout Standard
-Selection sort.
- We don't want to use mergesort since it requires creating an auxiliary
- array which doubles the space used.
- Mergesort is also bad because it requires stack memory for recursive calls.
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 4cm
-\end_inset
-
-
-\end_layout
-
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -756,78 +842,45 @@ Short Answer: Mergesort
 
 \end_deeper
 \begin_layout Enumerate
-[Acuña] Consider the following array: 23, 7, 35, 3, 4, 2, 13, 1.
- Show a trace of execution for top-down mergesort.
- Illustrate how the array is broken down, and then merged into an ordered
- state.
- [10 points]
-\begin_inset Separator latexpar
-\end_inset
-
-
+[Acuña] If the merge() method from mergesort was used for merging queues,
+ instead of arrays, how much space would be needed for auxiliary data storage?
+ Assume the input is of length 
+\emph on
+n
+\emph default
+.
+ [5 points]
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
-\begin_inset Branch blank
-inverted 0
+\begin_layout Enumerate
+O(1) 
+\begin_inset Note Note
 status collapsed
 
-\begin_layout Standard
-\begin_inset VSpace 10cm
-\end_inset
-
-
+\begin_layout Plain Layout
+ANS
 \end_layout
 
 \end_inset
 
 
-\begin_inset Branch soln
-inverted 0
-status collapsed
+\end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
+O(logn)
+\end_layout
 
-\series bold
-Ans:
+\begin_layout Enumerate
+O(n)
+\end_layout
+
+\begin_layout Enumerate
+O(nlogn)
 \end_layout
 
 \begin_layout Standard
-[23, 7, 35, 3, 4, 2, 13, 1]
-\end_layout
-
-\begin_layout Standard
-[[23, 7, 35, 3], [4, 2, 13, 1]]
-\end_layout
-
-\begin_layout Standard
-[[[23, 7], [35, 3]], [[4, 2], [13, 1]]]
-\end_layout
-
-\begin_layout Standard
-[[[[23], [7]], [[35], [3]]], [[[4], [2]], [[13], [1]]]]
-\end_layout
-
-\begin_layout Standard
-[[[7, 23], [3, 35]], [[2, 4], [1, 13]]]
-\end_layout
-
-\begin_layout Standard
-[[3, 7, 23, 35], [1, 2, 4, 13]]
-\end_layout
-
-\begin_layout Standard
-[1, 2, 3, 4, 7, 13, 23, 35]
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 6cm
-\end_inset
-
-
-\end_layout
-
+\begin_inset VSpace 0.5cm
 \end_inset
 
 
@@ -835,8 +888,49 @@ Ans:
 
 \end_deeper
 \begin_layout Enumerate
-In the lower bound proof for sorting, why must there be at least N! leaves
- on the decision tree? [10 points]
+[Abraham] If you had to pick a data structure on which you would be performing
+ merge sort, which one would you choose? (Hint: Think about minimizing space
+ usage.) [5 points]
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Arrays
+\end_layout
+
+\begin_layout Enumerate
+Linked Lists 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+ANS
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Queues
+\end_layout
+
+\begin_layout Enumerate
+Generics
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+[Acuña] In the lower bound proof for sorting, why must there be at least
+ N! leaves on the decision tree? [10 points]
 \end_layout
 
 \begin_deeper
@@ -888,6 +982,13 @@ A sorting algorithm must be able to sort (solve) any input.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \series bold
 Short Answer: Priority Queues 
@@ -895,50 +996,106 @@ Short Answer: Priority Queues
 
 \end_deeper
 \begin_layout Enumerate
-What is the difference between a (max) heap and a priority queue? [10 points]
-\begin_inset Separator latexpar
-\end_inset
-
-
+[Acuña] What is the difference between a (max) heap and a priority queue?
+ [5 points]
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
-\begin_inset Branch blank
-inverted 0
-status collapsed
+\begin_layout Enumerate
+A max heap provides ways to both add and remove elements, but a priority
+ queue does not.
+\end_layout
 
-\begin_layout Standard
-\begin_inset VSpace 5cm
-\end_inset
+\begin_layout Enumerate
+A priority queue requires O(n) time to remove an element, while a heap works
+ in O(logn) time.
+\end_layout
 
+\begin_layout Enumerate
+A heap is how data is structured, while saying priority queue specifies
+ what operations can be performed.
+ 
+\begin_inset Note Note
+status open
 
+\begin_layout Plain Layout
+ANS
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Enumerate
+There isn't any difference, they're different names for the same thing.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Branch soln
 inverted 0
 status collapsed
 
 \begin_layout Standard
-
+[Acuña] 
 \series bold
 Ans:
+\series default
+ A heap is a data structure and a priority queue is an ADT.
 \end_layout
 
-\begin_layout Standard
-A heap is a data structure and a priority queue is an ADT.
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 2cm
 \end_inset
 
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+[Abraham] Consider this array representation of a heap, what is the right
+ child of node 75? Assume the zeroth index is null.
+ A = {_, 100, 75, 50, 51, 40, 30, 3, 25, 10}
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+30
+\end_layout
+
+\begin_layout Enumerate
+51
+\end_layout
+
+\begin_layout Enumerate
+40 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ANS
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+42
+\end_layout
+
+\begin_layout Enumerate
+50
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.5cm
 \end_inset
 
 
@@ -1093,6 +1250,13 @@ n
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \series bold
 Short Answer: Symbol Tables
@@ -1165,7 +1329,7 @@ Give the contents of the symbol table after the code has been executed.
 \begin_inset Quotes eld
 \end_inset
 
-SER100 : 100
+CSE110 : 150
 \begin_inset Quotes erd
 \end_inset
 
@@ -1241,22 +1405,235 @@ SER316 : 75
 
 \end_layout
 
+\begin_layout Standard
+
+\series bold
+Programming: TBD
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+There will be at least one programming question on the actual exam.
+\end_layout
+
 \end_deeper
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Extra Questions
+\end_layout
+
+\begin_layout Standard
+The following questions were used on previous practice exams - they are
+ not part of the practice exam, and may use content not covered in the current
+ semester, but are provided for additional practice.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset Formula $\;\;\;\;$
+\end_inset
+
+Short Answer: Elementary Sorts
+\end_layout
+
 \begin_layout Enumerate
-Consider the task of implementing a SymbolTable vs an OrderedSymbolTable.
- For the purposes of get and put, which you be more likely to create an
- efficient implementation for? Explain.
- (Hint: no knowledge of BSTs or hashtables is needed.) [10 points]
+[Abraham] Which of the following arrays would insertion sort process the
+ fastest? [5 points]
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+(a) {1, 2, 3, 4, 7, 5, 6}
+\end_layout
+
+\begin_layout Standard
+(b) {2, 3, 4, 6, 1, 5, 7}
+\end_layout
+
+\begin_layout Standard
+(c) {6, 7, 5, 4, 3, 2, 1}
+\end_layout
+
+\begin_layout Standard
+(d) They will be processed the same 
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Created for SA18.
+ANS
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Short Answer: Mergesort
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+[Acuña] Consider the following array: 23, 7, 35, 3, 4, 2, 13, 1.
+ Show a trace of execution for top-down mergesort.
+ Illustrate how the array is broken down, and then merged into an ordered
+ state.
+ [10 points]
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status open
+
+\begin_layout Standard
+\begin_inset VSpace 5cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\series bold
+Ans:
+\end_layout
+
+\begin_layout Standard
+[23, 7, 35, 3, 4, 2, 13, 1]
+\end_layout
+
+\begin_layout Standard
+[[23, 7, 35, 3], [4, 2, 13, 1]]
+\end_layout
+
+\begin_layout Standard
+[[[23, 7], [35, 3]], [[4, 2], [13, 1]]]
+\end_layout
+
+\begin_layout Standard
+[[[[23], [7]], [[35], [3]]], [[[4], [2]], [[13], [1]]]]
+\end_layout
+
+\begin_layout Standard
+[[[7, 23], [3, 35]], [[2, 4], [1, 13]]]
+\end_layout
+
+\begin_layout Standard
+[[3, 7, 23, 35], [1, 2, 4, 13]]
+\end_layout
+
+\begin_layout Standard
+[1, 2, 3, 4, 7, 13, 23, 35]
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 6cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Short Answer: Priority Queues
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+[Abraham] As mentioned in class, a max heap would be a great data structure
+ when we need to extract the maximum element.
+ Let us say that you are given a few processes that require CPU time which
+ are stored in a heap structure.
+ The process with minimum priority needs to be executed first.
+ Example, a process with priority 0 needs to be picked up before a process
+ with priority 1.
+ We need to select the task with minimum priority.
+ What would be the complexity to simply read the minimum element in a min
+ heap? [5 points]
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+(a) O(1) 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ANS
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(b) O(logn)
+\end_layout
+
+\begin_layout Standard
+(c) O(nlogn)
+\end_layout
+
+\begin_layout Standard
+(d) O(n)
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Short Answer: Symbol Tables
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Consider the task of implementing a SymbolTable vs an OrderedSymbolTable.
+ For the purposes of get and put, which you be more likely to create an
+ efficient implementation for? Explain.
+ (Hint: no knowledge of BSTs or hash tables is needed.) [10 points]
 \end_layout
 
 \begin_deeper
@@ -1286,7 +1663,7 @@ Ans:
 \end_layout
 
 \begin_layout Standard
-OrderedSymbolTable offers more potential for optimization since itmeans
+OrderedSymbolTable offers more potential for optimization since it means
  you have some structure (i.e., all elements are Comparable) on the data which
  you can exploit.
 \end_layout
@@ -1301,18 +1678,6 @@ OrderedSymbolTable offers more potential for optimization since itmeans
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Programming: ???
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-There will be at least one programming question on the actual exam.
 \end_layout
 
 \end_deeper
