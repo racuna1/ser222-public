@@ -104,7 +104,7 @@ Practice
 
 \begin_layout Standard
 \align center
-Updated 9/2/2019
+Updated 12/24/2019
 \end_layout
 
 \begin_layout Standard
@@ -205,7 +205,7 @@ No electronic items are allowed.
 
 \bar default
  Please use a pen (instead of a pencil) if you have one.
- There are 90 points available and the exam must be completed in 37.5 minutes.
+ There are 120 points available and the exam must be completed in 50 minutes.
  This exam has three types of questions:
 \end_layout
 
@@ -221,7 +221,7 @@ No electronic items are allowed.
 \series bold
 Multiple choice questions:
 \series default
- There are 0 points of multiple choice questions.
+ There are 40 points of multiple choice questions.
  An answer is selecting one option among the choices given.
  Each multiple choice is worth 2 to 5 points.
 \end_layout
@@ -236,9 +236,9 @@ Multiple choice questions:
 \begin_layout Standard
 
 \series bold
-Programing questions:
+Short answer questions:
 \series default
- There are 90 points of short answer questions.
+ There are 40 points of short answer questions.
  A typical answer is one or two sentences.
  Each short answer question is worth 5 or 10 points.
 \end_layout
@@ -253,15 +253,15 @@ Programing questions:
 \begin_layout Standard
 
 \series bold
-Write-in questions:
+Programing questions:
 \series default
- The programming questions are given near the end of the paper.
- They must be answered on the question paper.
- There are 20 points of longer write-in questions.
+ There are 40 points of short answer questions.
+ A typical answer is one or two sentences.
+ Each short answer question is worth 5 or 10 points.
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace 5cm
+\begin_inset VSpace 7cm
 \end_inset
 
 
@@ -315,7 +315,7 @@ Possible
 \begin_inset Text
 
 \begin_layout Plain Layout
-SA: Binary Search Trees
+MC/SA: Binary Search Trees
 \end_layout
 
 \end_inset
@@ -344,7 +344,94 @@ SA: Binary Search Trees
 \begin_inset Text
 
 \begin_layout Plain Layout
-SA: Hashtables
+MC/SA: Hashtables
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MC/SA: Undirected Graphs
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MC/SA: Directed Graphs
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Scen: Binary Search Trees
 \end_layout
 
 \end_inset
@@ -363,93 +450,6 @@ SA: Hashtables
 
 \begin_layout Plain Layout
 30
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-SA: Undirected Graphs
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-20
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-SA: Directed Graphs
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-20
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Scen: Hashtables
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0
 \end_layout
 
 \end_inset
@@ -478,7 +478,7 @@ Scen: Undirected Graphs
 \begin_inset Text
 
 \begin_layout Plain Layout
-20
+10
 \end_layout
 
 \end_inset
@@ -536,7 +536,7 @@ Total:
 \begin_inset Text
 
 \begin_layout Plain Layout
-100
+120
 \end_layout
 
 \end_inset
@@ -563,6 +563,231 @@ Short Answer: Binary Search Trees
 \end_layout
 
 \begin_layout Enumerate
+Consider the following method discussed in lecture for deleting a node from
+ a BST.
+ What functionality is provided by the indicated line? [5 points] 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Acuna
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Java"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+private Node delete(Node x, Key key) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    if (x == null) return null;
+\end_layout
+
+\begin_layout Plain Layout
+
+    int cmp = key.compareTo(x.key);
+\end_layout
+
+\begin_layout Plain Layout
+
+    if (cmp < 0) x.left = delete(x.left, key);
+\end_layout
+
+\begin_layout Plain Layout
+
+    else if (cmp > 0) x.right = delete(x.right, key);
+\end_layout
+
+\begin_layout Plain Layout
+
+    else {
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (x.right == null) return x.left;
+\end_layout
+
+\begin_layout Plain Layout
+
+        if (x.left == null) return x.right;
+\end_layout
+
+\begin_layout Plain Layout
+
+        Node t = x;
+\end_layout
+
+\begin_layout Plain Layout
+
+        x = min(t.right);
+\end_layout
+
+\begin_layout Plain Layout
+
+        x.right = deleteMin(t.right);
+\end_layout
+
+\begin_layout Plain Layout
+
+        x.left = t.left;  //THIS LINE HERE
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+    x.N = size(x.left) + size(x.right) + 1;
+\end_layout
+
+\begin_layout Plain Layout
+
+    return x;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Finds the in-order successor to x.
+\end_layout
+
+\begin_layout Enumerate
+Replaces the current sub-tree rooted at x with the new sub-tree without
+ the minimal node.
+\end_layout
+
+\begin_layout Enumerate
+It sets the old left sub-tree of x to be a child of the successor node being
+ moved up.
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+ANS
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Updates the size variable of the tree rooted at x.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+When adding and removing nodes from a heap, the tree structure will always
+ remain balanced.
+ Why is it the case that when these operations are performed over a BST,
+ there is a chance that the tree will become unbalanced? [5 points] 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Acuna
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+In a BST there is exactly one place a node may be added.
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+ANS
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\series bold
+Ans:
+\series default
+ In a BST, there is exactly one place a node may be added.
+ This position might be selected such that a stilted tree is formed (ex:
+ consider adding elements in sequence).
+ In a heap, a node may end up in different places since although it is added
+ to the 
+\begin_inset Quotes eld
+\end_inset
+
+last
+\begin_inset Quotes erd
+\end_inset
+
+ position, swim is used to move it upward to a valid position.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+In a BST nodes are always placed in level nearest to the root node.
+\end_layout
+
+\begin_layout Enumerate
+Because heaps use an array, while BSTs use a linked node structured.
+\end_layout
+
+\begin_layout Enumerate
+This is is a trick question, both BSTs and heaps are always balanced.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
 Trace a (non-balancing) BST through the following operations:
 \begin_inset Separator latexpar
 \end_inset
@@ -575,7 +800,7 @@ Trace a (non-balancing) BST through the following operations:
 \align center
 \begin_inset Graphics
 	filename practice_exams/ser222_17f_bst.png
-	scale 50
+	scale 250
 
 \end_inset
 
@@ -673,65 +898,7 @@ Ans:
 \end_inset
 
 
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-When adding and removing nodes from a heap, the tree structure will always
- remain balanced.
- Why is it the case that when these operations are performed over a BST,
- there is a chance that the tree will become unbalanced? [10 points]
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Branch blank
-inverted 0
-status collapsed
-
-\begin_layout Standard
-\begin_inset VSpace 4cm
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Branch soln
-inverted 0
-status collapsed
-
-\begin_layout Standard
-
-\series bold
-Ans:
-\end_layout
-
-\begin_layout Standard
-In a BST, there is exactly one place a node may be added.
- This position might be selected such that a stilted tree is formed (ex:
- consider adding elements in sequence).
- In a heap, a node may end up in different places since although it is added
- to the 
-\begin_inset Quotes eld
-\end_inset
-
-last
-\begin_inset Quotes erd
-\end_inset
-
- position, swim is used to move it upward to a valid position.
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 3cm
-\end_inset
-
-
-\end_layout
-
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -741,6 +908,72 @@ last
 
 \series bold
 Short Answer: Hashtables
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Consider implementing a hashcode function for a string class.
+ Which of the following statement(s) is/are True? Select all that apply.
+ [5 points]
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Abraham
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+A hash function takes a string of arbitrary length and generates a fixed
+ length code.
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+ANS
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+A hash function takes a string of fixed length and generates a code of variable
+ length.
+ 
+\end_layout
+
+\begin_layout Enumerate
+A hash function may give the same hash value for distinct strings.
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+ANS
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+None of the above are true.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -815,21 +1048,29 @@ public class Point2D {
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Branch blank
-inverted 0
-status collapsed
+\begin_layout Enumerate
+Yes - it implements the required hashCode method using the attributes in
+ the class.
+\end_layout
 
-\begin_layout Standard
-\begin_inset VSpace 4cm
-\end_inset
+\begin_layout Enumerate
+Yes - since MAX_VALUE is larger than any number, the modulus doesn't change
+ the value of the point, and no information is lost.
+\end_layout
 
+\begin_layout Enumerate
+No - different Point2Ds might have the same hashcode.
+ 
+\begin_inset Note Comment
+status open
 
+\begin_layout Plain Layout
+ANS
 \end_layout
 
 \end_inset
 
-
+ 
 \begin_inset Branch soln
 inverted 0
 status collapsed
@@ -846,13 +1087,17 @@ No.
  means that even objects with different x values may produce the same hash.
 \end_layout
 
-\begin_layout Standard
-\begin_inset VSpace 3cm
 \end_inset
 
 
 \end_layout
 
+\begin_layout Enumerate
+No - it is missing the modulus by M.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.5cm
 \end_inset
 
 
@@ -871,9 +1116,9 @@ Imagine that you have a linear probe hashtable, with M=11.
 \begin_inset Formula $i$
 \end_inset
 
- is number of times the algorithm has tried to insert the key.
+ is the number of times the algorithm has tried to insert the key.
  Your drawing should include the main size M array.
- [20 points] 
+ [10 points] 
 \begin_inset Note Note
 status collapsed
 
@@ -1160,22 +1405,43 @@ Short Answer: Undirected Graphs
 
 \end_deeper
 \begin_layout Enumerate
-Would the DFS algorithm run faster if it was implemented with an adjacency
- matrix or an adjacency list? Justify.
- [10 points]
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Branch blank
-inverted 0
+Consider using the DFS algorithm.
+ From a performance standpoint, would it be better for the algorithm to
+ use a Graph ADT implemented using an adjustment matrix or adjacency list?
+ Explain.
+ [5 points] 
+\begin_inset Note Note
 status collapsed
 
-\begin_layout Standard
-\begin_inset VSpace 4cm
+\begin_layout Plain Layout
+Acuna
+\end_layout
+
 \end_inset
 
 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Adjustment matrix - it will provide faster support for vising each of the
+ adjacent nodes.
+\end_layout
+
+\begin_layout Enumerate
+Adjustment matrix - it will provide faster support for checking if two nodes
+ are connected.
+\end_layout
+
+\begin_layout Enumerate
+Adjacency list - it will provide faster support for vising each of the adjacent
+ nodes.
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+ANS
 \end_layout
 
 \end_inset
@@ -1189,21 +1455,93 @@ status collapsed
 
 \series bold
 Ans:
-\end_layout
-
-\begin_layout Standard
-It would be faster with an adjacency list.
+\series default
+ It would be faster with an adjacency list.
  It only accesses the graph via the adj() method, which in an adjacency
  matrix is ~V, while in an adjacency list is ~degree(V).
 \end_layout
 
-\begin_layout Standard
-\begin_inset VSpace 3cm
 \end_inset
 
 
 \end_layout
 
+\begin_layout Enumerate
+Adjacency list - it will provide faster support for checking if two nodes
+ are connected.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+In which of the following scenario(s) would you select using the DFS algorithm
+ over BFS? Select all that apply.
+ [5 points] 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Abraham
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+You have limited memory available for storing intermediate results and you
+ are given a wide graph.
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+ANS
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+You need to find the optimal solution that is the shortest path for the
+ given problem.
+\end_layout
+
+\begin_layout Enumerate
+The solution is far away as in many levels away from the source node.
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+ANS
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+When are you implementing a peer to peer networks like a social networking
+ site where you are attempting to find the degree of connection between
+ two individuals.
+ The degree of connection means the number of intermediate friend introductions
+ you need in order to get to the required person.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.5cm
 \end_inset
 
 
@@ -1263,9 +1601,132 @@ The order in which you explore outward from a particular node is dependent
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \series bold
 Short Answer: Directed Graphs
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+For the given directed graph, which of the following sequence is not a topologic
+al sort? [5 points]
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Abraham
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename practice_exams/ser222_exam_practice_m12_topo.png
+	scale 250
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+a, b, h, g, c, d, f, e
+\end_layout
+
+\begin_layout Enumerate
+a, b, c, d, e, f, g, h 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+ANS
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+a, b, g, c, e, d, f, h
+\end_layout
+
+\begin_layout Enumerate
+All of these are valid topological sorts.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Dijkstra’s Algorithm will work for both negative and positive weights? [5
+ points]
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Abraham
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+True, as long as there is no negative weight cycle, Dijkstra’s can find
+ the shortest paths.
+\end_layout
+
+\begin_layout Enumerate
+True, because Dijkstra’s will just update the weights and add the maximum
+ negative weight to each edge to find the shortest path.
+\end_layout
+
+\begin_layout Enumerate
+False, because Dijkstra’s algorithms will select an edge with minimum distance
+ in every stage and negative weights might change the cost on nodes in a
+ way that it invalidates other paths that use that node.
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+ANS
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+False, because the problem of finding shortest path cannot be solved for
+ graphs with negative weights.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -1320,54 +1781,8 @@ No.
 
 \end_layout
 
-\end_deeper
-\begin_layout Enumerate
-In the DFS based topological sort, what would happen if nodes were pushed
- on the stack before their children were explored, rather than after? Would
- the algorithm still work? Explain.
- [10 points]
-\end_layout
-
-\begin_deeper
 \begin_layout Standard
-\begin_inset Branch blank
-inverted 0
-status collapsed
-
-\begin_layout Standard
-\begin_inset VSpace 5cm
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Branch soln
-inverted 0
-status collapsed
-
-\begin_layout Standard
-
-\series bold
-Ans:
-\end_layout
-
-\begin_layout Standard
-No.
- We lose the logic which makes sure that a node is only listed after its
- children have been listed, which, in reverse, gives us the topological
- sort solution.
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 3cm
-\end_inset
-
-
-\end_layout
-
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -1377,6 +1792,13 @@ No.
 
 \series bold
 Programming: Binary Search Trees
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+On the real exam, there could be programming questions on BSTs, hash tables,
+ or graphs.
 \end_layout
 
 \end_deeper
@@ -1841,7 +2263,7 @@ BFS
 \series default
  algorithm on this graph to compute the shortest paths between 0 and every
  other node.
- For reference, the BFS algorithm is shown on the next page.
+ For reference, the BFS algorithm is shown below.
  Use the adjacency list above for the order of the nodes explored and follow
  the trace format shown before.
  Your answer must include the values of 
@@ -1857,9 +2279,93 @@ queue
 edgeTo
 \emph default
 , as they update.
- [20 points]
+ [10 points]
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Java"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+private void bfs(Graph G, int s) { //by Sedgewick.
+ for reference.
+\end_layout
+
+\begin_layout Plain Layout
+
+    Queue<Integer> queue = new LinkedList<>();
+\end_layout
+
+\begin_layout Plain Layout
+
+    marked[s] = true;
+\end_layout
+
+\begin_layout Plain Layout
+
+    queue.add(s);
+\end_layout
+
+\begin_layout Plain Layout
+
+    while (!queue.isEmpty()) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        int v = queue.remove();
+\end_layout
+
+\begin_layout Plain Layout
+
+        for (int w : G.adj(v))
+\end_layout
+
+\begin_layout Plain Layout
+
+            if (!marked[w]) {
+\end_layout
+
+\begin_layout Plain Layout
+
+                edgeTo[w] = v;
+\end_layout
+
+\begin_layout Plain Layout
+
+                marked[w] = true;
+\end_layout
+
+\begin_layout Plain Layout
+
+                queue.add(w);
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 \begin_inset Float figure
 placement H
@@ -2290,236 +2796,86 @@ queue = {}
 
 \end_layout
 
+\begin_layout Section*
+Extra Questions
+\end_layout
+
 \begin_layout Standard
-\begin_inset Float algorithm
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset listings
-lstparams "language=Java"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-public class BreadthFirstPaths {
+The following questions were used on previous practice exams - they are
+ not part of the practice exam, and may use content not covered in the current
+ semester, but are provided for additional practice.
 \end_layout
 
-\begin_layout Plain Layout
-
-    private boolean[] marked;
-\end_layout
-
-\begin_layout Plain Layout
-
-    private int[] edgeTo;
-\end_layout
-
-\begin_layout Plain Layout
-
-    private final int s;
-\end_layout
-
-\begin_layout Plain Layout
-
-    public BreadthFirstPaths(Graph G, int s) {
-\end_layout
-
-\begin_layout Plain Layout
-
-        marked = new boolean[G.V()];
-\end_layout
-
-\begin_layout Plain Layout
-
-        edgeTo = new int[G.V()];
-\end_layout
-
-\begin_layout Plain Layout
-
-        this.s = s;
-\end_layout
-
-\begin_layout Plain Layout
-
-        bfs(G, s);
-\end_layout
-
-\begin_layout Plain Layout
-
-    }
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-    private void bfs(Graph G, int s) {
-\end_layout
-
-\begin_layout Plain Layout
-
-        Queue<Integer> queue = new LinkedList<>();
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-        marked[s] = true;
-\end_layout
-
-\begin_layout Plain Layout
-
-        queue.add(s);
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-        while (!queue.isEmpty()) {
-\end_layout
-
-\begin_layout Plain Layout
-
-            int v = queue.remove();
-\end_layout
-
-\begin_layout Plain Layout
-
-            for (int w : G.adj(v))
-\end_layout
-
-\begin_layout Plain Layout
-
-                if (!marked[w]) {
-\end_layout
-
-\begin_layout Plain Layout
-
-                    edgeTo[w] = v;
-\end_layout
-
-\begin_layout Plain Layout
-
-                    marked[w] = true;
-\end_layout
-
-\begin_layout Plain Layout
-
-                    queue.add(w);
-\end_layout
-
-\begin_layout Plain Layout
-
-                }
-\end_layout
-
-\begin_layout Plain Layout
-
-        }
-\end_layout
-
-\begin_layout Plain Layout
-
-    }
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-    public boolean hasPathTo(int v) {
-\end_layout
-
-\begin_layout Plain Layout
-
-        return marked[v];
-\end_layout
-
-\begin_layout Plain Layout
-
-    }
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-    public Iterable<Integer> pathTo(int v) {
-\end_layout
-
-\begin_layout Plain Layout
-
-        if(!hasPathTo(v))
-\end_layout
-
-\begin_layout Plain Layout
-
-            return null;
-\end_layout
-
-\begin_layout Plain Layout
-
-        Stack<Integer> path = new Stack<>();
-\end_layout
-
-\begin_layout Plain Layout
-
-        for(int x = v; x != s; x = edgeTo[x])
-\end_layout
-
-\begin_layout Plain Layout
-
-            path.push(x);
-\end_layout
-
-\begin_layout Plain Layout
-
-        path.push(s);
-\end_layout
-
-\begin_layout Plain Layout
-
-        return path;
-\end_layout
-
-\begin_layout Plain Layout
-
-    }
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
+\begin_layout Standard
+\begin_inset Formula $ $
 \end_inset
 
 
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption Standard
+\begin_layout Standard
 
-\begin_layout Plain Layout
-BFS for pathing.
+\series bold
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Formula $ $
+\end_inset
+
+Short Answer: Directed Graphs
 \end_layout
 
+\begin_layout Enumerate
+In the DFS based topological sort, what would happen if nodes were pushed
+ on the stack before their children were explored, rather than after? Would
+ the algorithm still work? Explain.
+ [10 points]
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset VSpace 5cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\series bold
+Ans:
+\end_layout
+
+\begin_layout Standard
+No.
+ We lose the logic which makes sure that a node is only listed after its
+ children have been listed, which, in reverse, gives us the topological
+ sort solution.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 3cm
 \end_inset
 
 
@@ -2530,5 +2886,6 @@ BFS for pathing.
 
 \end_layout
 
+\end_deeper
 \end_body
 \end_document
