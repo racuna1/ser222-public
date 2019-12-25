@@ -205,7 +205,7 @@ No electronic items are allowed.
 
 \bar default
  Please use a pen (instead of a pencil) if you have one.
- There are 125 points available and the exam must be completed in 50 minutes.
+ There are 120 points available and the exam must be completed in 50 minutes.
  This exam has three types of questions:
 \end_layout
 
@@ -221,7 +221,7 @@ No electronic items are allowed.
 \series bold
 Multiple choice questions:
 \series default
- There are 35 points of multiple choice questions.
+ There are 40 points of multiple choice questions.
  An answer is selecting one option among the choices given.
  Each multiple choice is worth 2 to 5 points.
 \end_layout
@@ -238,7 +238,7 @@ Multiple choice questions:
 \series bold
 Short answer questions:
 \series default
- There are 50 points of short answer questions.
+ There are 40 points of short answer questions.
  A typical answer is one or two sentences.
  Each short answer question is worth 5 or 10 points.
 \end_layout
@@ -362,7 +362,7 @@ MC/SA: Hashtables
 \begin_inset Text
 
 \begin_layout Plain Layout
-25
+20
 \end_layout
 
 \end_inset
@@ -536,7 +536,7 @@ Total:
 \begin_inset Text
 
 \begin_layout Plain Layout
-125
+120
 \end_layout
 
 \end_inset
@@ -800,7 +800,7 @@ Trace a (non-balancing) BST through the following operations:
 \align center
 \begin_inset Graphics
 	filename practice_exams/ser222_17f_bst.png
-	scale 50
+	scale 250
 
 \end_inset
 
@@ -898,6 +898,10 @@ Ans:
 \end_inset
 
 
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -910,7 +914,7 @@ Short Answer: Hashtables
 \begin_layout Enumerate
 Consider implementing a hashcode function for a string class.
  Which of the following statement(s) is/are True? Select all that apply.
- 
+ [5 points]
 \begin_inset Note Note
 status collapsed
 
@@ -962,7 +966,7 @@ ANS
 \end_layout
 
 \begin_layout Enumerate
-None of them are true.
+None of the above are true.
 \end_layout
 
 \begin_layout Standard
@@ -1044,21 +1048,29 @@ public class Point2D {
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Branch blank
-inverted 0
-status collapsed
+\begin_layout Enumerate
+Yes - it implements the required hashCode method using the attributes in
+ the class.
+\end_layout
 
-\begin_layout Standard
-\begin_inset VSpace 4cm
-\end_inset
+\begin_layout Enumerate
+Yes - since MAX_VALUE is larger than any number, the modulus doesn't change
+ the value of the point, and no information is lost.
+\end_layout
 
+\begin_layout Enumerate
+No - different Point2Ds might have the same hashcode.
+ 
+\begin_inset Note Comment
+status open
 
+\begin_layout Plain Layout
+ANS
 \end_layout
 
 \end_inset
 
-
+ 
 \begin_inset Branch soln
 inverted 0
 status collapsed
@@ -1075,13 +1087,17 @@ No.
  means that even objects with different x values may produce the same hash.
 \end_layout
 
-\begin_layout Standard
-\begin_inset VSpace 3cm
 \end_inset
 
 
 \end_layout
 
+\begin_layout Enumerate
+No - it is missing the modulus by M.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.5cm
 \end_inset
 
 
@@ -1499,7 +1515,6 @@ ANS
 \begin_layout Enumerate
 You need to find the optimal solution that is the shortest path for the
  given problem.
- 
 \end_layout
 
 \begin_layout Enumerate
@@ -1601,7 +1616,7 @@ Short Answer: Directed Graphs
 \end_deeper
 \begin_layout Enumerate
 For the given directed graph, which of the following sequence is not a topologic
-al sort? 
+al sort? [5 points]
 \begin_inset Note Note
 status open
 
@@ -1618,6 +1633,7 @@ Abraham
 \begin_layout Standard
 \begin_inset Graphics
 	filename practice_exams/ser222_exam_practice_m12_topo.png
+	scale 250
 
 \end_inset
 
@@ -1631,7 +1647,7 @@ a, b, h, g, c, d, f, e
 \begin_layout Enumerate
 a, b, c, d, e, f, g, h 
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 ANS
@@ -1659,7 +1675,8 @@ All of these are valid topological sorts.
 
 \end_deeper
 \begin_layout Enumerate
-Dijkstra’s Algorithm will work for both negative and positive weights? 
+Dijkstra’s Algorithm will work for both negative and positive weights? [5
+ points]
 \begin_inset Note Note
 status open
 
@@ -1689,7 +1706,7 @@ False, because Dijkstra’s algorithms will select an edge with minimum distance
  way that it invalidates other paths that use that node.
  
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 ANS
