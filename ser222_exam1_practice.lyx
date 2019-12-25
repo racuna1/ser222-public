@@ -270,7 +270,7 @@ Programming questions:
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace 7cm
+\begin_inset VSpace 8cm
 \end_inset
 
 
@@ -279,7 +279,7 @@ Programming questions:
 \begin_layout Standard
 \align right
 \begin_inset Tabular
-<lyxtabular version="3" rows="12" columns="3">
+<lyxtabular version="3" rows="8" columns="3">
 <features tabularvalignment="middle">
 <column alignment="left" valignment="top">
 <column alignment="center" valignment="top">
@@ -324,7 +324,7 @@ Possible
 \begin_inset Text
 
 \begin_layout Plain Layout
-MC: Recursion
+MC/SA: Recursion
 \end_layout
 
 \end_inset
@@ -342,7 +342,7 @@ MC: Recursion
 \begin_inset Text
 
 \begin_layout Plain Layout
-10
+20
 \end_layout
 
 \end_inset
@@ -353,7 +353,7 @@ MC: Recursion
 \begin_inset Text
 
 \begin_layout Plain Layout
-MC: Data Abstraction
+MC/SA: Data Abstraction
 \end_layout
 
 \end_inset
@@ -371,7 +371,7 @@ MC: Data Abstraction
 \begin_inset Text
 
 \begin_layout Plain Layout
-5
+15
 \end_layout
 
 \end_inset
@@ -382,7 +382,7 @@ MC: Data Abstraction
 \begin_inset Text
 
 \begin_layout Plain Layout
-MC: Stacks, Lists, and Generics
+MC/SA: Stacks, Lists, and Generics
 \end_layout
 
 \end_inset
@@ -400,7 +400,7 @@ MC: Stacks, Lists, and Generics
 \begin_inset Text
 
 \begin_layout Plain Layout
-10
+20
 \end_layout
 
 \end_inset
@@ -411,123 +411,7 @@ MC: Stacks, Lists, and Generics
 \begin_inset Text
 
 \begin_layout Plain Layout
-MC: Analysis of Algorithms
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-SA: Recursion
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-10
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-SA: Data Abstraction
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-10
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-SA: Stacks, Lists, and Generics
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-10
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-SA: Analysis of Algorithms
+MC/SA: Analysis of Algorithms
 \end_layout
 
 \end_inset
@@ -585,7 +469,7 @@ Prog: Recursion
 \begin_inset Text
 
 \begin_layout Plain Layout
-Prog: Analysis of Algorithms
+Prog: TBD
 \end_layout
 
 \end_inset
@@ -655,7 +539,7 @@ Total:
 \begin_layout Standard
 
 \series bold
-MCQ: Recursion
+Short Answer: Recursion
 \end_layout
 
 \begin_layout Enumerate
@@ -687,6 +571,13 @@ status open
 Correct answer
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.5cm
 \end_inset
 
 
@@ -761,7 +652,7 @@ No, the return value is not correct for factorial.
 status open
 
 \begin_layout Plain Layout
-Correct answer
+ANS
 \end_layout
 
 \end_inset
@@ -770,15 +661,89 @@ Correct answer
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Consider an algorithm for determining the size of some nested folders/files
+ recursively.
+ (Imagine right clicking an item on your desktop and viewing it's size.)
+ What would be the base case(s) for this problem? [10 points]
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status open
+
+\begin_layout Standard
+\begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
 
 \series bold
-MC: Data Abstraction
+Ans:
+\end_layout
+
+\begin_layout Standard
+An empty folder, or a folder containing only files.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 2cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Short Answer: Data Abstraction
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
 Given the following piece of code which of the following statements is correct?
- [5 points]
+ [5 points] 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Abraham
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -863,12 +828,12 @@ public class Alphabets extends NaturalNumbers implements Characters {
 
 \begin_layout Plain Layout
 
-@Override public int count() { }
+    @Override public int count() { }
 \end_layout
 
 \begin_layout Plain Layout
 
-@Override public int length() { } 
+    @Override public int length() { } 
 \end_layout
 
 \begin_layout Plain Layout
@@ -905,7 +870,7 @@ This code will compile without errors.
 status open
 
 \begin_layout Plain Layout
-Correct answer
+ANS
 \end_layout
 
 \end_inset
@@ -914,156 +879,10 @@ Correct answer
 \end_layout
 
 \begin_layout Standard
-
-\series bold
-MC: Stacks, Lists, and Generics
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Consider an implementation of unsorted single linked list.
- Suppose it has its representation with a head and a tail pointer (i.e.
- pointers to the first and last nodes of the linked list).
- Given the representation, which of the following operation cannot be implemente
-d in O(1) time? [5 points]
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Insertion of the front node of the linked list.
- 
-\end_layout
-
-\begin_layout Enumerate
-Insertion of the last node of the linked list.
-\end_layout
-
-\begin_layout Enumerate
-Deletion of the first node of the linked list.
- 
-\end_layout
-
-\begin_layout Enumerate
-Deletion of the last node of the linked list.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Correct answer
-\end_layout
-
+\begin_inset VSpace 0.5cm
 \end_inset
 
 
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Assume that we are storing the ASU IDs of 50 students in a singly linked
- list.
- Due to a security breach, one entire node has been corrupted.
- In this case, will all the 50 nodes still be accessible to us? [5 points]
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Yes - the Java garbage collector will delete the bad node from the list.
- 
-\end_layout
-
-\begin_layout Enumerate
-Yes - although we do not have a previous reference, we can use the tail
- reference.
- 
-\end_layout
-
-\begin_layout Enumerate
-No – the user will face data loss.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Correct answer
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-No - only the nodes after the corrupted node will be accessible.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Short Answer: Recursion
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Consider an algorithm for determining the size of some nested folders/files
- recursively.
- (Imagine right clicking an item on your desktop and viewing it's size.)
- What would be the base case(s) for this problem? [10 points]
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Branch blank
-inverted 0
-status collapsed
-
-\begin_layout Standard
-\begin_inset VSpace 4cm
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Branch soln
-inverted 0
-status collapsed
-
-\begin_layout Standard
-
-\series bold
-Ans:
-\end_layout
-
-\begin_layout Standard
-An empty folder, or a folder containing only files.
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 2cm
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Short Answer: Data Abstraction
 \end_layout
 
 \end_deeper
@@ -1077,7 +896,7 @@ When it comes to functionality (not performance), is it important to know
 \begin_layout Standard
 \begin_inset Branch blank
 inverted 0
-status collapsed
+status open
 
 \begin_layout Standard
 \begin_inset VSpace 4cm
@@ -1118,11 +937,113 @@ ion is hidden.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \series bold
 Short Answer: Stacks, Lists, and Generics
 \end_layout
 
+\end_deeper
+\begin_layout Enumerate
+Consider an implementation of unsorted single linked list.
+ Suppose it has its representation with a head and a tail pointer (i.e.
+ pointers to the first and last nodes of the linked list).
+ Given the representation, which of the following operation cannot be implemente
+d in O(1) time? [5 points]
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Insertion of the front node of the linked list.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Insertion of the last node of the linked list.
+\end_layout
+
+\begin_layout Enumerate
+Deletion of the first node of the linked list.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Deletion of the last node of the linked list.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ANS
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Assume that we are storing the ASU IDs of 50 students in a singly linked
+ list.
+ Due to a security breach, one entire node has been corrupted.
+ In this case, will all the 50 nodes still be accessible to us? [5 points]
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Yes - the Java garbage collector will delete the bad node from the list.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Yes - although we do not have a previous reference, we can use the tail
+ reference.
+\end_layout
+
+\begin_layout Enumerate
+No – the user will face data loss.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ANS
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+No - only the nodes after the corrupted node will be accessible.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 If you were optimizing for performance and wanted to support potentially
