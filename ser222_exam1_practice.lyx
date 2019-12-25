@@ -117,7 +117,7 @@ status collapsed
 
 \begin_layout Standard
 \align center
-Updated 10/30/2019
+Updated 12/14/2019
 \end_layout
 
 \begin_layout Standard
@@ -214,7 +214,7 @@ No electronic items are allowed.
 
 \bar default
  Please use a pen (instead of a pencil) if you have one.
- There are 107 points available and the exam must be completed in 37.5 minutes.
+ There are 99 points available and the exam must be completed in 37.5 minutes.
  This exam has three types of questions:
 \end_layout
 
@@ -266,7 +266,7 @@ Programming questions:
 \series default
  The programming questions are given near the end of the paper.
  They must be answered on the question paper.
- There are 32 points of write-in programming questions.
+ There are 24 points of write-in programming questions.
 \end_layout
 
 \begin_layout Standard
@@ -603,7 +603,7 @@ Prog: Analysis of Algorithms
 \begin_inset Text
 
 \begin_layout Plain Layout
-8
+0
 \end_layout
 
 \end_inset
@@ -632,7 +632,7 @@ Total:
 \begin_inset Text
 
 \begin_layout Plain Layout
-107
+99
 \end_layout
 
 \end_inset
@@ -1478,7 +1478,7 @@ If you were asked to analyze the performance of this algorithm, would it
 \begin_layout Standard
 
 \series bold
-N/A Programming: Recursion
+Programming: Recursion
 \end_layout
 
 \end_deeper
@@ -1863,7 +1863,7 @@ public static int countOccurrences<T>(LinearNode node, T target) {
 \begin_layout Standard
 
 \series bold
-Short Answer: Stacks, Lists, and Generics
+Programming: Stacks, Lists, and Generics
 \end_layout
 
 \begin_layout Standard
@@ -1877,140 +1877,6 @@ If this was the real exam, there might be a question here asking you to
 \emph default
 
 \begin_inset VSpace 1cm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Programming: Analysis of Algorithms
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Consider the following method, excerpted from a protein structural prediction
- algorithm.
- Assume that any variables not given as parameters are available as globals.
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset listings
-lstparams "language=Java"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-//sets initial interaction energy.
-\end_layout
-
-\begin_layout Plain Layout
-
-//  int n: dimension of square matrix storing protein backbone.
-\end_layout
-
-\begin_layout Plain Layout
-
-//  double[][] pair: energy matrix.
-\end_layout
-
-\begin_layout Plain Layout
-
-void energy() {
-\end_layout
-
-\begin_layout Plain Layout
-
-    double ee = 0; 
-\end_layout
-
-\begin_layout Plain Layout
-
-    //reset all pair interaction energies to zero.
-\end_layout
-
-\begin_layout Plain Layout
-
-    for(int j = 1; j < n; j++)
-\end_layout
-
-\begin_layout Plain Layout
-
-        for(int i = 3; i < n-2; i++)
-\end_layout
-
-\begin_layout Plain Layout
-
-            pair[i][j] = 0.0;
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-    //<more code follows in actual program>
-\end_layout
-
-\begin_layout Plain Layout
-
-    //...
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Give a growth function for 
-\emph on
-md_fragment
-\emph default
- that counts the number of assignments in the inner loop based on 
-\emph on
-n
-\emph default
-.
- [8 points]
-\end_layout
-
-\begin_layout Standard
-\begin_inset Branch blank
-inverted 0
-status collapsed
-
-\begin_layout Standard
-\begin_inset VSpace 4cm
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Branch soln
-inverted 0
-status collapsed
-
-\begin_layout Standard
-
-\series bold
-Ans:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $f(n)=\Sigma_{j=1}^{n}\Sigma_{i=3}^{n-2}1$
-\end_inset
-
-
-\end_layout
-
 \end_inset
 
 
@@ -2030,7 +1896,8 @@ Extra Questions
 
 \begin_layout Standard
 The following questions were used on previous practice exams - they are
- not part of the practice exam, but are provided for additional practice.
+ not part of the practice exam, and may use content not covered in the current
+ semester, but are provided for additional practice.
 \end_layout
 
 \begin_layout Standard
@@ -2304,6 +2171,140 @@ An array would take less.
 
 \begin_layout Standard
 \begin_inset VSpace 2cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Short Answer: Analysis of Algorithms
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Consider the following method, excerpted from a protein structural prediction
+ algorithm.
+ Assume that any variables not given as parameters are available as globals.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Java"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+//sets initial interaction energy.
+\end_layout
+
+\begin_layout Plain Layout
+
+//  int n: dimension of square matrix storing protein backbone.
+\end_layout
+
+\begin_layout Plain Layout
+
+//  double[][] pair: energy matrix.
+\end_layout
+
+\begin_layout Plain Layout
+
+void energy() {
+\end_layout
+
+\begin_layout Plain Layout
+
+    double ee = 0; 
+\end_layout
+
+\begin_layout Plain Layout
+
+    //reset all pair interaction energies to zero.
+\end_layout
+
+\begin_layout Plain Layout
+
+    for(int j = 1; j < n; j++)
+\end_layout
+
+\begin_layout Plain Layout
+
+        for(int i = 3; i < n-2; i++)
+\end_layout
+
+\begin_layout Plain Layout
+
+            pair[i][j] = 0.0;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    //<more code follows in actual program>
+\end_layout
+
+\begin_layout Plain Layout
+
+    //...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Give a growth function for 
+\emph on
+md_fragment
+\emph default
+ that counts the number of assignments in the inner loop based on 
+\emph on
+n
+\emph default
+.
+ [8 points]
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\series bold
+Ans:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f(n)=\Sigma_{j=1}^{n}\Sigma_{i=3}^{n-2}1$
 \end_inset
 
 
