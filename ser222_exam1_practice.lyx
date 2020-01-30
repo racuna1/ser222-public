@@ -117,7 +117,7 @@ status collapsed
 
 \begin_layout Standard
 \align center
-Updated 12/14/2019
+Updated 1/29/2020
 \end_layout
 
 \begin_layout Standard
@@ -558,36 +558,56 @@ Short Answer: Recursion
 \end_layout
 
 \begin_layout Enumerate
-When is a base case required for a recursive method? [5 points]
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-If the method needs to return a value.
- 
-\end_layout
-
-\begin_layout Enumerate
-If its mathematical function was defined piece wise.
-\end_layout
-
-\begin_layout Enumerate
-If the recursive step doesn't always make the sub-problem smaller.
-\end_layout
-
-\begin_layout Enumerate
-All the time.
- 
-\begin_inset Note Note
+Consider the problem of reversing a string.
+ For example: "ser222" becomes "222res".
+ Should this problem be solved with recursion? [5 points] 
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Correct answer
+from FA19 exam
 \end_layout
 
 \end_inset
 
 
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
+LO2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Yes - using recursion is necessary for the structure of this problem.
+\end_layout
+
+\begin_layout Enumerate
+Yes - using recursion is ideal to develop a fast algorithm.
+\end_layout
+
+\begin_layout Enumerate
+No - using recursion will require many more function calls than a loop.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ANS
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+No - using recursion will require writing much more complex code.
 \end_layout
 
 \begin_layout Standard
@@ -746,6 +766,58 @@ Short Answer: Data Abstraction
 
 \end_deeper
 \begin_layout Enumerate
+When would it make the most sense for the Point2D class to use polar coordinates
+ for its internal representation? [5 points] 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+from FA19 exam
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+When fast trigonometry functions are available.
+\end_layout
+
+\begin_layout Enumerate
+When the polar coordinates accessor and mutator methods will be used most
+ often.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ANS
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+When the API provides both Cartesian and polar coordinate methods.
+\end_layout
+
+\begin_layout Enumerate
+It never ever matters!
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Enumerate
 Given the following piece of code which of the following statements is correct?
  [5 points] 
 \begin_inset Note Note
@@ -761,7 +833,7 @@ Abraham
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset listings
 lstparams "language=Java"
 inline false
@@ -863,18 +935,16 @@ public class Alphabets extends NaturalNumbers implements Characters {
 \begin_layout Enumerate
 This code will not compile, because method count() in interface Numbers
  must be defined abstract.
- 
 \end_layout
 
 \begin_layout Enumerate
 This code will not compile, because class NaturalNumbers must implement
  method count() from interface Numbers.
- 
 \end_layout
 
 \begin_layout Enumerate
 This code will not compile, because the same class cannot extend a class
- and implement another interface at the same time 
+ and implement another interface at the same time
 \end_layout
 
 \begin_layout Enumerate
@@ -892,8 +962,7 @@ ANS
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset VSpace 0.5cm
+\end_deeper
 \end_inset
 
 
@@ -965,30 +1034,28 @@ Short Answer: Stacks, Lists, and Generics
 
 \end_deeper
 \begin_layout Enumerate
-Consider an implementation of unsorted single linked list.
- Suppose it has its representation with a head and a tail pointer (i.e.
+Consider an implementation of unsorted singly linked list.
+ Suppose it has a representation with a head and a tail pointer (i.e.
  pointers to the first and last nodes of the linked list).
- Given the representation, which of the following operation cannot be implemente
-d in O(1) time? [5 points]
+ Given this representation, which of the following operation cannot be implement
+ed in O(1) time? [5 points]
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-Insertion of the front node of the linked list.
- 
+Insertion before the head node of the linked list.
 \end_layout
 
 \begin_layout Enumerate
-Insertion of the last node of the linked list.
+Insertion after the tail node of the linked list.
 \end_layout
 
 \begin_layout Enumerate
-Deletion of the first node of the linked list.
- 
+Deletion of the head node of the linked list.
 \end_layout
 
 \begin_layout Enumerate
-Deletion of the last node of the linked list.
+Deletion of the tail node of the linked list.
  
 \begin_inset Note Note
 status collapsed
@@ -1743,6 +1810,12 @@ public static int countOccurrences<T>(LinearNode node, T target) {
 \begin_layout Standard
 
 \series bold
+Programming: Data Abstraction
+\end_layout
+
+\begin_layout Standard
+
+\series bold
 Programming: Stacks, Lists, and Generics
 \end_layout
 
@@ -1770,7 +1843,7 @@ If this was the real exam, there might be a question here asking you to
 
 \end_layout
 
-\begin_layout Section*
+\begin_layout Part*
 Extra Questions
 \end_layout
 
@@ -1801,6 +1874,47 @@ The following questions were used on previous practice exams - they are
 Short Answer: Recursion
 \end_layout
 
+\begin_layout Enumerate
+When is a base case required for a recursive method? [5 points]
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If the method needs to return a value.
+ 
+\end_layout
+
+\begin_layout Enumerate
+If its mathematical function was defined piece wise.
+\end_layout
+
+\begin_layout Enumerate
+If the recursive step doesn't always make the sub-problem smaller.
+\end_layout
+
+\begin_layout Enumerate
+All the time.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Correct answer
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 Consider the problem of reversing letters of a string.
  Would it be more appropriate to use recursion or iteration? Justify your
