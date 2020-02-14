@@ -117,7 +117,7 @@ status collapsed
 
 \begin_layout Standard
 \align center
-Updated 12/24/2019
+Updated 2/13/2020
 \end_layout
 
 \begin_layout Standard
@@ -230,7 +230,7 @@ No electronic items are allowed.
 \series bold
 Multiple choice questions:
 \series default
- There are 30 points of multiple choice questions.
+ There are 35 points of multiple choice questions.
  An answer is selecting one option among the choices given.
  Each multiple choice is worth 2.5 to 5 points.
 \end_layout
@@ -429,7 +429,7 @@ MC/SA: Symbol Tables
 \begin_inset Text
 
 \begin_layout Plain Layout
-10
+15
 \end_layout
 
 \end_inset
@@ -458,7 +458,7 @@ Prog: TBD
 \begin_inset Text
 
 \begin_layout Plain Layout
-0
+lots
 \end_layout
 
 \end_inset
@@ -487,7 +487,7 @@ Total:
 \begin_inset Text
 
 \begin_layout Plain Layout
-70
+75
 \end_layout
 
 \end_inset
@@ -1260,6 +1260,57 @@ n
 
 \series bold
 Short Answer: Symbol Tables
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Consider the following scenario: you need to store a record for each of
+ the top 1000 teams that participated in a machine learning competition,
+ in order to be able to look up which team placed in a specific place.
+ Would it make more sense to use an array or a symbol table for this problem?
+ Explain.
+ [5 points] 
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
+FA19
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
+M03_01::LO2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+An array will probably be better.
+ It will be faster and more efficient in storage.
+\end_layout
+
+\begin_layout Enumerate
+An array will probably be better.
+ It will allow the team record type to be stored properly.
+\end_layout
+
+\begin_layout Enumerate
+A symbol table will probably be better.
+ It will provide more flexibility.
+\end_layout
+
+\begin_layout Enumerate
+A symbol table will probably be better.
+ It will be more efficient in storage.
 \end_layout
 
 \end_deeper
