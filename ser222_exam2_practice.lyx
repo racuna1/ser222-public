@@ -117,7 +117,7 @@ status collapsed
 
 \begin_layout Standard
 \align center
-Updated 2/13/2020
+Updated 2/15/2020
 \end_layout
 
 \begin_layout Standard
@@ -848,8 +848,7 @@ Short Answer: Mergesort
 \emph on
 n
 \emph default
-.
- [5 points]
+, and that all queues are internally implemented as a list.[5 points]
 \end_layout
 
 \begin_deeper
@@ -913,7 +912,7 @@ ANS
 \end_layout
 
 \begin_layout Enumerate
-Queues
+Priority Queue
 \end_layout
 
 \begin_layout Enumerate
@@ -1296,6 +1295,17 @@ M03_01::LO2
 \begin_layout Enumerate
 An array will probably be better.
  It will be faster and more efficient in storage.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ANS
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
