@@ -104,7 +104,7 @@ Practice
 
 \begin_layout Standard
 \align center
-Updated 12/24/2019
+Updated 3/12/2019
 \end_layout
 
 \begin_layout Standard
@@ -196,8 +196,7 @@ Exam Instructions
 \end_layout
 
 \begin_layout Standard
-The exam is open textbook (Algorithms 4e by Sedgewick and Wayne), as well
- as open note.
+The exam is open one sheet of notes (8.5x11 inches).
  
 \bar under
 No electronic items are allowed.
@@ -930,7 +929,7 @@ Abraham
 \begin_deeper
 \begin_layout Enumerate
 A hash function takes a string of arbitrary length and generates a fixed
- length code.
+ sized hash.
  
 \begin_inset Note Note
 status collapsed
@@ -945,24 +944,14 @@ ANS
 \end_layout
 
 \begin_layout Enumerate
-A hash function takes a string of fixed length and generates a code of variable
- length.
+A hash function takes a string of fixed length and generates a hash of variable
+ size.
  
 \end_layout
 
 \begin_layout Enumerate
 A hash function may give the same hash value for distinct strings.
  
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-ANS
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Enumerate
@@ -1424,12 +1413,12 @@ Acuna
 
 \begin_deeper
 \begin_layout Enumerate
-Adjustment matrix - it will provide faster support for vising each of the
+Adjacency matrix - it will provide faster support for visiting each of the
  adjacent nodes.
 \end_layout
 
 \begin_layout Enumerate
-Adjustment matrix - it will provide faster support for checking if two nodes
+Adjacency matrix - it will provide faster support for checking if two nodes
  are connected.
 \end_layout
 
