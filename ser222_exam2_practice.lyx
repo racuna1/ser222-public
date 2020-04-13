@@ -117,7 +117,7 @@ status collapsed
 
 \begin_layout Standard
 \align center
-Updated 2/15/2020
+Updated 4/10/2020
 \end_layout
 
 \begin_layout Standard
@@ -205,8 +205,7 @@ Exam Instructions
 \end_layout
 
 \begin_layout Standard
-The exam is open textbook (Algorithms 4e by Sedgewick and Wayne), as well
- as open note.
+The exam is open one sheet of notes (8.5x11 inches).
  
 \bar under
 No electronic items are allowed.
@@ -230,7 +229,7 @@ No electronic items are allowed.
 \series bold
 Multiple choice questions:
 \series default
- There are 35 points of multiple choice questions.
+ There are 25 points of multiple choice questions.
  An answer is selecting one option among the choices given.
  Each multiple choice is worth 2.5 to 5 points.
 \end_layout
@@ -247,7 +246,7 @@ Multiple choice questions:
 \series bold
 Short answer questions:
 \series default
- There are 40 points of short answer questions.
+ There are 30 points of short answer questions.
  A typical answer is one or two sentences.
  Each short answer question is worth 10 points.
 \end_layout
@@ -314,35 +313,6 @@ Earned
 
 \series bold
 Possible
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-MC/SA: Elementary Sorts
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-20
 \end_layout
 
 \end_inset
@@ -440,6 +410,35 @@ MC/SA: Symbol Tables
 \begin_inset Text
 
 \begin_layout Plain Layout
+MC/SA: ADJ
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 Prog: TBD
 \end_layout
 
@@ -487,7 +486,7 @@ Total:
 \begin_inset Text
 
 \begin_layout Plain Layout
-75
+55
 \end_layout
 
 \end_inset
@@ -510,337 +509,9 @@ Total:
 \begin_layout Standard
 
 \series bold
-Short Answer: Elementary Sorts
-\end_layout
-
-\begin_layout Enumerate
-[Abraham] Which sorting algorithm will take least time when all elements
- of input array are identical? Consider the implementations of the sorting
- algorithms as given in class.
- [5 points]
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Selection Sort
-\end_layout
-
-\begin_layout Enumerate
-Insertion Sort 
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-ANS
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Shell Sort
-\end_layout
-
-\begin_layout Enumerate
-Merge Sort
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 0.5cm
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-[Acuña] When dealing with systems having low RAM capacity, or analyzing
- large datasets, space is at a premium.
- In these cases, algorithms must be designed to reduce their memory foot
- print.
- From the sorting algorithm implementations seen in class, which would be
- the worse choice? [5 points]
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Selection Sort
-\end_layout
-
-\begin_layout Enumerate
-Insertion Sort
-\end_layout
-
-\begin_layout Enumerate
-Shell Sort
-\end_layout
-
-\begin_layout Enumerate
-Merge Sort 
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-ANS
-\end_layout
-
-\end_inset
-
-
-\begin_inset Branch soln
-inverted 0
-status collapsed
-
-\begin_layout Standard
-
-\series bold
-Ans:
-\series default
- [Acuña] We don't want to use mergesort since it requires creating an auxiliary
- array which doubles the space used.
- Mergesort is also bad because it requires stack memory for recursive calls.
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 4cm
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 0.5cm
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-[Acuña] What are the Big-Oh and Tilde orders of the following code fragment?
- The fragment is parametrized on the variable 
-\begin_inset Formula $n$
-\end_inset
-
-.
- Assume that you are measuring the number of swap calls.
- [10 points] 
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-From FC15 final.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset listings
-lstparams "language=Java"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-public static void sort(Comparable[] a) {
-\end_layout
-
-\begin_layout Plain Layout
-
-    int n = a.length;
-\end_layout
-
-\begin_layout Plain Layout
-
-    for (int j = 0; j < n-1; j++) {
-\end_layout
-
-\begin_layout Plain Layout
-
-        int z = j;
-\end_layout
-
-\begin_layout Plain Layout
-
-        for (int i = j+1; i < n; i++) {
-\end_layout
-
-\begin_layout Plain Layout
-
-            if (a[i] < a[z]) {
-\end_layout
-
-\begin_layout Plain Layout
-
-                z = i;
-\end_layout
-
-\begin_layout Plain Layout
-
-            }
-\end_layout
-
-\begin_layout Plain Layout
-
-        }
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-        if(z != j) {
-\end_layout
-
-\begin_layout Plain Layout
-
-          swap(a[j], a[z]); //count these
-\end_layout
-
-\begin_layout Plain Layout
-
-        }
-\end_layout
-
-\begin_layout Plain Layout
-
-    }
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-What is the Big-Oh order of the above code fragment? If it does not exist,
- then explain.
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Branch blank
-inverted 0
-status collapsed
-
-\begin_layout Standard
-\begin_inset VSpace 2cm
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Branch soln
-inverted 0
-status collapsed
-
-\begin_layout Standard
-
-\series bold
-Ans: [Acuña]
-\end_layout
-
-\begin_layout Standard
-It is O(n) since it is inside one loop with linear incrementor.
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 1cm
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-What is the Tilde order of the above code fragment? If it does not exist,
- then explain.
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Branch blank
-inverted 0
-status collapsed
-
-\begin_layout Standard
-\begin_inset VSpace 2cm
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Branch soln
-inverted 0
-status collapsed
-
-\begin_layout Standard
-
-\series bold
-Ans: [Acuña]
-\end_layout
-
-\begin_layout Standard
-It does not exist, swap only runs if z != j and we can't know how often
- that occurs without knowing the data.
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 1cm
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\series bold
 Short Answer: Mergesort
 \end_layout
 
-\end_deeper
 \begin_layout Enumerate
 [Acuña] If the merge() method from mergesort was used for merging queues,
  instead of arrays, how much space would be needed for auxiliary data storage?
@@ -1466,6 +1137,33 @@ SER316 : 75
 
 \end_layout
 
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Short Answer: Analysis, Design, and Justification
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+There will be a full sized section of ADJ questions on the actual exam.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 
 \series bold
@@ -1478,7 +1176,6 @@ Programming: TBD
 There will be at least one programming question on the actual exam.
 \end_layout
 
-\end_deeper
 \begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
@@ -1502,45 +1199,6 @@ The following questions were used on previous practice exams - they are
 \begin_inset Formula $\;\;\;\;$
 \end_inset
 
-Short Answer: Elementary Sorts
-\end_layout
-
-\begin_layout Enumerate
-[Abraham] Which of the following arrays would insertion sort process the
- fastest? [5 points]
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-(a) {1, 2, 3, 4, 7, 5, 6}
-\end_layout
-
-\begin_layout Standard
-(b) {2, 3, 4, 6, 1, 5, 7}
-\end_layout
-
-\begin_layout Standard
-(c) {6, 7, 5, 4, 3, 2, 1}
-\end_layout
-
-\begin_layout Standard
-(d) They will be processed the same 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-ANS
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 0.5cm
-\end_inset
-
 
 \end_layout
 
@@ -1550,7 +1208,6 @@ ANS
 Short Answer: Mergesort
 \end_layout
 
-\end_deeper
 \begin_layout Enumerate
 [Acuña] Consider the following array: 23, 7, 35, 3, 4, 2, 13, 1.
  Show a trace of execution for top-down mergesort.
