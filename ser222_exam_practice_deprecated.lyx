@@ -1,0 +1,1153 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\branch blank
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch soln
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.54cm
+\topmargin 2.54cm
+\rightmargin 2.54cm
+\bottommargin 2.54cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\align center
+
+\size huge
+SER 222 
+\series bold
+Deprecated Questions 
+\series default
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\size huge
+(SOLN)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+Updated 5/11/2020
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Last Name: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+rule{6cm}{0.15mm}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+First Name: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+rule{5.94cm}{0.15mm}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Last 4 digits of ASU ID: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+rule{4.05cm}{0.15mm}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+Exam Instructions
+\end_layout
+
+\begin_layout Standard
+The exam is open textbook (Algorithms 4e by Sedgewick and Wayne), as well
+ as open note.
+ 
+\bar under
+No electronic items are allowed.
+ Write legibly.
+
+\bar default
+ Please use a pen (instead of a pencil) if you have one.
+ There are 44 points available and the exam must be completed in 37.5 minutes.
+ This exam has three types of questions:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Multiple choice questions:
+\series default
+ There are 10 points of multiple choice questions.
+ An answer is selecting one option among the choices given.
+ Each multiple choice is worth 2 to 5 points.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Short answer questions:
+\series default
+ There are 10 points of short answer questions.
+ A typical answer is one or two sentences.
+ Each short answer question is worth 5 or 10 points.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Programming questions:
+\series default
+ The programming questions are given near the end of the paper.
+ They must be answered on the question paper.
+ There are 24 points of write-in programming questions.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 8cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align right
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Topic
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Earned
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Possible
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MC/SA: Recursion
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Prog: Recursion
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Total:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+44
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Formula $ $
+\end_inset
+
+Short Answer: Recursion
+\end_layout
+
+\begin_layout Enumerate
+Consider the problem of reversing a string.
+ For example: "ser222" becomes "222res".
+ Should this problem be solved with recursion? [5 points] 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+from FA19 exam
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
+LO2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Yes - using recursion is necessary for the structure of this problem.
+\end_layout
+
+\begin_layout Enumerate
+Yes - using recursion is ideal to develop a fast algorithm.
+\end_layout
+
+\begin_layout Enumerate
+No - using recursion will require many more function calls than a loop.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ANS
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+No - using recursion will require writing much more complex code.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Consider the following method.
+ Is this a correct recursive implementation for factorial? [5 points]
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Java"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+int factorial(int n) { 
+\end_layout
+
+\begin_layout Plain Layout
+
+if(n>1) 
+\end_layout
+
+\begin_layout Plain Layout
+
+	return n * factorial(n-1); 
+\end_layout
+
+\begin_layout Plain Layout
+
+else 
+\end_layout
+
+\begin_layout Plain Layout
+
+	return 0; 
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Yes, it calls itself on the n-1 sub-problem.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Yes, it includes both a base case and recursive step.
+\end_layout
+
+\begin_layout Enumerate
+No, the n>1 condition is not correct for factorial.
+ 
+\end_layout
+
+\begin_layout Enumerate
+No, the return value is not correct for factorial.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ANS
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Consider an algorithm for determining the size of some nested folders/files
+ recursively.
+ (Imagine right clicking an item on your desktop and viewing it's size.)
+ What would be the base case(s) for this problem? [10 points]
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status open
+
+\begin_layout Standard
+\begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\series bold
+Ans:
+\end_layout
+
+\begin_layout Standard
+An empty folder, or a folder containing only files.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 2cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Programming: Recursion
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Implement a recursive method called 
+\series bold
+countOccurrences
+\series default
+ that takes the first node in a singly linked list and returns the number
+ of times a particular value occurs in the list.
+ For example, if countOccurrences("A") is called on a list with nodes containing
+: "A", "B", "C", "B", "E", it would return 1.
+ If countOccurrences("B") was called on the same list, it would return 2.
+ For reference, a standard implementation for the nodes of a singly linked
+ list is given below.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Source: MT Fall 2017.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+public class LinearNode<T> {
+\end_layout
+
+\begin_layout Plain Layout
+
+  private LinearNode<T> next;
+\end_layout
+
+\begin_layout Plain Layout
+
+  private T element;
+\end_layout
+
+\begin_layout Plain Layout
+
+  public LinearNode(T elem) { next = null; element = elem; }
+\end_layout
+
+\begin_layout Plain Layout
+
+  public LinearNode<T> getNext() { return next; } 
+\end_layout
+
+\begin_layout Plain Layout
+
+  public void setNext(LinearNode<T> node) { next = node; } 
+\end_layout
+
+\begin_layout Plain Layout
+
+  public T getElement() { return element; } 
+\end_layout
+
+\begin_layout Plain Layout
+
+  public void setElement(T elem) { element = elem; }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Using the fantastic four approach, determine the size n problem for the
+ method countOccurrences.
+ [2 point]
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\series bold
+Ans:
+\end_layout
+
+\begin_layout Standard
+Finding the total number of times a value occurs in the whole list.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.75cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Identify the stopping condition(s) and the return value, if any, for the
+ problem.
+ [2 point]
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+Ans:
+\end_layout
+
+\begin_layout Standard
+An empty list, for which zero will be returned.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.75cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Determine the size m problem(i.e.
+ the “sub-problem”) for the problem.
+ [2 point]
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\series bold
+Ans:
+\end_layout
+
+\begin_layout Standard
+Finding the total number of times a value occurs in the tail of the list
+ (i.e., search everything after the first node).
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.75cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+How is the size-n problem constructed from the size m problem? [2 point]
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\series bold
+Ans:
+\end_layout
+
+\begin_layout Standard
+Add the sub-problem count to 1 if the head has a match, otherwise add 0.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.75cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Implement the recursive method 
+\series bold
+public static int countOccurrences<T>(LinearNode node, T target)
+\series default
+ (Hint: use .equals to compare the target with the contents of each node.)
+ [16 points]
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\series bold
+Ans:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Java"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+public static int countOccurrences<T>(LinearNode node, T target) {
+\end_layout
+
+\begin_layout Plain Layout
+
+  if(node == null)
+\end_layout
+
+\begin_layout Plain Layout
+
+    return 0;
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\end_layout
+
+\begin_layout Plain Layout
+
+  if(node.element.equals(target))
+\end_layout
+
+\begin_layout Plain Layout
+
+    return 1 + countOccurrence(node.getNext(), target);
+\end_layout
+
+\begin_layout Plain Layout
+
+  else
+\end_layout
+
+\begin_layout Plain Layout
+
+    return countOccurrence(node.getNext(), target);
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+Extra Questions
+\end_layout
+
+\begin_layout Standard
+The following questions were used on previous practice exams - they are
+ not part of the practice exam, and may use content not covered in the current
+ semester, but are provided for additional practice.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Formula $ $
+\end_inset
+
+Short Answer: Recursion
+\end_layout
+
+\begin_layout Enumerate
+When is a base case required for a recursive method? [5 points]
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If the method needs to return a value.
+ 
+\end_layout
+
+\begin_layout Enumerate
+If its mathematical function was defined piece wise.
+\end_layout
+
+\begin_layout Enumerate
+If the recursive step doesn't always make the sub-problem smaller.
+\end_layout
+
+\begin_layout Enumerate
+All the time.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Correct answer
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Consider the problem of reversing letters of a string.
+ Would it be more appropriate to use recursion or iteration? Justify your
+ answer.
+ [10 points]
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\series bold
+Ans:
+\end_layout
+
+\begin_layout Standard
+(Answer would be evaluated on justification's soundness.
+ Full credit answers for either direction are possible.)
+\end_layout
+
+\begin_layout Standard
+Either would work okay but iteration would probably be faster since it doesn't
+ require the overhead of many recursive calls.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 2cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
