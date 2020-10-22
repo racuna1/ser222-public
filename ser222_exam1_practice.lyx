@@ -1530,17 +1530,6 @@ Linked lists are a very typical data structure used in ADTs like stacks,
  The list is singly linked, and you only start with a reference to it's
  head (not tail).
  The LinearNode class may be used, but you may not import any packages.
- [30 points]
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
-FA20
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
