@@ -1509,26 +1509,381 @@ It does not exist, swap only runs if z != j and we can't know how often
 \begin_layout Standard
 
 \series bold
-Programming: Data Abstraction
-\end_layout
-
-\begin_layout Standard
-
-\series bold
 Programming: Stacks, Lists, and Generics
 \end_layout
 
 \begin_layout Standard
 
 \emph on
-If this was the real exam, there might be a question here asking you to
- implement methods (potentially stand-alone, or in an ADT) using linked
- lists.
- This would probably involve writing a program containing 20 to 30 lines,
- and which would have a high weight (e.g., around 25 points).
-\emph default
+The real exam will involve writing code for one or more methods.
+ Methods typically contain ~20 lines and have a higher weight (20-30 points)
+ than other questions.
+ The problem given here uses linked lists but all modules with programming
+ concepts are fair game (data abstraction, stacks/lists/generic, elementary
+ sorting).
+\end_layout
 
-\begin_inset VSpace 1cm
+\begin_layout Standard
+Linked lists are a very typical data structure used in ADTs like stacks,
+ or queues.
+ For this question, implement the list operation shown below: cloneTail.
+ The list is singly linked, and you only start with a reference to it's
+ head (not tail).
+ The LinearNode class may be used, but you may not import any packages.
+ [30 points]
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+FA20
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Java"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+public class LinearNode<T> {
+\end_layout
+
+\begin_layout Plain Layout
+
+  private LinearNode<T> next;
+\end_layout
+
+\begin_layout Plain Layout
+
+  public T element;
+\end_layout
+
+\begin_layout Plain Layout
+
+  public LinearNode(T elem) { next = null; element = elem; }
+\end_layout
+
+\begin_layout Plain Layout
+
+  public LinearNode<T> getNext() { return next; } 
+\end_layout
+
+\begin_layout Plain Layout
+
+  public void setNext(LinearNode<T> node) { next = node; } 
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+//Given the head of a singly linked list, creates and links together a
+\end_layout
+
+\begin_layout Plain Layout
+
+//clone of the list starting at a specific node (identified by index).
+\end_layout
+
+\begin_layout Plain Layout
+
+//Input list will be always non-empty.
+ Returns head of new list.
+\end_layout
+
+\begin_layout Plain Layout
+
+//Assume that the start index given will always be valid.
+\end_layout
+
+\begin_layout Plain Layout
+
+//EXAMPLES: cloneTail([A, B, C], 2) returns [C],
+\end_layout
+
+\begin_layout Plain Layout
+
+//          cloneTail([A, B, C], 1) returns [B, C],
+\end_layout
+
+\begin_layout Plain Layout
+
+//          cloneTail([A], 0) returns [A],
+\end_layout
+
+\begin_layout Plain Layout
+
+//          where brackets show the contents of the list at a high level
+\end_layout
+
+\begin_layout Plain Layout
+
+//          and the left most node is the head.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+public LinearNode cloneTail(LinearNode head, int start) {
+\end_layout
+
+\begin_layout Plain Layout
+
+  //TODO: implement this method.
+ creating additional helpers is fine.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch soln
+inverted 0
+status open
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Java"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+public class LinearNode<T> {
+\end_layout
+
+\begin_layout Plain Layout
+
+  private LinearNode<T> next;
+\end_layout
+
+\begin_layout Plain Layout
+
+  public T element;
+\end_layout
+
+\begin_layout Plain Layout
+
+  public LinearNode(T elem) { next = null; element = elem; }
+\end_layout
+
+\begin_layout Plain Layout
+
+  public LinearNode<T> getNext() { return next; } 
+\end_layout
+
+\begin_layout Plain Layout
+
+  public void setNext(LinearNode<T> node) { next = node; } 
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+//Given the head of a singly linked list, creates and links together a
+\end_layout
+
+\begin_layout Plain Layout
+
+//clone of the list starting at a specific node (identified by index).
+\end_layout
+
+\begin_layout Plain Layout
+
+//Input list will be always non-empty.
+ Returns head of new list.
+\end_layout
+
+\begin_layout Plain Layout
+
+//Assume that the start index given will always be valid.
+\end_layout
+
+\begin_layout Plain Layout
+
+//EXAMPLES: cloneTail([A, B, C], 2) returns [C],
+\end_layout
+
+\begin_layout Plain Layout
+
+//          cloneTail([A, B, C], 1) returns [B, C],
+\end_layout
+
+\begin_layout Plain Layout
+
+//          cloneTail([A], 0) returns [A],
+\end_layout
+
+\begin_layout Plain Layout
+
+//          where brackets show the contents of the list at a high level
+\end_layout
+
+\begin_layout Plain Layout
+
+//          and the left most node is the head.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+public LinearNode cloneTail(LinearNode head, int start) {
+\end_layout
+
+\begin_layout Plain Layout
+
+  //TODO: implement this method.
+ creating additional helpers is fine.
+\end_layout
+
+\begin_layout Plain Layout
+
+    LinearNode newHead, newTail;
+\end_layout
+
+\begin_layout Plain Layout
+
+  int depth = 0;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  while(depth != start) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    depth++;
+\end_layout
+
+\begin_layout Plain Layout
+
+    head=head.getNext();
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  newHead = new LinearNode(head.getElement());
+\end_layout
+
+\begin_layout Plain Layout
+
+  newTail = newHead;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  head = head.getNext();  
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  while(head != null)
+\end_layout
+
+\begin_layout Plain Layout
+
+    LinearNode node = new LinearNode(head.getElement());
+\end_layout
+
+\begin_layout Plain Layout
+
+    newTail.setNext(node);
+\end_layout
+
+\begin_layout Plain Layout
+
+    newTail = node;
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+    head = head.getNext();
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  return newHead;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
