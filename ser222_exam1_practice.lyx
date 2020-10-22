@@ -213,7 +213,7 @@ No electronic items are allowed.
 
 \bar default
  Please use a pen (instead of a pencil) if you have one.
- There are 65 points available and the exam must be completed in 30 minutes.
+ There are 90 points available and the exam must be completed in 30 minutes.
  This exam has three types of questions:
 \end_layout
 
@@ -265,7 +265,7 @@ Programming questions:
 \series default
  The programming questions are given near the end of the paper.
  They must be answered on the question paper.
- There are 0 points of write-in programming questions.
+ There are 25 points of write-in programming questions.
 \end_layout
 
 \begin_layout Standard
@@ -439,7 +439,7 @@ MC/SA: Elemenary Sorts
 \begin_inset Text
 
 \begin_layout Plain Layout
-Prog: TBD
+Prog: Stacks, Lists, and Generics
 \end_layout
 
 \end_inset
@@ -457,7 +457,7 @@ Prog: TBD
 \begin_inset Text
 
 \begin_layout Plain Layout
-0
+25
 \end_layout
 
 \end_inset
@@ -486,7 +486,7 @@ Total:
 \begin_inset Text
 
 \begin_layout Plain Layout
-65
+90
 \end_layout
 
 \end_inset
