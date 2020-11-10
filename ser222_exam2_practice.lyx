@@ -117,7 +117,7 @@ status collapsed
 
 \begin_layout Standard
 \align center
-Updated 8/16/2020
+Updated 11/10/2020
 \end_layout
 
 \begin_layout Standard
@@ -213,7 +213,7 @@ No electronic items are allowed.
 
 \bar default
  Please use a pen (instead of a pencil) if you have one.
- There are 75 points available and the exam must be completed in 37.5 minutes.
+ There are 95 points available and the exam must be completed in 37.5 minutes.
  This exam has three types of questions:
 \end_layout
 
@@ -265,7 +265,7 @@ Programming questions:
 \series default
  The programming questions are given near the end of the paper.
  They must be answered on the question paper.
- There are 0 points of write-in programming questions.
+ There are 20 points of write-in programming questions.
 \end_layout
 
 \begin_layout Standard
@@ -439,7 +439,7 @@ MC/SA: ADJ
 \begin_inset Text
 
 \begin_layout Plain Layout
-Prog: TBD
+Prog: Priority Queues
 \end_layout
 
 \end_inset
@@ -457,7 +457,7 @@ Prog: TBD
 \begin_inset Text
 
 \begin_layout Plain Layout
-lots
+20
 \end_layout
 
 \end_inset
@@ -486,7 +486,7 @@ Total:
 \begin_inset Text
 
 \begin_layout Plain Layout
-55
+95
 \end_layout
 
 \end_inset
@@ -1171,6 +1171,16 @@ SC20
 \begin_deeper
 \begin_layout Enumerate
 Open-ended, Well-defined
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ANS
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -1194,7 +1204,7 @@ Close-ended, Ill-defined
 
 \end_deeper
 \begin_layout Enumerate
-[Acuña] Suppose that design a program that appears to successfully solve
+[Acuña] Suppose that we design a program that appears to successfully solve
  a problem, can we skip analysis and jump straight to justification? [5
  points] 
 \begin_inset Note Comment
@@ -1219,7 +1229,7 @@ Yes - this is what we already do for homework in classes.
 \end_layout
 
 \begin_layout Enumerate
-No - the program needs more testing to check it's appearent successfulness.
+No - the program needs more testing to check its apparent successfulness.
 \end_layout
 
 \begin_layout Enumerate
@@ -1249,7 +1259,7 @@ ANS
 [Acuña] Consider the following problem statement: find every pair of students
  in a textfile that share the first name.
  Give two reasonable assumptions that would be useful for solving this problem.
- (If needed, you may explain where an assumption would be useful.) [10 points]
+ (If needed, you may explain why an assumption would be useful.) [10 points]
  
 \begin_inset Note Comment
 status open
@@ -1292,13 +1302,46 @@ status collapsed
 \begin_layout Standard
 
 \series bold
-Programming: TBD
+Programming: Priority Queues
 \end_layout
 
 \begin_layout Standard
 
 \emph on
-There will be at least one programming question on the actual exam.
+The real exam will involve writing code for one or more methods.
+ Methods typically contain ~20 lines and have a higher weight (20-30 points)
+ than other questions.
+ The problem given here uses linked lists but all modules with programming
+ concepts are fair game (mergesort, priority queues, symbol tables).
+\end_layout
+
+\begin_layout Standard
+Implement a method to find the k-th largest element in an array of size
+ N using a minimum priority queue (MinPQ).
+ Assume that the MinPQ class has a constructor that takes a single integer
+ representing its maximum size, a insert(), a min(), a delMin(), an isEmpty(),
+ and size() methods.
+ The MinPQ does not resize (to preserve O(logn performance).
+ You may not import any packages.
+ Creating additional helper methods is fine but you should provide a one
+ line comment that indicates their purpose.
+ [20 points]
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Java"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+public int findKthLargest(int[] data, int k) {
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
