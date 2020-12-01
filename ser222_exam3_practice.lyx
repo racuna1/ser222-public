@@ -104,7 +104,7 @@ Practice
 
 \begin_layout Standard
 \align center
-Updated 8/16/2020
+Updated 11/30/2020
 \end_layout
 
 \begin_layout Standard
@@ -1396,7 +1396,7 @@ Short Answer: Undirected Graphs
 \begin_layout Enumerate
 Consider using the DFS algorithm.
  From a performance standpoint, would it be better for the algorithm to
- use a Graph ADT implemented using an adjustment matrix or adjacency list?
+ use a Graph ADT implemented using an adjacency matrix or adjacency list?
  Explain.
  [5 points] 
 \begin_inset Note Note
@@ -1423,8 +1423,8 @@ Adjacency matrix - it will provide faster support for checking if two nodes
 \end_layout
 
 \begin_layout Enumerate
-Adjacency list - it will provide faster support for vising each of the adjacent
- nodes.
+Adjacency list - it will provide faster support for visiting each of the
+ adjacent nodes.
  
 \begin_inset Note Note
 status collapsed
@@ -1522,7 +1522,7 @@ ANS
 \end_layout
 
 \begin_layout Enumerate
-When are you implementing a peer to peer networks like a social networking
+When are you implementing a peer to peer network like a social networking
  site where you are attempting to find the degree of connection between
  two individuals.
  The degree of connection means the number of intermediate friend introductions
