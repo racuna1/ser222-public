@@ -1,3 +1,4 @@
+import java.util.Scanner;
 import java.util.Stack;
 /**
  * Tests the priority queue ADT by finding top transactions.
@@ -15,10 +16,11 @@ public class TopM {
     public static void main(String[] args) {
         int m = Integer.parseInt(args[0]); 
         MinPQ<Transaction> pq = new MinPQ<Transaction>(m+1);
+        Scanner in = new Scanner(System.in);
 
-        while (StdIn.hasNextLine()) {
+        while (in.hasNextLine()) {
             // Create an entry from the next line and put on the PQ. 
-            String line = StdIn.readLine();
+            String line = in.nextLine();
             Transaction transaction = new Transaction(line);
             pq.insert(transaction); 
 

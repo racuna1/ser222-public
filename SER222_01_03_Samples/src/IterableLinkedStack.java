@@ -62,11 +62,13 @@ public class IterableLinkedStack<ItemType> implements Stack<ItemType>, Iterable 
     private class StackIterator implements Iterator<ItemType> {
         private final int modCounted = modCount;
         private LinearNode<ItemType> iter = top;
-        
+
+        @Override
         public boolean hasNext() {
             return iter != null;
         }
 
+        @Override
         public ItemType next() {
             if (!hasNext())
                     throw new NoSuchElementException();
@@ -79,7 +81,8 @@ public class IterableLinkedStack<ItemType> implements Stack<ItemType>, Iterable 
             
             return element;
         }
-        
+
+        @Override
         public void remove() {
             throw new UnsupportedOperationException("Not supported yet.");
         }       
