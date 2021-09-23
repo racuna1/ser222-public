@@ -1219,7 +1219,7 @@ public static int sum_all(int n) {
 
 \begin_layout Plain Layout
 
-        sum += i;	// Cost metric
+        sum += i;	// cost metric
 \end_layout
 
 \begin_layout Plain Layout
@@ -1240,8 +1240,7 @@ public static int sum_all(int n) {
 \begin_layout Standard
 Suppose you were asked to find the Big-Oh of the function using the cost
  metric shown.
- What type of problem is this.
- [5 points]
+ What type of problem is this? [5 points]
 \end_layout
 
 \begin_layout Enumerate
@@ -1264,6 +1263,10 @@ Semi-structureed
 
 \begin_layout Enumerate
 Unstructured
+\end_layout
+
+\begin_layout Enumerate
+Open-ended
 \end_layout
 
 \begin_layout Standard
