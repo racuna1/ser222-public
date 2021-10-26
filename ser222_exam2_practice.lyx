@@ -1502,10 +1502,42 @@ Short Answer: Analysis, Design, and Justification II
 
 \end_deeper
 \begin_layout Enumerate
-TODO [5 points] 
+[Vega] If we go through the steps of ADJ to create a solution for a given
+ problem, what should we do if we find in the justification that our solution
+ does not satisfy the metrics defined in the Analysis? [5 points]
 \end_layout
 
 \begin_deeper
+\begin_layout Enumerate
+Skip those metrics and just include the ones that are met.
+ It isn't important to meet all the metrics as long as we gave a solution.
+\end_layout
+
+\begin_layout Enumerate
+Loop back to the Design phase and either modify our solution or create a
+ new solution that satisfies the metrics.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ANS
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Go back to the Analysis and modify the metrics to match our solution.
+\end_layout
+
+\begin_layout Enumerate
+Skip the Justification step altogether.
+ The most important part is the Design phase.
+\end_layout
+
 \begin_layout Standard
 \begin_inset VSpace 0.5cm
 \end_inset
@@ -1573,7 +1605,7 @@ ANS
  (If needed, you may explain why an assumption would be useful.) [10 points]
  
 \begin_inset Note Comment
-status open
+status collapsed
 
 \begin_layout Plain Layout
 SC20
