@@ -117,7 +117,7 @@ status collapsed
 
 \begin_layout Standard
 \align center
-Updated 11/23/2021
+Updated 3/19/2022
 \end_layout
 
 \begin_layout Standard
@@ -827,6 +827,13 @@ It does not exist, swap only runs if z != j and we can't know how often
 
 \end_deeper
 \begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \series bold
 Short Answer: Mergesort
@@ -1230,162 +1237,6 @@ n
 
 \begin_layout Standard
 \begin_inset VSpace 1cm
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Short Answer: Symbol Tables
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-[Acuña] Trace an initially empty symbol table (called ST) through the following
- operations:
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset listings
-inline false
-status open
-
-\begin_layout Plain Layout
-
-SymbolTable<> ST = new BinarySearchTree<String, Integer>();
-\end_layout
-
-\begin_layout Plain Layout
-
-ST.put("CSE110", 150);
-\end_layout
-
-\begin_layout Plain Layout
-
-ST.put("CSE205", 150);
-\end_layout
-
-\begin_layout Plain Layout
-
-ST.put("CSE230", 100);
-\end_layout
-
-\begin_layout Plain Layout
-
-ST.put("SER316", 100);
-\end_layout
-
-\begin_layout Plain Layout
-
-System.out.println(ST.get("CSE205"));
-\end_layout
-
-\begin_layout Plain Layout
-
-ST.put("CSE205", 250);
-\end_layout
-
-\begin_layout Plain Layout
-
-ST.put("SER316", 75);
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Give the contents of the symbol table after the code has been executed.
- Use the format ABC### : ### (e.g., 
-\begin_inset Quotes eld
-\end_inset
-
-CSE110 : 150
-\begin_inset Quotes erd
-\end_inset
-
-) to give your answer.
- Use separate lines for each key/value pair.
- [10 points]
-\end_layout
-
-\begin_layout Standard
-\begin_inset Branch blank
-inverted 0
-status collapsed
-
-\begin_layout Standard
-\begin_inset VSpace 3cm
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Branch soln
-inverted 0
-status collapsed
-
-\begin_layout Standard
-
-\series bold
-Ans:
-\end_layout
-
-\begin_layout Standard
-\begin_inset listings
-inline false
-status open
-
-\begin_layout Plain Layout
-
-SER100 : 150
-\end_layout
-
-\begin_layout Plain Layout
-
-SER200 : 250
-\end_layout
-
-\begin_layout Plain Layout
-
-SER250 : 100
-\end_layout
-
-\begin_layout Plain Layout
-
-SER316 : 75
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 0.5cm
 \end_inset
 
 
