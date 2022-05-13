@@ -117,7 +117,7 @@ status collapsed
 
 \begin_layout Standard
 \align center
-Updated 9/6/2021
+Updated 3/19/2022
 \end_layout
 
 \begin_layout Standard
@@ -213,7 +213,7 @@ No electronic items are allowed.
 
 \bar default
  Please use a pen (instead of a pencil) if you have one.
- There are 115 points available and the exam must be completed in 37.5 minutes.
+ There are 115 points available and the exam must be completed in 60 minutes.
  This exam has three types of questions:
 \end_layout
 
@@ -278,7 +278,7 @@ Programming questions:
 \begin_layout Standard
 \align right
 \begin_inset Tabular
-<lyxtabular version="3" rows="8" columns="3">
+<lyxtabular version="3" rows="7" columns="3">
 <features tabularvalignment="middle">
 <column alignment="left" valignment="top">
 <column alignment="center" valignment="top">
@@ -400,35 +400,6 @@ MC/SA: Priority Queues
 
 \begin_layout Plain Layout
 20
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-MC/SA: Symbol Tables
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-15
 \end_layout
 
 \end_inset
@@ -856,6 +827,13 @@ It does not exist, swap only runs if z != j and we can't know how often
 
 \end_deeper
 \begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \series bold
 Short Answer: Mergesort
@@ -1279,224 +1257,6 @@ n
 \begin_layout Standard
 
 \series bold
-Short Answer: Symbol Tables
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-[Acuña] Consider the following scenario: you need to store a record for
- each of the top 1000 teams that participated in a machine learning competition,
- in order to be able to look up which team placed in a specific place.
- Would it make more sense to use an array or a symbol table for this problem?
- Explain.
- [5 points] 
-\begin_inset Note Comment
-status collapsed
-
-\begin_layout Plain Layout
-FA19
-\end_layout
-
-\end_inset
-
- 
-\begin_inset Note Comment
-status collapsed
-
-\begin_layout Plain Layout
-M03_01::LO2
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-An array will probably be better.
- It will be faster and more efficient in storage.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-ANS
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-An array will probably be better.
- It will allow the team record type to be stored properly.
-\end_layout
-
-\begin_layout Enumerate
-A symbol table will probably be better.
- It will provide more flexibility.
-\end_layout
-
-\begin_layout Enumerate
-A symbol table will probably be better.
- It will be more efficient in storage.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-[Acuña] Trace an initially empty symbol table (called ST) through the following
- operations:
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset listings
-inline false
-status open
-
-\begin_layout Plain Layout
-
-SymbolTable<> ST = new BinarySearchTree<String, Integer>();
-\end_layout
-
-\begin_layout Plain Layout
-
-ST.put("CSE110", 150);
-\end_layout
-
-\begin_layout Plain Layout
-
-ST.put("CSE205", 150);
-\end_layout
-
-\begin_layout Plain Layout
-
-ST.put("CSE230", 100);
-\end_layout
-
-\begin_layout Plain Layout
-
-ST.put("SER316", 100);
-\end_layout
-
-\begin_layout Plain Layout
-
-System.out.println(ST.get("CSE205"));
-\end_layout
-
-\begin_layout Plain Layout
-
-ST.put("CSE205", 250);
-\end_layout
-
-\begin_layout Plain Layout
-
-ST.put("SER316", 75);
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Give the contents of the symbol table after the code has been executed.
- Use the format ABC### : ### (e.g., 
-\begin_inset Quotes eld
-\end_inset
-
-CSE110 : 150
-\begin_inset Quotes erd
-\end_inset
-
-) to give your answer.
- Use separate lines for each key/value pair.
- [10 points]
-\end_layout
-
-\begin_layout Standard
-\begin_inset Branch blank
-inverted 0
-status collapsed
-
-\begin_layout Standard
-\begin_inset VSpace 3cm
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Branch soln
-inverted 0
-status collapsed
-
-\begin_layout Standard
-
-\series bold
-Ans:
-\end_layout
-
-\begin_layout Standard
-\begin_inset listings
-inline false
-status open
-
-\begin_layout Plain Layout
-
-SER100 : 150
-\end_layout
-
-\begin_layout Plain Layout
-
-SER200 : 250
-\end_layout
-
-\begin_layout Plain Layout
-
-SER250 : 100
-\end_layout
-
-\begin_layout Plain Layout
-
-SER316 : 75
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 0.5cm
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\series bold
 Short Answer: Analysis, Design, and Justification II
 \end_layout
 
@@ -1886,64 +1646,6 @@ ANS
 
 \begin_layout Standard
 \begin_inset VSpace 0.5cm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Short Answer: Symbol Tables
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Consider the task of implementing a SymbolTable vs an OrderedSymbolTable.
- For the purposes of get and put, which you be more likely to create an
- efficient implementation for? Explain.
- (Hint: no knowledge of BSTs or hash tables is needed.) [10 points]
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Branch blank
-inverted 0
-status collapsed
-
-\begin_layout Standard
-\begin_inset VSpace 4cm
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Branch soln
-inverted 0
-status collapsed
-
-\begin_layout Standard
-
-\series bold
-Ans:
-\end_layout
-
-\begin_layout Standard
-OrderedSymbolTable offers more potential for optimization since it means
- you have some structure (i.e., all elements are Comparable) on the data which
- you can exploit.
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 2cm
-\end_inset
-
-
-\end_layout
-
 \end_inset
 
 

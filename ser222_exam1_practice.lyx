@@ -117,7 +117,7 @@ status collapsed
 
 \begin_layout Standard
 \align center
-Updated 9/22/2021
+Updated 3/19/2022
 \end_layout
 
 \begin_layout Standard
@@ -213,7 +213,7 @@ No electronic items are allowed.
 
 \bar default
  Please use a pen (instead of a pencil) if you have one.
- There are TODO points available and the exam must be completed in 35 minutes.
+ There are 75 points available and the exam must be completed in 35 minutes.
  This exam has three types of questions:
 \end_layout
 
@@ -229,7 +229,7 @@ No electronic items are allowed.
 \series bold
 Multiple choice questions:
 \series default
- There are 45 points of multiple choice questions.
+ There are 30 points of multiple choice questions.
  An answer is selecting one option among the choices given.
  Each multiple choice is worth 2 to 5 points.
 \end_layout
@@ -428,7 +428,7 @@ MC/SA: Analysis, Design, and Justification I
 \begin_inset Text
 
 \begin_layout Plain Layout
-20
+15
 \end_layout
 
 \end_inset
@@ -486,7 +486,7 @@ Total:
 \begin_inset Text
 
 \begin_layout Plain Layout
-80
+75
 \end_layout
 
 \end_inset
@@ -1181,122 +1181,6 @@ Close-ended, Well-defined
 
 \begin_layout Enumerate
 Close-ended, Ill-defined
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 0.5cm
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-[Vega] Consider the following problem function.
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset listings
-lstparams "language=Java"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-public static int sum_all(int n) {
-\end_layout
-
-\begin_layout Plain Layout
-
-	int sum = 0;
-\end_layout
-
-\begin_layout Plain Layout
-
-    for(int i = 0; i < n; i++)
-\end_layout
-
-\begin_layout Plain Layout
-
-        sum += i;	// cost metric
-\end_layout
-
-\begin_layout Plain Layout
-
-    return sum;
-\end_layout
-
-\begin_layout Plain Layout
-
-}   
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Suppose you were asked to find the Big-Oh of the function using the cost
- metric shown.
- What type of problem is this? [5 points]
-\end_layout
-
-\begin_layout Enumerate
-Structured
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-ANS
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Semi-structureed
-\end_layout
-
-\begin_layout Enumerate
-Unstructured
-\end_layout
-
-\begin_layout Enumerate
-Open-ended
-\end_layout
-
-\begin_layout Standard
-\begin_inset Branch soln
-inverted 0
-status collapsed
-
-\begin_layout Standard
-
-\series bold
-Ans:
-\end_layout
-
-\begin_layout Standard
-The question is structured because it is explicitly stated what the problem
- is, and we are given a specific cost metric.
- If the cost metric was not given, then we would have to choose a cost metric
- ourselves, which would make the question semi-structured.
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 2cm
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -2333,7 +2217,133 @@ If you were asked to analyze the performance of this algorithm, would it
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace 3cm
+
+\series bold
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Short Answer: Analysis, Design, and Justification I
+\end_layout
+
+\begin_layout Enumerate
+[Vega] Consider the following problem function.
+\end_layout
+
+\begin_deeper
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=Java"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+public static int sum_all(int n) {
+\end_layout
+
+\begin_layout Plain Layout
+
+	int sum = 0;
+\end_layout
+
+\begin_layout Plain Layout
+
+    for(int i = 0; i < n; i++)
+\end_layout
+
+\begin_layout Plain Layout
+
+        sum += i;	// cost metric
+\end_layout
+
+\begin_layout Plain Layout
+
+    return sum;
+\end_layout
+
+\begin_layout Plain Layout
+
+}   
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Suppose you were asked to find the Big-Oh of the function using the cost
+ metric shown.
+ What type of problem is this? [5 points]
+\end_layout
+
+\begin_layout Enumerate
+Structured
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+ANS
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Semi-structureed
+\end_layout
+
+\begin_layout Enumerate
+Unstructured
+\end_layout
+
+\begin_layout Enumerate
+Open-ended
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\series bold
+Ans:
+\end_layout
+
+\begin_layout Standard
+The question is structured because it is explicitly stated what the problem
+ is, and we are given a specific cost metric.
+ If the cost metric was not given, then we would have to choose a cost metric
+ ourselves, which would make the question semi-structured.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 2cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_inset
 
 
