@@ -6,8 +6,7 @@
 public interface IncrementCounter {
       //Increments the counter by one.
       void increment();
+
       //Returns the increments since creation.
       int tally();
-      //Returns a string representation.
-      String toString();
 }

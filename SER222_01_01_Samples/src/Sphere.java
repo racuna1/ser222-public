@@ -3,25 +3,26 @@
  * 
  * @author Acuna
  * @version 1.0
- */public class Sphere extends RoundShape
-{
+ */
+public class Sphere extends RoundShape {
+
     public Sphere(double r)
     {
         super(r);
     }
-    
-    public double GetArea()
+
+    public double getArea()
     {
-        return 4 * Math.PI * Math.pow(GetRadius(), 2);
+        return 4 * Math.PI * Math.pow(getRadius(), 2);
     }
     
-    public double GetVolume()
+    public double getVolume()
     {
-        return (4.0/3)*Math.PI * Math.pow(GetRadius(), 3);
+        return (4.0/3)*Math.PI * Math.pow(getRadius(), 3);
     } 
-    
-    String ToString()
-    {
-        return "A sphere of radius " + GetRadius() + ", area " + GetArea() + ", and volume " + GetVolume() + ".";
-    }     
+
+    @Override
+    public String toString() {
+        return "A sphere of radius " + getRadius() + ", area " + getArea() + ", and volume " + getVolume() + ".";
+    }
 }
