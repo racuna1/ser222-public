@@ -117,7 +117,7 @@ status collapsed
 
 \begin_layout Standard
 \align center
-Updated 3/19/2022
+Updated 3/30/2024
 \end_layout
 
 \begin_layout Standard
@@ -798,7 +798,7 @@ Short Answer: Stacks, Lists, and Generics
 \begin_layout Enumerate
 Consider an implementation of unsorted singly linked list.
  Suppose it has a representation with a head and a tail pointer, where head's
- next leads to tail.
+ next eventually leads to tail.
  Given this representation, which of the following operation cannot be implement
 ed in O(1) time? [5 points]
 \end_layout
@@ -1301,8 +1301,7 @@ The real exam will involve writing code for one or more methods.
  Methods typically contain ~20 lines and have a higher weight (20-30 points)
  than other questions.
  The problem given here uses linked lists but all modules with programming
- concepts are fair game (data abstraction, stacks/lists/generic, elementary
- sorting).
+ concepts are fair game (data abstraction, stacks/lists/generics).
 \end_layout
 
 \begin_layout Standard
@@ -1432,7 +1431,7 @@ public LinearNode cloneTail(LinearNode head, int start) {
 \begin_layout Standard
 \begin_inset Branch soln
 inverted 0
-status collapsed
+status open
 
 \begin_layout Standard
 \begin_inset listings
@@ -1442,107 +1441,7 @@ status open
 
 \begin_layout Plain Layout
 
-public class LinearNode<T> {
-\end_layout
-
-\begin_layout Plain Layout
-
-  private LinearNode<T> next;
-\end_layout
-
-\begin_layout Plain Layout
-
-  public T element;
-\end_layout
-
-\begin_layout Plain Layout
-
-  public LinearNode(T elem) { next = null; element = elem; }
-\end_layout
-
-\begin_layout Plain Layout
-
-  public LinearNode<T> getNext() { return next; } 
-\end_layout
-
-\begin_layout Plain Layout
-
-  public void setNext(LinearNode<T> node) { next = node; } 
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-//Given the head of a singly linked list, creates and links together a
-\end_layout
-
-\begin_layout Plain Layout
-
-//clone of the list starting at a specific node (identified by index).
-\end_layout
-
-\begin_layout Plain Layout
-
-//Input list will be always non-empty.
- Returns head of new list.
-\end_layout
-
-\begin_layout Plain Layout
-
-//Assume that the start index given will always be valid.
-\end_layout
-
-\begin_layout Plain Layout
-
-//EXAMPLES: cloneTail([A, B, C], 2) returns [C],
-\end_layout
-
-\begin_layout Plain Layout
-
-//          cloneTail([A, B, C], 1) returns [B, C],
-\end_layout
-
-\begin_layout Plain Layout
-
-//          cloneTail([A], 0) returns [A],
-\end_layout
-
-\begin_layout Plain Layout
-
-//          where brackets show the contents of the list at a high level
-\end_layout
-
-\begin_layout Plain Layout
-
-//          and the left most node is the head.
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-public LinearNode cloneTail(LinearNode head, int start) {
-\end_layout
-
-\begin_layout Plain Layout
-
-  //TODO: implement this method.
- creating additional helpers is fine.
-\end_layout
-
-\begin_layout Plain Layout
-
-    LinearNode newHead, newTail;
+  LinearNode newHead, newTail;
 \end_layout
 
 \begin_layout Plain Layout
