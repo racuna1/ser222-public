@@ -54,12 +54,12 @@
 \use_refstyle 1
 \use_minted 0
 \branch blank
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch soln
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -117,7 +117,7 @@ status collapsed
 
 \begin_layout Standard
 \align center
-Updated 11/23/2021b
+Updated 4/21/2024
 \end_layout
 
 \begin_layout Standard
@@ -286,7 +286,7 @@ Programing questions:
 \series default
  The programming questions are given near the end of the paper.
  They must be answered on the question paper.
- There are 40 points of write-in programming questions.
+ There are 45 points of write-in programming questions.
 \end_layout
 
 \begin_layout Standard
@@ -398,7 +398,7 @@ MC/SA: Binary Search Trees
 \begin_inset Text
 
 \begin_layout Plain Layout
-20
+10
 \end_layout
 
 \end_inset
@@ -456,7 +456,7 @@ MC/SA: Undirected Graphs
 \begin_inset Text
 
 \begin_layout Plain Layout
-10
+20
 \end_layout
 
 \end_inset
@@ -543,7 +543,7 @@ Prog: Undirected Graphs
 \begin_inset Text
 
 \begin_layout Plain Layout
-10
+0
 \end_layout
 
 \end_inset
@@ -572,7 +572,7 @@ Prog: Directed Graphs
 \begin_inset Text
 
 \begin_layout Plain Layout
-0
+15
 \end_layout
 
 \end_inset
@@ -601,7 +601,7 @@ Total:
 \begin_inset Text
 
 \begin_layout Plain Layout
-105
+110
 \end_layout
 
 \end_inset
@@ -689,6 +689,13 @@ A symbol table will probably be better.
 \begin_layout Enumerate
 A symbol table will probably be better.
  It will be more efficient in storage.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -833,124 +840,6 @@ Updates the size variable of the tree rooted at x.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Trace a (non-balancing) BST through the following operations:
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\align center
-\begin_inset Graphics
-	filename practice_exams/ser222_17f_bst.png
-	scale 250
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset listings
-inline false
-status open
-
-\begin_layout Plain Layout
-
-//assume that the "tree" variable below has already been constructed,
-\end_layout
-
-\begin_layout Plain Layout
-
-//per the tree shown above.
-\end_layout
-
-\begin_layout Plain Layout
-
-tree.add(new Integer(3));
-\end_layout
-
-\begin_layout Plain Layout
-
-tree.add(new Integer(7));
-\end_layout
-
-\begin_layout Plain Layout
-
-tree.add(new Integer(2));
-\end_layout
-
-\begin_layout Plain Layout
-
-tree.remove(new Integer(6));
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Draw the structure of the BST after each call.
- Images must be cumulative.
- [10 points]
-\end_layout
-
-\begin_layout Standard
-\begin_inset Branch blank
-inverted 0
-status collapsed
-
-\begin_layout Standard
-\begin_inset VSpace 14cm
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Branch soln
-inverted 0
-status collapsed
-
-\begin_layout Standard
-
-\series bold
-Staff Ans:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Graphics
-	filename practice_exams/ser222_exam3_practice_q1.png
-	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 2cm
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \begin_inset Newpage pagebreak
 \end_inset
 
@@ -1200,7 +1089,7 @@ status collapsed
 
 \begin_inset Branch soln
 inverted 0
-status open
+status collapsed
 
 \begin_layout Standard
 
@@ -1606,6 +1495,559 @@ When are you implementing a peer to peer network like a social networking
 
 \end_layout
 
+\end_deeper
+\begin_layout Enumerate
+Run the 
+\series bold
+BFS
+\series default
+ algorithm on this graph to compute the shortest paths between 0 and every
+ other node.
+ For reference, the BFS algorithm is shown below.
+ Use the adjacency list above for the order of the nodes explored and follow
+ the trace format shown before.
+ Your answer must include the values of 
+\emph on
+v
+\emph default
+, 
+\emph on
+queue
+\emph default
+, and 
+\emph on
+edgeTo
+\emph default
+, as they update.
+ [10 points]
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Java"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+private void bfs(Graph G, int s) { //by Sedgewick.
+ for reference.
+\end_layout
+
+\begin_layout Plain Layout
+
+    Queue<Integer> queue = new LinkedList<>();
+\end_layout
+
+\begin_layout Plain Layout
+
+    marked[s] = true;
+\end_layout
+
+\begin_layout Plain Layout
+
+    queue.add(s);
+\end_layout
+
+\begin_layout Plain Layout
+
+    while (!queue.isEmpty()) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        int v = queue.remove();
+\end_layout
+
+\begin_layout Plain Layout
+
+        for (int w : G.adj(v))
+\end_layout
+
+\begin_layout Plain Layout
+
+            if (!marked[w]) {
+\end_layout
+
+\begin_layout Plain Layout
+
+                edgeTo[w] = v;
+\end_layout
+
+\begin_layout Plain Layout
+
+                marked[w] = true;
+\end_layout
+
+\begin_layout Plain Layout
+
+                queue.add(w);
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "40text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Description
+\begin_inset Graphics
+	filename practice_exams/ser222_exercise11_graph1.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "40text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3, 1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0, 4, 3, 2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1, 5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1, 0, 4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1, 3, 5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2, 4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample graph.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status open
+
+\begin_layout Standard
+
+\series bold
+Before loop:
+\end_layout
+
+\begin_layout Standard
+marked[
+\begin_inset Formula $\;\;\;$
+\end_inset
+
+]=
+\end_layout
+
+\begin_layout Standard
+queue={
+\begin_inset Formula $\;\;\;$
+\end_inset
+
+}
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Loop 1:
+\end_layout
+
+\begin_layout Standard
+v=
+\end_layout
+
+\begin_layout Standard
+edgeTo[
+\begin_inset Formula $\;\;\;$
+\end_inset
+
+]=
+\end_layout
+
+\begin_layout Standard
+edgeTo[
+\begin_inset Formula $\;\;\;$
+\end_inset
+
+]=
+\end_layout
+
+\begin_layout Standard
+queue = {
+\begin_inset Formula $\;\;\;$
+\end_inset
+
+
+\begin_inset Formula $\;\;\;$
+\end_inset
+
+
+\begin_inset Formula $\;\;\;$
+\end_inset
+
+}
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 6cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch soln
+inverted 0
+status open
+
+\begin_layout Standard
+
+\series bold
+Staff Ans
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Before loop:
+\end_layout
+
+\begin_layout Standard
+marked[0]=T
+\end_layout
+
+\begin_layout Standard
+queue={0} (front)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Loop 1:
+\end_layout
+
+\begin_layout Standard
+v=0
+\end_layout
+
+\begin_layout Standard
+edgeTo[3]=0
+\end_layout
+
+\begin_layout Standard
+edgeTo[1]=0
+\end_layout
+
+\begin_layout Standard
+queue = {1, 3} (front)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Loop 2:
+\end_layout
+
+\begin_layout Standard
+v = 3
+\end_layout
+
+\begin_layout Standard
+edgeTo[4] = 4
+\end_layout
+
+\begin_layout Standard
+queue = {4, 1} (front)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Loop 3:
+\end_layout
+
+\begin_layout Standard
+v = 1
+\end_layout
+
+\begin_layout Standard
+edgeTo[2]=1
+\end_layout
+
+\begin_layout Standard
+queue={2, 4} (front)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Loop 4:
+\end_layout
+
+\begin_layout Standard
+v = 4
+\end_layout
+
+\begin_layout Standard
+edgeTo[5]=4
+\end_layout
+
+\begin_layout Standard
+queue={5, 2} (front)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Loop 5:
+\end_layout
+
+\begin_layout Standard
+v = 2
+\end_layout
+
+\begin_layout Standard
+queue={5} (front)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Loop 6:
+\end_layout
+
+\begin_layout Standard
+v = 5
+\end_layout
+
+\begin_layout Standard
+queue = {}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 
 \series bold
@@ -1678,7 +2120,7 @@ All of these are valid topological sorts.
 \end_deeper
 \begin_layout Enumerate
 When using DFS to check for a cycle in a directed graph, can we simply check
- for the algorithm visiting a marked node? Explain yes or no.
+ for the algorithm visiting a marked node? Answer yes or no and explain.
  [10 points]
 \end_layout
 
@@ -1745,6 +2187,7 @@ Programming: Binary Search Trees
 \emph on
 On the real exam, there could be programming questions on BSTs, hash tables,
  or graphs.
+ They might be longer like Q11 or shorter like Q12.
 \end_layout
 
 \end_deeper
@@ -2198,112 +2641,32 @@ private boolean isSorted(List<Integer> vals){
 \begin_layout Standard
 
 \series bold
-Programming: Undirected Graphs
+Programming: Directed Graphs
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
-Run the 
-\series bold
-BFS
-\series default
- algorithm on this graph to compute the shortest paths between 0 and every
- other node.
- For reference, the BFS algorithm is shown below.
- Use the adjacency list above for the order of the nodes explored and follow
- the trace format shown before.
- Your answer must include the values of 
-\emph on
-v
-\emph default
-, 
-\emph on
-queue
-\emph default
-, and 
-\emph on
-edgeTo
-\emph default
-, as they update.
- [10 points]
-\end_layout
 
-\begin_deeper
-\begin_layout Standard
-\begin_inset listings
-lstparams "language=Java"
-inline false
+\series bold
+Implement
+\series default
+ a method to compute the average out-degree of nodes with at least one out-edge;
+ use the method signature below.
+ The out-degree of a node is the number of outgoing edges it has.
+ Assume you are using the standard Directed Graph ADT discussed in class
+ (see API below).
+ You may not import any packages.
+ Creating additional helper methods is fine but you should provide a one
+ line comment that indicates their purpose.
+ As an example, the following graph would have an average out-degree of
+ 1.
+ If there was an extra node unconnected to anything, it would still be 1.
+ [15 points] 
+\begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-private void bfs(Graph G, int s) { //by Sedgewick.
- for reference.
-\end_layout
-
-\begin_layout Plain Layout
-
-    Queue<Integer> queue = new LinkedList<>();
-\end_layout
-
-\begin_layout Plain Layout
-
-    marked[s] = true;
-\end_layout
-
-\begin_layout Plain Layout
-
-    queue.add(s);
-\end_layout
-
-\begin_layout Plain Layout
-
-    while (!queue.isEmpty()) {
-\end_layout
-
-\begin_layout Plain Layout
-
-        int v = queue.remove();
-\end_layout
-
-\begin_layout Plain Layout
-
-        for (int w : G.adj(v))
-\end_layout
-
-\begin_layout Plain Layout
-
-            if (!marked[w]) {
-\end_layout
-
-\begin_layout Plain Layout
-
-                edgeTo[w] = v;
-\end_layout
-
-\begin_layout Plain Layout
-
-                marked[w] = true;
-\end_layout
-
-\begin_layout Plain Layout
-
-                queue.add(w);
-\end_layout
-
-\begin_layout Plain Layout
-
-            }
-\end_layout
-
-\begin_layout Plain Layout
-
-    }
-\end_layout
-
-\begin_layout Plain Layout
-
-}
+Core2
 \end_layout
 
 \end_inset
@@ -2311,36 +2674,10 @@ private void bfs(Graph G, int s) { //by Sedgewick.
 
 \end_layout
 
-\end_deeper
+\begin_deeper
 \begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "40text%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Description
 \begin_inset Graphics
-	filename practice_exams/ser222_exercise11_graph1.png
+	filename practice_exams/ser222_04_02_core2_graph_simple.png
 	scale 50
 
 \end_inset
@@ -2348,258 +2685,29 @@ status open
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Graphics
+	filename practice_exams/ser222_03_02_api_digraph.png
+	scale 50
+
 \end_inset
 
 
-\begin_inset space \hfill{}
-\end_inset
+\end_layout
 
-
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "40text%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
+\begin_layout Standard
+\begin_inset listings
+inline false
 status open
 
 \begin_layout Plain Layout
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="left" valignment="top">
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
+
+double averageOutDegree(Digraph G) {
+\end_layout
 
 \begin_layout Plain Layout
-0
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3, 1
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0, 4, 3, 2
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-2
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1, 5
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1, 0, 4
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-4
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1, 3, 5
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-5
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-2, 4
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Sample graph.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Branch blank
-inverted 0
-status open
-
-\begin_layout Standard
-
-\series bold
-Before loop:
-\end_layout
-
-\begin_layout Standard
-marked[
-\begin_inset Formula $\;\;\;$
-\end_inset
-
-]=
-\end_layout
-
-\begin_layout Standard
-queue={
-\begin_inset Formula $\;\;\;$
-\end_inset
-
-}
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Loop 1:
-\end_layout
-
-\begin_layout Standard
-v=
-\end_layout
-
-\begin_layout Standard
-edgeTo[
-\begin_inset Formula $\;\;\;$
-\end_inset
-
-]=
-\end_layout
-
-\begin_layout Standard
-edgeTo[
-\begin_inset Formula $\;\;\;$
-\end_inset
-
-]=
-\end_layout
-
-\begin_layout Standard
-queue = {
-\begin_inset Formula $\;\;\;$
-\end_inset
-
-
-\begin_inset Formula $\;\;\;$
-\end_inset
-
-
-\begin_inset Formula $\;\;\;$
-\end_inset
-
-}
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 6cm
-\end_inset
-
-
+    
 \end_layout
 
 \end_inset
@@ -2613,134 +2721,71 @@ inverted 0
 status open
 
 \begin_layout Standard
+\begin_inset listings
+inline false
+status open
 
-\series bold
-Staff Ans
+\begin_layout Plain Layout
+
+double averageOutDegree(Digraph G) {
 \end_layout
 
-\begin_layout Standard
-\begin_inset Formula $ $
-\end_inset
+\begin_layout Plain Layout
 
+  double sum;
+\end_layout
+
+\begin_layout Plain Layout
+
+  int nodes;
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
-\series bold
-Before loop:
+  for(int v = 0; v < G.V(); v++) {
 \end_layout
 
-\begin_layout Standard
-marked[0]=T
+\begin_layout Plain Layout
+
+    int deg = 0
 \end_layout
 
-\begin_layout Standard
-queue={0} (front)
+\begin_layout Plain Layout
+
+    for(Integer i : G.adj(v))
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
-\series bold
-Loop 1:
+      deg++;
 \end_layout
 
-\begin_layout Standard
-v=0
+\begin_layout Plain Layout
+
+    if(deg > 0) {sum += deg; nodes++;}
 \end_layout
 
-\begin_layout Standard
-edgeTo[3]=0
+\begin_layout Plain Layout
+
+  }
 \end_layout
 
-\begin_layout Standard
-edgeTo[1]=0
+\begin_layout Plain Layout
+
 \end_layout
 
-\begin_layout Standard
-queue = {1, 3} (front)
+\begin_layout Plain Layout
+
+  return sum / nodes;
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
-\series bold
-Loop 2:
-\end_layout
-
-\begin_layout Standard
-v = 3
-\end_layout
-
-\begin_layout Standard
-edgeTo[4] = 4
-\end_layout
-
-\begin_layout Standard
-queue = {4, 1} (front)
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Loop 3:
-\end_layout
-
-\begin_layout Standard
-v = 1
-\end_layout
-
-\begin_layout Standard
-edgeTo[2]=1
-\end_layout
-
-\begin_layout Standard
-queue={2, 4} (front)
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Loop 4:
-\end_layout
-
-\begin_layout Standard
-v = 4
-\end_layout
-
-\begin_layout Standard
-edgeTo[5]=4
-\end_layout
-
-\begin_layout Standard
-queue={5, 2} (front)
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Loop 5:
-\end_layout
-
-\begin_layout Standard
-v = 2
-\end_layout
-
-\begin_layout Standard
-queue={5} (front)
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Loop 6:
-\end_layout
-
-\begin_layout Standard
-v = 5
-\end_layout
-
-\begin_layout Standard
-queue = {}
+}
 \end_layout
 
 \end_inset
@@ -2748,6 +2793,12 @@ queue = {}
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
@@ -2760,9 +2811,9 @@ Extra Questions
 \end_layout
 
 \begin_layout Standard
-The following questions were used on previous practice exams - they are
- not part of the practice exam, and may use content not covered in the current
- semester, but are provided for additional practice.
+The following questions were used on previous practice exams.
+ They may use content not covered in the current semester but are provided
+ for additional practice.
 \end_layout
 
 \begin_layout Standard
@@ -2791,7 +2842,10 @@ The following questions were used on previous practice exams - they are
 \end_inset
 
 Short Answer: Symbol Tables & Binary Search Trees
-\end_layout
+\series default
+
+\begin_inset Note Note
+status collapsed
 
 \begin_layout Enumerate
 [Acuña] Trace an initially empty symbol table (called ST) through the following
@@ -2803,7 +2857,7 @@ Short Answer: Symbol Tables & Binary Search Trees
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset listings
 inline false
 status open
@@ -2853,7 +2907,7 @@ ST.put("SER316", 75);
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Give the contents of the symbol table after the code has been executed.
  Use the format ABC### : ### (e.g., 
 \begin_inset Quotes eld
@@ -2868,7 +2922,7 @@ CSE110 : 150
  [10 points]
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Branch blank
 inverted 0
 status collapsed
@@ -2936,6 +2990,11 @@ SER316 : 75
 \end_layout
 
 \end_deeper
+\end_inset
+
+
+\end_layout
+
 \begin_layout Enumerate
 Consider the task of implementing a SymbolTable vs an OrderedSymbolTable.
  For the purposes of get and put, which you be more likely to create an
@@ -2973,6 +3032,120 @@ Ans:
 OrderedSymbolTable offers more potential for optimization since it means
  you have some structure (i.e., all elements are Comparable) on the data which
  you can exploit.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 2cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Trace a (non-balancing) BST through the following operations:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename practice_exams/ser222_17f_bst.png
+	scale 250
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+//assume that the "tree" variable below has already been constructed,
+\end_layout
+
+\begin_layout Plain Layout
+
+//per the tree shown above.
+\end_layout
+
+\begin_layout Plain Layout
+
+tree.add(new Integer(3));
+\end_layout
+
+\begin_layout Plain Layout
+
+tree.add(new Integer(7));
+\end_layout
+
+\begin_layout Plain Layout
+
+tree.add(new Integer(2));
+\end_layout
+
+\begin_layout Plain Layout
+
+tree.remove(new Integer(6));
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Draw the structure of the BST after each call.
+ Images must be cumulative.
+ [10 points]
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch blank
+inverted 0
+status open
+
+\begin_layout Standard
+\begin_inset VSpace 14cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch soln
+inverted 0
+status collapsed
+
+\begin_layout Standard
+
+\series bold
+Staff Ans:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename practice_exams/ser222_exam3_practice_q1.png
+	scale 60
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3061,6 +3234,13 @@ last
  position, swim is used to move it upward to a valid position.
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.5cm
 \end_inset
 
 
