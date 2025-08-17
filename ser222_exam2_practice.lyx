@@ -1,16 +1,16 @@
-#LyX 2.3 created this file. For more info see http://www.lyx.org/
-\lyxformat 544
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
 \begin_document
 \begin_header
 \save_transient_properties true
 \origin unavailable
 \textclass article
 \use_default_options true
-\maintain_unincluded_children false
+\maintain_unincluded_children no
 \language english
 \language_package default
-\inputencoding auto
-\fontencoding global
+\inputencoding auto-legacy
+\fontencoding auto
 \font_roman "default" "default"
 \font_sans "default" "default"
 \font_typewriter "default" "default"
@@ -18,7 +18,9 @@
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
-\font_osf false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
 \use_microtype false
@@ -52,16 +54,18 @@
 \suppress_date false
 \justification true
 \use_refstyle 1
+\use_formatted_ref 0
 \use_minted 0
+\use_lineno 0
 \branch blank
 \selected 1
 \filename_suffix 0
-\color #faf0e6
+\color background background
 \end_branch
 \branch soln
 \selected 0
 \filename_suffix 0
-\color #faf0e6
+\color background background
 \end_branch
 \index Index
 \shortcut idx
@@ -82,11 +86,16 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
+\tablestyle default
 \tracking_changes false
 \output_changes false
+\change_bars false
+\postpone_fragile_content false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
 \end_header
 
 \begin_body
@@ -117,7 +126,7 @@ status collapsed
 
 \begin_layout Standard
 \align center
-Updated 3/19/2022
+Updated 6/25/2025
 \end_layout
 
 \begin_layout Standard
@@ -135,7 +144,8 @@ Updated 3/19/2022
 \end_layout
 
 \begin_layout Standard
-Last Name: 
+Last Name:
+ 
 \begin_inset ERT
 status open
 
@@ -152,7 +162,8 @@ rule{6cm}{0.15mm}$
 \end_layout
 
 \begin_layout Standard
-First Name: 
+First Name:
+ 
 \begin_inset ERT
 status open
 
@@ -169,7 +180,8 @@ rule{5.94cm}{0.15mm}$
 \end_layout
 
 \begin_layout Standard
-Last 4 digits of ASU ID: 
+Last 4 digits of ASU ID:
+ 
 \begin_inset ERT
 status open
 
@@ -228,6 +240,7 @@ No electronic items are allowed.
 
 \series bold
 Multiple choice questions:
+
 \series default
  There are 35 points of multiple choice questions.
  An answer is selecting one option among the choices given.
@@ -245,6 +258,7 @@ Multiple choice questions:
 
 \series bold
 Short answer questions:
+
 \series default
  There are 40 points of short answer questions.
  A typical answer is one or two sentences.
@@ -262,6 +276,7 @@ Short answer questions:
 
 \series bold
 Programming questions:
+
 \series default
  The programming questions are given near the end of the paper.
  They must be answered on the question paper.
@@ -323,7 +338,8 @@ Possible
 \begin_inset Text
 
 \begin_layout Plain Layout
-MC/SA: Elemenary Sorts
+MC/SA:
+ Elementary Sorts
 \end_layout
 
 \end_inset
@@ -352,7 +368,8 @@ MC/SA: Elemenary Sorts
 \begin_inset Text
 
 \begin_layout Plain Layout
-MC/SA: Mergesort
+MC/SA:
+ Mergesort
 \end_layout
 
 \end_inset
@@ -381,7 +398,8 @@ MC/SA: Mergesort
 \begin_inset Text
 
 \begin_layout Plain Layout
-MC/SA: Priority Queues
+MC/SA:
+ Priority Queues
 \end_layout
 
 \end_inset
@@ -410,7 +428,10 @@ MC/SA: Priority Queues
 \begin_inset Text
 
 \begin_layout Plain Layout
-MC/SA: Analysis, Design, and Justification II
+MC/SA:
+ Analysis,
+ Design,
+ and Justification II
 \end_layout
 
 \end_inset
@@ -439,7 +460,8 @@ MC/SA: Analysis, Design, and Justification II
 \begin_inset Text
 
 \begin_layout Plain Layout
-Prog: Priority Queues
+Prog:
+ Priority Queues
 \end_layout
 
 \end_inset
@@ -509,13 +531,13 @@ Total:
 \begin_layout Standard
 
 \series bold
-Short Answer: Elementary Sorts
+Short Answer:
+ Elementary Sorts
 \end_layout
 
 \begin_layout Enumerate
-[Abraham] Which sorting algorithm will take least time when all elements
- of input array are identical? Consider the implementations of the sorting
- algorithms as given in class.
+[Abraham] Which sorting algorithm will take least time when all elements of input array are identical?
+ Consider the implementations of the sorting algorithms as given in class.
  [5 points]
 \end_layout
 
@@ -555,12 +577,14 @@ Merge Sort
 
 \end_deeper
 \begin_layout Enumerate
-[Acuña] When dealing with systems having low RAM capacity, or analyzing
- large datasets, space is at a premium.
- In these cases, algorithms must be designed to reduce their memory foot
- print.
- From the sorting algorithm implementations seen in class, which would be
- the worse choice? [5 points]
+[Acuña] When dealing with systems having low RAM capacity,
+ or analyzing large datasets,
+ space is at a premium.
+ In these cases,
+ algorithms must be designed to reduce their memory foot print.
+ From the sorting algorithm implementations seen in class,
+ which would be the worse choice?
+ [5 points]
 \end_layout
 
 \begin_deeper
@@ -596,9 +620,9 @@ status collapsed
 
 \series bold
 Ans:
+
 \series default
- [Acuña] We don't want to use mergesort since it requires creating an auxiliary
- array which doubles the space used.
+ [Acuña] We don't want to use mergesort since it requires creating an auxiliary array which doubles the space used.
  Mergesort is also bad because it requires stack memory for recursive calls.
 \end_layout
 
@@ -662,7 +686,9 @@ public static void sort(Comparable[] a) {
 
 \begin_layout Plain Layout
 
-    for (int j = 0; j < n-1; j++) {
+    for (int j = 0;
+ j < n-1;
+ j++) {
 \end_layout
 
 \begin_layout Plain Layout
@@ -672,7 +698,9 @@ public static void sort(Comparable[] a) {
 
 \begin_layout Plain Layout
 
-        for (int i = j+1; i < n; i++) {
+        for (int i = j+1;
+ i < n;
+ i++) {
 \end_layout
 
 \begin_layout Plain Layout
@@ -706,7 +734,9 @@ public static void sort(Comparable[] a) {
 
 \begin_layout Plain Layout
 
-          swap(a[j], a[z]); //count these
+          swap(a[j],
+ a[z]);
+ //count these
 \end_layout
 
 \begin_layout Plain Layout
@@ -730,7 +760,8 @@ public static void sort(Comparable[] a) {
 \end_layout
 
 \begin_layout Enumerate
-What is the Big-Oh order of the above code fragment? If it does not exist,
+What is the Big-Oh order of the above code fragment?
+ If it does not exist,
  then explain.
 \end_layout
 
@@ -752,12 +783,13 @@ status collapsed
 
 \begin_inset Branch soln
 inverted 0
-status collapsed
+status open
 
 \begin_layout Standard
 
 \series bold
-Ans: [Acuña]
+Ans:
+ [Acuña]
 \end_layout
 
 \begin_layout Standard
@@ -778,7 +810,8 @@ It is O(n) since it is inside one loop with linear incrementor.
 
 \end_deeper
 \begin_layout Enumerate
-What is the Tilde order of the above code fragment? If it does not exist,
+What is the Tilde order of the above code fragment?
+ If it does not exist,
  then explain.
 \end_layout
 
@@ -800,17 +833,18 @@ status collapsed
 
 \begin_inset Branch soln
 inverted 0
-status collapsed
+status open
 
 \begin_layout Standard
 
 \series bold
-Ans: [Acuña]
+Ans:
+ [Acuña]
 \end_layout
 
 \begin_layout Standard
-It does not exist, swap only runs if z != j and we can't know how often
- that occurs without knowing the data.
+It does not exist,
+ swap only runs if z != j and we can't know how often that occurs without knowing the data.
 \end_layout
 
 \begin_layout Standard
@@ -836,18 +870,23 @@ It does not exist, swap only runs if z != j and we can't know how often
 \begin_layout Standard
 
 \series bold
-Short Answer: Mergesort
+Short Answer:
+ Mergesort
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
 [Acuña] If the merge() method from mergesort was used for merging queues,
- instead of arrays, how much space would be needed for auxiliary data storage?
+ instead of arrays,
+ how much space would be needed for auxiliary data storage?
  Assume the input is of length 
 \emph on
 n
 \emph default
-, and that all queues are internally implemented as a list.[5 points]
+,
+ that all queues are internally implemented as a list,
+ and that each is sorted with the smallest element at the front.
+ [5 points]
 \end_layout
 
 \begin_deeper
@@ -886,9 +925,10 @@ O(nlogn)
 
 \end_deeper
 \begin_layout Enumerate
-[Abraham] If you had to pick a data structure on which you would be performing
- merge sort, which one would you choose? (Hint: Think about minimizing space
- usage.) [5 points]
+[Abraham] If you had to pick a data structure on which you would be performing merge sort,
+ which one would you choose?
+ (Hint:
+ Think about minimizing space usage.) [5 points]
 \end_layout
 
 \begin_deeper
@@ -927,8 +967,10 @@ Generics
 
 \end_deeper
 \begin_layout Enumerate
-[Acuña] In the lower bound proof for sorting, why must there be at least
- N! leaves on the decision tree? [10 points]
+[Acuña] In the lower bound proof for sorting,
+ why must there be at least N!
+ leaves on the decision tree?
+ [10 points]
 \end_layout
 
 \begin_deeper
@@ -949,22 +991,24 @@ status collapsed
 
 \begin_inset Branch soln
 inverted 0
-status collapsed
+status open
 
 \begin_layout Standard
 
 \series bold
-Ans: [Acuña]
+Ans:
+ [Acuña]
 \end_layout
 
 \begin_layout Standard
 A sorting algorithm must be able to sort (solve) any input.
- Given that the input is an array of size N, then there are N! permutations
- of it.
- Since each result is represented as a leaf, we need N! leaves to have enough
- solutions available for the possible inputs.
- This is the equivalent of saying that the tree contains a path which leads
- to the solution of each possible input.
+ Given that the input is an array of size N,
+ then there are N!
+ permutations of it.
+ Since each result is represented as a leaf,
+ we need N!
+ leaves to have enough solutions available for the possible inputs.
+ This is the equivalent of saying that the tree contains a path which leads to the solution of each possible input.
 \end_layout
 
 \begin_layout Standard
@@ -989,7 +1033,8 @@ A sorting algorithm must be able to sort (solve) any input.
 \begin_layout Standard
 
 \series bold
-Short Answer: Priority Queues 
+Short Answer:
+ Priority Queues 
 \end_layout
 
 \end_deeper
@@ -1000,18 +1045,18 @@ Short Answer: Priority Queues
 
 \begin_deeper
 \begin_layout Enumerate
-A max heap provides ways to both add and remove elements, but a priority
- queue does not.
+A max heap provides ways to both add and remove elements,
+ but a priority queue does not.
 \end_layout
 
 \begin_layout Enumerate
-A priority queue requires O(n) time to remove an element, while a heap works
- in O(logn) time.
+A priority queue requires O(n) time to remove an element,
+ while a heap works in O(logn) time.
 \end_layout
 
 \begin_layout Enumerate
-A heap is how data is structured, while saying priority queue specifies
- what operations can be performed.
+A heap is how data is structured,
+ while saying priority queue specifies what operations can be performed.
  
 \begin_inset Note Note
 status open
@@ -1026,7 +1071,8 @@ ANS
 \end_layout
 
 \begin_layout Enumerate
-There isn't any difference, they're different names for the same thing.
+There isn't any difference,
+ they're different names for the same thing.
 \end_layout
 
 \begin_layout Standard
@@ -1038,6 +1084,7 @@ status collapsed
 [Acuña] 
 \series bold
 Ans:
+
 \series default
  A heap is a data structure and a priority queue is an ADT.
 \end_layout
@@ -1056,9 +1103,19 @@ Ans:
 
 \end_deeper
 \begin_layout Enumerate
-[Abraham] Consider this array representation of a heap, what is the right
- child of node 75? Assume the zeroth index is null.
- A = {_, 100, 75, 50, 51, 40, 30, 3, 25, 10}
+[Abraham] Consider this array representation of a heap,
+ what is the right child of node 75?
+ Assume the zeroth index is null.
+ A = {_,
+ 100,
+ 75,
+ 50,
+ 51,
+ 40,
+ 30,
+ 3,
+ 25,
+ 10}
 \end_layout
 
 \begin_deeper
@@ -1104,7 +1161,8 @@ ANS
 One of the main operations for a PQ is to move an element lower in a heap,
  so that it will be in the proper order.
  It is implemented by the sink() method.
- According to lecture, this particular implementation takes 
+ According to lecture,
+ this particular implementation takes 
 \begin_inset Formula $O(log(n))$
 \end_inset
 
@@ -1134,7 +1192,8 @@ status open
 
 \begin_layout Plain Layout
 
-            if (j < N && less(j, j+1))
+            if (j < N && less(j,
+ j+1))
 \end_layout
 
 \begin_layout Plain Layout
@@ -1144,7 +1203,8 @@ status open
 
 \begin_layout Plain Layout
 
-            if (!less(k, j))
+            if (!less(k,
+ j))
 \end_layout
 
 \begin_layout Plain Layout
@@ -1154,7 +1214,8 @@ status open
 
 \begin_layout Plain Layout
 
-            exch(k, j);
+            exch(k,
+ j);
 \end_layout
 
 \begin_layout Plain Layout
@@ -1186,7 +1247,8 @@ Support this claim by explaining why this method is
 \begin_inset Formula $O(log(n))$
 \end_inset
 
-: [10 points]
+:
+ [10 points]
 \end_layout
 
 \begin_layout Standard
@@ -1206,7 +1268,7 @@ status collapsed
 
 \begin_inset Branch soln
 inverted 0
-status collapsed
+status open
 
 \begin_layout Standard
 
@@ -1223,11 +1285,13 @@ The height of the tree will be
 
 
 \emph default
-, where 
+,
+ where 
 \emph on
 n
 \emph default
- is the number of nodes, so since each loop iteration moves down one level,
+ is the number of nodes,
+ so since each loop iteration moves down one level,
  it can run a maximum of 
 \begin_inset Formula $log_{2}(n)$
 \end_inset
@@ -1257,14 +1321,17 @@ n
 \begin_layout Standard
 
 \series bold
-Short Answer: Analysis, Design, and Justification II
+Short Answer:
+ Analysis,
+ Design,
+ and Justification II
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
-[Vega] If we go through the steps of ADJ to create a solution for a given
- problem, what should we do if we find in the justification that our solution
- does not satisfy the metrics defined in the Analysis? [5 points]
+[Vega] If we go through the steps of ADJ to create a solution for a given problem,
+ what should we do if we find in the justification that our solution does not satisfy the metrics defined in the Analysis?
+ [5 points]
 \end_layout
 
 \begin_deeper
@@ -1274,8 +1341,7 @@ Skip those metrics and just include the ones that are met.
 \end_layout
 
 \begin_layout Enumerate
-Loop back to the Design phase and either modify our solution or create a
- new solution that satisfies the metrics.
+Loop back to the Design phase and either modify our solution or create a new solution that satisfies the metrics.
  
 \begin_inset Note Note
 status open
@@ -1307,9 +1373,9 @@ Skip the Justification step altogether.
 
 \end_deeper
 \begin_layout Enumerate
-[Acuña] Suppose that we design a program that appears to successfully solve
- a problem, can we skip analysis and jump straight to justification? [5
- points] 
+[Acuña] Suppose that we design a program that appears to successfully solve a problem,
+ can we skip analysis and jump straight to justification?
+ [5 points] 
 \begin_inset Note Comment
 status open
 
@@ -1324,7 +1390,8 @@ SC20
 
 \begin_deeper
 \begin_layout Enumerate
-Yes - analysis only supports design, and design only supports justification.
+Yes - analysis only supports design,
+ and design only supports justification.
 \end_layout
 
 \begin_layout Enumerate
@@ -1359,11 +1426,11 @@ ANS
 
 \end_deeper
 \begin_layout Enumerate
-[Acuña] Consider the following problem statement: find every pair of students
- in a textfile that share the first name.
+[Acuña] Consider the following problem statement:
+ find every pair of students in a textfile that share the first name.
  Give two reasonable assumptions that would be useful for solving this problem.
- (If needed, you may explain why an assumption would be useful.) [10 points]
- 
+ (If needed,
+ you may explain why an assumption would be useful.) [10 points] 
 \begin_inset Note Comment
 status collapsed
 
@@ -1380,7 +1447,7 @@ SC20
 \begin_layout Standard
 \begin_inset Branch blank
 inverted 0
-status collapsed
+status open
 
 \begin_layout Standard
 \begin_inset VSpace 4cm
@@ -1405,29 +1472,31 @@ status collapsed
 \begin_layout Standard
 
 \series bold
-Programming: Priority Queues
+Programming:
+ Priority Queues
 \end_layout
 
 \begin_layout Standard
 
 \emph on
 The real exam will involve writing code for one or more methods.
- Methods typically contain ~20 lines and have a higher weight (20-30 points)
- than other questions.
- The problem given here uses linked lists but all modules with programming
- concepts are fair game (mergesort, priority queues, symbol tables).
+ Methods typically contain ~20 lines and have a higher weight (20-30 points) than other questions.
+ The problem given here uses linked lists but all modules with programming concepts are fair game (mergesort,
+ priority queues,
+ symbol tables).
 \end_layout
 
 \begin_layout Standard
-Implement a method to find the k-th largest element in an array of size
- N using a minimum priority queue (MinPQ).
- Assume that the MinPQ class has a constructor that takes a single integer
- representing its maximum size, a insert(), a min(), a delMin(), an isEmpty(),
+Implement a method to find the k-th largest element in an array of size N using a minimum priority queue (MinPQ).
+ Assume that the MinPQ class has a constructor that takes a single integer representing its maximum size,
+ a insert(),
+ a min(),
+ a delMin(),
+ an isEmpty(),
  and size() methods.
  The MinPQ does not resize (to preserve O(logn performance).
  You may not import any packages.
- Creating additional helper methods is fine but you should provide a one
- line comment that indicates their purpose.
+ Creating additional helper methods is fine but you should provide a one line comment that indicates their purpose.
  [20 points]
 \end_layout
 
@@ -1439,7 +1508,71 @@ status open
 
 \begin_layout Plain Layout
 
-public int findKthLargest(int[] data, int k) {
+public int findKthLargest(int[] data,
+ int k) {
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+public int findKthLargest (int[] data,
+ int k ) {
+\end_layout
+
+\begin_layout Plain Layout
+
+  MinPQ newMinPQ = new MinPQ(k+1);
+\end_layout
+
+\begin_layout Plain Layout
+
+  for(int i :
+ data){
+\end_layout
+
+\begin_layout Plain Layout
+
+    newMinPQ.insert(i);
+\end_layout
+
+\begin_layout Plain Layout
+
+    if(newMinPQ.size() > k)
+\end_layout
+
+\begin_layout Plain Layout
+
+      newMinPQ.delMin();
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+  return newMinPQ.delMin()
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1459,9 +1592,9 @@ Extra Questions
 \end_layout
 
 \begin_layout Standard
-The following questions were used on previous practice exams - they are
- not part of the practice exam, and may use content not covered in the current
- semester, but are provided for additional practice.
+The following questions were used on previous practice exams - they are not part of the practice exam,
+ and may use content not covered in the current semester,
+ but are provided for additional practice.
 \end_layout
 
 \begin_layout Standard
@@ -1476,17 +1609,24 @@ The following questions were used on previous practice exams - they are
 \begin_layout Standard
 
 \series bold
-Short Answer: Mergesort
+Short Answer:
+ Mergesort
 \end_layout
 
 \begin_layout Enumerate
-[Abraham] Which of the following arrays would insertion sort process the
- fastest? [5 points]
+[Abraham] Which of the following arrays would insertion sort process the fastest?
+ [5 points]
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
-(a) {1, 2, 3, 4, 7, 5, 6}
+(a) {1,
+ 2,
+ 3,
+ 4,
+ 7,
+ 5,
+ 6}
 \begin_inset Note Note
 status open
 
@@ -1500,11 +1640,23 @@ ANS
 \end_layout
 
 \begin_layout Standard
-(b) {2, 3, 4, 6, 1, 5, 7}
+(b) {2,
+ 3,
+ 4,
+ 6,
+ 1,
+ 5,
+ 7}
 \end_layout
 
 \begin_layout Standard
-(c) {6, 7, 5, 4, 3, 2, 1}
+(c) {6,
+ 7,
+ 5,
+ 4,
+ 3,
+ 2,
+ 1}
 \end_layout
 
 \begin_layout Standard
@@ -1520,10 +1672,18 @@ ANS
 
 \end_deeper
 \begin_layout Enumerate
-[Acuña] Consider the following array: 23, 7, 35, 3, 4, 2, 13, 1.
+[Acuña] Consider the following array:
+ 23,
+ 7,
+ 35,
+ 3,
+ 4,
+ 2,
+ 13,
+ 1.
  Show a trace of execution for top-down mergesort.
- Illustrate how the array is broken down, and then merged into an ordered
- state.
+ Illustrate how the array is broken down,
+ and then merged into an ordered state.
  [10 points]
 \begin_inset Separator latexpar
 \end_inset
@@ -1558,31 +1718,80 @@ Ans:
 \end_layout
 
 \begin_layout Standard
-[23, 7, 35, 3, 4, 2, 13, 1]
+[23,
+ 7,
+ 35,
+ 3,
+ 4,
+ 2,
+ 13,
+ 1]
 \end_layout
 
 \begin_layout Standard
-[[23, 7, 35, 3], [4, 2, 13, 1]]
+[[23,
+ 7,
+ 35,
+ 3],
+ [4,
+ 2,
+ 13,
+ 1]]
 \end_layout
 
 \begin_layout Standard
-[[[23, 7], [35, 3]], [[4, 2], [13, 1]]]
+[[[23,
+ 7],
+ [35,
+ 3]],
+ [[4,
+ 2],
+ [13,
+ 1]]]
 \end_layout
 
 \begin_layout Standard
-[[[[23], [7]], [[35], [3]]], [[[4], [2]], [[13], [1]]]]
+[[[[23],
+ [7]],
+ [[35],
+ [3]]],
+ [[[4],
+ [2]],
+ [[13],
+ [1]]]]
 \end_layout
 
 \begin_layout Standard
-[[[7, 23], [3, 35]], [[2, 4], [1, 13]]]
+[[[7,
+ 23],
+ [3,
+ 35]],
+ [[2,
+ 4],
+ [1,
+ 13]]]
 \end_layout
 
 \begin_layout Standard
-[[3, 7, 23, 35], [1, 2, 4, 13]]
+[[3,
+ 7,
+ 23,
+ 35],
+ [1,
+ 2,
+ 4,
+ 13]]
 \end_layout
 
 \begin_layout Standard
-[1, 2, 3, 4, 7, 13, 23, 35]
+[1,
+ 2,
+ 3,
+ 4,
+ 7,
+ 13,
+ 23,
+ 35]
 \end_layout
 
 \begin_layout Standard
@@ -1600,21 +1809,21 @@ Ans:
 \begin_layout Standard
 
 \series bold
-Short Answer: Priority Queues
+Short Answer:
+ Priority Queues
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
-[Abraham] As mentioned in class, a max heap would be a great data structure
- when we need to extract the maximum element.
- Let us say that you are given a few processes that require CPU time which
- are stored in a heap structure.
+[Abraham] As mentioned in class,
+ a max heap would be a great data structure when we need to extract the maximum element.
+ Let us say that you are given a few processes that require CPU time which are stored in a heap structure.
  The process with minimum priority needs to be executed first.
- Example, a process with priority 0 needs to be picked up before a process
- with priority 1.
+ Example,
+ a process with priority 0 needs to be picked up before a process with priority 1.
  We need to select the task with minimum priority.
- What would be the complexity to simply read the minimum element in a min
- heap? [5 points]
+ What would be the complexity to simply read the minimum element in a min heap?
+ [5 points]
 \end_layout
 
 \begin_deeper
