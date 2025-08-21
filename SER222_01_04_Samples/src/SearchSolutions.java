@@ -1,3 +1,5 @@
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.Scanner;
 
 /**
@@ -21,7 +23,7 @@ public class SearchSolutions {
         int lo = 0;
         int hi = pool.length - 1;
         while (lo <= hi) {
-            int mid = lo + (hi - lo) / 2;
+            int mid = (hi + lo) / 2;
             if (target < pool[mid])
                 hi = mid - 1;
             else if (target > pool[mid])

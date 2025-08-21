@@ -9,7 +9,13 @@ public class Point2DTester {
         Point2D p1 = new Point2D(3, 5);
         Point2D p2 = new Point2D(3, 5);
 
-        if(p1.equals(p2)) //Java will compare addresses so this is false.
+        if(p1 == p2) { //Java will compare addresses so this is false.
+            System.out.println("Both the points are equal.");
+        } else {
+            System.out.println("The two points are not equal as `=` compares the addresses of the two variables.");
+        }
+
+        if(p1.equals(p2))
             System.out.println("Dist is 0.");
         else
             System.out.println("Dist is " +   

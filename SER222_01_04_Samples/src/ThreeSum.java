@@ -22,7 +22,7 @@ public class ThreeSum {
        int[] a = {23, 32, 5, 103, 12, 10, 45, 3, 4, 5, 23, 23, 32, 5, 103, 52, 134, 45, 3, 4, 45, 234, 12, 10, 45};
        
        Stopwatch stopwatch = new Stopwatch();
-       System.out.println(ThreeSum.count(a));
+       System.out.println(count(a));
        double time = stopwatch.elapsedTime();
        
        System.out.println("elapsed time " + time);
